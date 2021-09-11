@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import Link from 'next/link';
 import logoB from '../static/images/blue_logo.png';
+import globe from '../static/images/globe.png';
 
 const HeaderContainer = styled.div`
+  z-index: 3;
   position: relative;
   display: flex;
   width: 100vw;
@@ -56,7 +58,7 @@ const HeaderLogoContainer = styled.div`
   padding-left: 10px;
 
   & > img {
-    height: 50px;
+    height: 40px;
     cursor: pointer;
     max-width: 100%;
   }
@@ -69,13 +71,13 @@ const HeaderLogoContainer = styled.div`
 
   @media ${(props) => props.theme.mobile} {
     display: flex;
-    width: calc(100% - 50px);
+    width: calc(100% - 100px);
     min-width: calc(100% - 50px);
 
     align-items: center;
 
     & > img {
-      height: 70px;
+      height: 40px;
       cursor: pointer;
     }
   }
@@ -367,23 +369,9 @@ const Header = () => {
       </HeaderMobileMenu>
       <HeaderMenuContainer>
         <div className='dropdown'>
-          <Link href='/introduce/'>
+          <Link href='/company/'>
             <span>COMPANY</span>
           </Link>
-          <div className='dropdown-content'>
-            <Link href='/introduce/'>
-              <a onClick={() => setOpen(false)}>학부장인사말</a>
-            </Link>
-            <Link href='/introduce/goal/'>
-              <a onClick={() => setOpen(false)}>교육목표</a>
-            </Link>
-            <Link href='/introduce/prospect/'>
-              <a onClick={() => setOpen(false)}>졸업후 전망</a>
-            </Link>
-            <Link href='/introduce/direction/'>
-              <a onClick={() => setOpen(false)}>오시는 길</a>
-            </Link>
-          </div>
         </div>
         <div className='dropdown'>
           <Link href='/professor-list/'>
@@ -415,6 +403,21 @@ const Header = () => {
           <div className='dropdown-content'>
             <Link href='/study/student-union/'>
               <a onClick={() => setOpen(false)}>학생회</a>
+            </Link>
+          </div>
+        </div>
+        <div className='dropdown'>
+          <Link href='/study/student-union/'>
+            <span>
+              <img src={globe} style={{ height: '20px' }}></img>
+            </span>
+          </Link>
+          <div className='dropdown-content'>
+            <Link href='/study/student-union/'>
+              <a onClick={() => setOpen(false)}>EN</a>
+            </Link>
+            <Link href='/study/student-union/'>
+              <a onClick={() => setOpen(false)}>KR</a>
             </Link>
           </div>
         </div>

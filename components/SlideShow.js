@@ -1,18 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const imagePath2 = [
-  `/static/images/main_1.jpg`,
-  `/static/images/main_2.jpg`,
-  `/static/images/main_3.jpg`,
+  `/static/images/main_1.png`,
+  `/static/images/main_2.png`,
+  `/static/images/main_3.png`,
 ];
 
-const labelPath1 = [
-  `Expand your vision, Be ambitious!`,
-  `한국외국어대학교 Language & Trade`,
-  `Welcome to Division of Language & Trade`,
-];
-
-const delay = 2500;
+const delay = 3000;
 
 function Slideshow() {
   const [index, setIndex] = useState(0);
@@ -48,10 +42,21 @@ function Slideshow() {
         >
           {imagePath2.map((image, index) => (
             <div className='slide' key={index}>
-              <span>{labelPath1[index]}</span>
               <img src={image}></img>
             </div>
           ))}
+        </div>
+
+        <div className='floatText'>
+          <span>비지니스 채널은 국내 화장품 업계 최초의 ODM 기업입니다</span>
+          <p>
+            우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발,
+            출하, 관리에 이르기까지 체계적인 토털 서비스를 제공합니다
+          </p>
+          <p>
+            브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록
+            지원합니다
+          </p>
         </div>
 
         <div className='slideshowDots'>
@@ -68,12 +73,14 @@ function Slideshow() {
       </div>
       <style jsx>{`
         .slideshow {
+          z-index: 2;
           margin: auto;
           overflow: hidden;
           max-width: 100vw;
-          height: calc((100vh - 165px) / 2);
-          max-height: calc((100vh - 165px) / 2);
-          position: relative;
+          height: 100vh;
+          max-height: 100vh;
+          position: absolute;
+          top: 0;
         }
 
         .slideshowSlider {
@@ -89,8 +96,8 @@ function Slideshow() {
           width: 100%;
           position: relative;
           margin: 0;
-          height: calc(50vh - 85px);
-          max-height: calc(50vh - 85px);
+          height: 100vh;
+          max-height: 100vh;
         }
 
         .slide > span {
@@ -98,14 +105,12 @@ function Slideshow() {
           bottom: 0px;
           left: 0px;
           width: 100%;
-          background-color: rgba(0, 0, 0, 0.3);
           height: 15%;
           display: flex;
           align-items: center;
           padding-left: 1.5em;
           font-size: 20px;
           color: #fff;
-          font-family: 'HUFSM';
         }
 
         @media screen and (max-width: 770px) {
@@ -113,14 +118,14 @@ function Slideshow() {
             margin: auto;
             overflow: hidden;
             max-width: 100vw;
-            height: calc((100vh - 85px) / 2);
-            max-height: calc((100vh - 85px) / 2);
+            height: calc(100vh - 85px);
+            max-height: calc(100vh - 85px);
             position: relative;
           }
 
           .slide {
-            height: calc((100vh - 85px) / 2);
-            max-height: calc((100vh - 85px) / 2);
+            height: calc(100vh - 85px);
+            max-height: calc(100vh - 85px);
           }
 
           .slide > span {
@@ -147,13 +152,13 @@ function Slideshow() {
           text-align: center;
           position: absolute;
           bottom: 1em;
-          right: 1em;
+          right: calc(50% - 36px);
         }
 
         .slideshowDot {
           display: inline-block;
-          height: 8px;
-          width: 8px;
+          height: 9px;
+          width: 9px;
           border-radius: 50%;
 
           cursor: pointer;
@@ -163,7 +168,7 @@ function Slideshow() {
         }
 
         .slideshowDot.active {
-          background-color: #002d56;
+          background-color: #fff;
         }
       `}</style>
     </>
