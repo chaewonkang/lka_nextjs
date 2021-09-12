@@ -403,27 +403,14 @@ const Header = ({ isTransparent }) => {
           </div>
         </div>
         <div className='dropdown'>
-          <Link href='/study/roadmap/'>
+          <Link href='/distribution'>
             <span>DISTRIBUTION</span>
           </Link>
-          <div className='dropdown-content'>
-            <Link href='/study/roadmap/'>
-              <a onClick={() => setOpen(false)}>전공로드맵</a>
-            </Link>
-            <Link href='/study/curriculum/'>
-              <a onClick={() => setOpen(false)}>교과과정</a>
-            </Link>
-          </div>
         </div>
         <div className='dropdown'>
-          <Link href='/study/student-union/'>
+          <Link href='/contact/'>
             <span>CONTACT</span>
           </Link>
-          <div className='dropdown-content'>
-            <Link href='/study/student-union/'>
-              <a onClick={() => setOpen(false)}>학생회</a>
-            </Link>
-          </div>
         </div>
         <div className='dropdown'>
           <Link href='/study/student-union/'>

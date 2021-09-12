@@ -6,7 +6,14 @@ function PageLayout({ children }) {
   const router = useRouter();
 
   const transparentPage = '/';
-  const includePage = ['/company', '/greeting', '/history', '/address'];
+  const includePage = [
+    '/company',
+    '/greeting',
+    '/history',
+    '/address',
+    '/contact',
+    '/distribution',
+  ];
 
   return (
     <div>
