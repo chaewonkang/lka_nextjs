@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 import banner from '../static/images/banner_1.png';
 import { useRouter } from 'next/router';
+import map from '../static/images/map.png';
 
 const bannerObj = {
   img: banner,
@@ -12,7 +13,7 @@ const bannerObj = {
     '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획	개발, 출하, 관리에 이르기까지 체계적인 토털 서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
 };
 
-const Company = () => {
+const History = () => {
   const router = useRouter();
   console.log(router);
   return (
@@ -27,9 +28,9 @@ const Company = () => {
           <div className='company_box'>
             <div className='text_wrapper'>
               <h1>
-                No.1 Platform
+                경기도 파주시 책향기숲길 132
                 <br />
-                Service Provider
+                헤르만하우스 02 38호
               </h1>
               <span>
                 비지니스 채널은 국내 화장품 업계 최초의 ODM 기업입니다.
@@ -40,31 +41,10 @@ const Company = () => {
                 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수
                 있도록 지원합니다.
               </p>
-            </div>
-            <div className='img_wrapper'>
-              <div className='img_area'></div>
             </div>
           </div>
-          <div className='company_box'>
-            <div className='text_wrapper'>
-              <h1>
-                No.1 Platform
-                <br />
-                Service Provider
-              </h1>
-              <span>
-                비지니스 채널은 국내 화장품 업계 최초의 ODM 기업입니다.
-              </span>
-              <p>
-                우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획,
-                개발, 출하, 관리에 이르기까지 체계적인 토털 서비스를 제공합니다.
-                브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수
-                있도록 지원합니다.
-              </p>
-            </div>
-            <div className='img_wrapper'>
-              <div className='img_area'></div>
-            </div>
+          <div className='map_box'>
+            <img src={map}></img>
           </div>
         </div>
       </PageLayout>
@@ -72,4 +52,4 @@ const Company = () => {
   );
 };
 
-export default Company;
+export default History;

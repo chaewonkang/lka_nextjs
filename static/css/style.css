@@ -1,8 +1,37 @@
 #body {
 	width: 100%;
-	height: calc(100vh - 80px);
+	height: auto;
+	overflow: auto;
 }
 
+/* TOPOF COMMON */
+
+.text_wrapper {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.text_wrapper h1 {
+		font-weight: bolder;
+		color: #2A6EB1;
+		line-height: 1.5em;
+}
+
+.text_wrapper span {
+		font-size: 25px;
+		font-weight: bolder;
+}
+
+.text_wrapper p {
+		color: #7E7E7E;
+		font-size: 18px;
+		line-height: 1.8em;
+		word-break: keep-all;
+}
+
+/* ENDOF COMMON */
 
 
 /* TOPOF Slideshow */
@@ -33,37 +62,45 @@
 
 .banner_container {
 	width: 100%;
-	height: 290px;
-}
-
-.banner_container .banner_wrapper {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
+	height: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 }
 
-.banner_container .banner_wrapper img {
+.banner_container .banner_wrapper {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	height: 50%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5em 1em;
+    color: #fff;
+	font-size: 1em;
+	text-align: center;
+}
+
+.banner_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+	opacity: 0.7;
+	filter: brightness(50%);
 }
 
 .banner_container .banner_wrapper h1,
 .banner_container .banner_wrapper p
 {
-	position: absolute;
-	text-align: center;
-	top: -20px;
-	left: 0px;
-	width: 100%;
-	height: 15%;
-	display: flex;
-	align-items: center;
-	padding-left: 1.5em;
-	color: #fff;
+	width: 40%;
+	line-height: 1.8em;
 }
-
 
 /* ENDOF Banner */
 
@@ -108,3 +145,141 @@
 }
 
 /* ENDOF Footer */
+
+/* TOPOF company */
+
+.company_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.company_box {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.company_box .text_wrapper {
+
+	width: calc(60% - 5em);
+	max-width: calc(60% - 5em);
+	height: 100%;
+	padding: 5em;
+	margin: 0;
+}
+
+.company_box .img_wrapper {
+	width: 40%;
+	height: 300px;
+}
+
+.company_box .img_wrapper .img_area {
+	width: 80%;
+	height: 100%;
+	border-radius: 50px;
+	background-color: #F5F5F5;
+}
+
+/* ENDOF company */
+
+/* TOPOF greeting */
+
+.greeting_container {
+	width: 70%;
+	height: calc(100vh - 320px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+.greeting_container .greeting_wrapper {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.greeting_container .greeting_wrapper h1 {
+	font-weight: bolder;
+	color: #2A6EB1;
+	line-height: 1.5em;
+}
+
+.greeting_container .greeting_wrapper span {
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.greeting_container .greeting_wrapper p {
+	color: #7E7E7E;
+	font-size: 18px;
+	line-height: 1.8em;
+	word-break: keep-all;
+}
+
+.greeting_container .greeting_signature {
+	height: 7%;
+	width: 100%;
+	text-align: right;
+}
+
+.greeting_container .greeting_signature span {
+	font-weight: bolder;
+	margin-right: 10px;
+	color: #7E7E7E;
+}
+.greeting_container .greeting_signature img {
+	height: 100%;
+}
+
+/* ENDOF greeting */
+
+/* TOPOF address */
+
+.map_box {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.map_box img {
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+}
+
+/* ENDOF address */
+
+/* TOPOF history */
+
+.history_container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.history_title_wrapper {
+	width: 80%;
+	height: 240px;
+	text-align: center;
+	color: #2A6EB1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.history_title_wrapper h1 {
+	line-height: 1.3em;
+}
+
+
+/* ENDOF history */

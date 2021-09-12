@@ -2,6 +2,7 @@ import React from 'react';
 import Document, { Html, Main, NextScript, Head } from 'next/document';
 import Helmet from 'react-helmet';
 import { ServerStyleSheet, createGlobalStyle } from 'styled-components';
+import theme from '../styles/theme';
 
 const GlobalStyles = createGlobalStyle`
 

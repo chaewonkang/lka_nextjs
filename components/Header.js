@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import Link from 'next/link';
 import logoB from '../static/images/blue_logo.png';
+import logoW from '../static/images/white_logo.png';
 import globe from '../static/images/globe.png';
 
 const HeaderContainer = styled.div`
-  z-index: 3;
+  z-index: 10;
   position: relative;
   display: flex;
   width: 100vw;
@@ -16,13 +17,8 @@ const HeaderContainer = styled.div`
   color: #fff;
   padding-right: 50px;
   padding-left: 50px;
-
   background-size: 50vw;
   object-fit: cover;
-
-  &:hover {
-    background-color: rgba(48, 116, 189, 1);
-  }
 
   @media ${(props) => props.theme.mobile} {
     background-color: #fff;
@@ -89,6 +85,7 @@ const HeaderMenuContainer = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 50px;
+  z-index: 10;
 
   width: 100%;
 
@@ -217,7 +214,7 @@ const StyledBurger = styled.button`
 const StyledMenu = styled.nav`
   display: inline-block;
   width: 100vw;
-  z-index: 10;
+  z-index: 15;
   background: #002d56;
   opacity: 0.9;
   height: 100vh;
@@ -266,8 +263,9 @@ const StyledMenu = styled.nav`
   }
 `;
 
-const Header = () => {
+const Header = ({ isTransparent }) => {
   const [open, setOpen] = useState(false);
+  const bgColor = isTransparent;
   const link1 = [
     '/introduce/',
     '/introduce/goal/',
@@ -291,11 +289,19 @@ const Header = () => {
     setOpen(false);
   };
 
+  console.log(bgColor);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer
+      style={
+        bgColor
+          ? { backgroundColor: 'rbga(0,0,0,0)' }
+          : { backgroundColor: 'rgba(48, 116, 189, 1)' }
+      }
+    >
       <HeaderLogoContainer>
         <Link href='/'>
-          <img src={logoB}></img>
+          {bgColor ? <img src={logoB}></img> : <img src={logoW}></img>}
         </Link>
       </HeaderLogoContainer>
       <HeaderMobileMenu>
@@ -309,8 +315,7 @@ const Header = () => {
             <Link href='/introduce/'>
               <span>COMPANY</span>
             </Link>
-            {/*
-            handleClick(e, '/introduce/direction/' ) */}
+
             <Link href='/introduce/'>
               <a onClick={() => setOpen(!open)}>회사개요</a>
             </Link>
@@ -372,6 +377,20 @@ const Header = () => {
           <Link href='/company/'>
             <span>COMPANY</span>
           </Link>
+          <div className='dropdown-content'>
+            <Link href='/company/'>
+              <a onClick={() => setOpen(!open)}>회사개요</a>
+            </Link>
+            <Link href='/greeting/'>
+              <a onClick={() => setOpen(!open)}>인사말</a>
+            </Link>
+            <Link href='/history/'>
+              <a onClick={() => setOpen(!open)}>연혁</a>
+            </Link>
+            <Link href='/address/'>
+              <a onClick={() => setOpen(!open)}>오시는길</a>
+            </Link>
+          </div>
         </div>
         <div className='dropdown'>
           <Link href='/professor-list/'>
