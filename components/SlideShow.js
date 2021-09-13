@@ -118,14 +118,13 @@ function Slideshow() {
             margin: auto;
             overflow: hidden;
             max-width: 100vw;
-            height: calc(100vh - 85px);
-            max-height: calc(100vh - 85px);
-            position: relative;
+            height: 100vh;
+            max-height: 100vh;
           }
 
           .slide {
-            height: calc(100vh - 85px);
-            max-height: calc(100vh - 85px);
+            height: 100vh;
+            max-height: 100vh;
           }
 
           .slide > span {
@@ -135,7 +134,7 @@ function Slideshow() {
 
         .slide > img {
           width: 100%;
-          height: inherit;
+          height: 100%;
           object-fit: cover;
           margin: auto;
         }

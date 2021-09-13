@@ -20,8 +20,9 @@ const HeaderContainer = styled.div`
   background-size: 50vw;
   object-fit: cover;
 
-  @media ${(props) => props.theme.mobile} {
-    background-color: #fff;
+  @media screen and ${(props) => props.theme.mobile} {
+    padding-left: 20px;
+    padding-right: 30px;
   }
 `;
 
@@ -67,8 +68,8 @@ const HeaderLogoContainer = styled.div`
 
   @media ${(props) => props.theme.mobile} {
     display: flex;
-    width: calc(100% - 100px);
-    min-width: calc(100% - 50px);
+    width: calc(100% - 70px);
+    min-width: calc(100% - 70px);
 
     align-items: center;
 
@@ -175,21 +176,21 @@ const StyledBurger = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
-  background-color: #fff !important;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0);
 
   &:focus {
     outline: none;
   }
 
   div {
-    width: 1.5rem;
-    background: #002d56;
+    width: 24px;
+    background: #fff;
     height: 0.18rem;
     border-radius: 0px;
     transition: all 0.3s linear;
@@ -215,14 +216,14 @@ const StyledMenu = styled.nav`
   display: inline-block;
   width: 100vw;
   z-index: 15;
-  background: #002d56;
+  background: #fff;
   opacity: 0.9;
   height: 100vh;
   text-align: center;
   padding-top: 0px;
   padding-bottom: 0;
   position: absolute;
-  top: 80px;
+  top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
@@ -235,7 +236,7 @@ const StyledMenu = styled.nav`
     font-size: 18px;
     margin-bottom: 0.5em;
     padding: 0.5em;
-    color: #fff;
+    color: #000;
     display: block;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -247,8 +248,8 @@ const StyledMenu = styled.nav`
     padding: 0.25em;
 
     margin-bottom: 0.5em;
-    color: #fff;
-    font-family: 'HUFSL';
+    color: #000;
+
     text-decoration: none;
     transition: color 0.3s linear;
 

@@ -404,16 +404,27 @@
 }
 
 .dist_container .dist_box {
-	width: 25%;
+	width: 20%;
 	background-color: #fff;
 	border-radius: 50px;
 	margin: 30px;
 	padding: 40px;
 }
 
+.dist_title {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #EFEFEF;
+	padding-top: 20px;
+}
+
 .dist_container .dist_box .text_wrapper {
 	text-align: center;
 	height: auto;
+	padding-top: 40px;
 }
 
 .dist_container .dist_box .img_wrapper {
