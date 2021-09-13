@@ -31,7 +31,11 @@ const History = () => {
               위대한 역사를 만들고 있습니다.
             </h1>
           </div>
-          <div className='history_table'></div>
+          <div className='history_table'>
+			  {historyContentKr.map((item, index) => {
+				  
+			  })}
+		  </div>
         </div>
       </PageLayout>
     </ThemeProvider>
