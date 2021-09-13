@@ -19,6 +19,7 @@ const HeaderContainer = styled.div`
   padding-left: 50px;
   background-size: 50vw;
   object-fit: cover;
+  font-family: 'Urbanist', sans-serif;
 
   @media screen and ${(props) => props.theme.mobile} {
     padding-left: 10px;

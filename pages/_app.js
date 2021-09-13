@@ -6,9 +6,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel='shortcut icon' href='../static/images/favicon.ico' />
+        <link rel='shortcut icon' href='../static/images/symbol_blue.ico' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <title>주식회사 비즈니스채널</title>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600&display=swap'
+          rel='stylesheet'
+        ></link>
+        <title>BUSINESS CHANNEL Ltd.</title>
       </Head>
       <Component {...pageProps} />
     </>

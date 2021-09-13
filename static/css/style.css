@@ -3,6 +3,7 @@
 	height: auto;
 	overflow-y: auto;
 	overflow-x: hidden;
+	font-family: 'Urbanist', sans-serif;
 }
 
 /* TOPOF COMMON */
@@ -170,6 +171,7 @@
 		width: 100%;
 		line-height: 1.8em;
 		font-size: 23px;
+
 	}
 
 	.banner_container .banner_wrapper p {
@@ -188,6 +190,7 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 14px;
+	font-family: 'Urbanist', sans-serif;
 }
 
 .footer_inner {
@@ -197,6 +200,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.footer_inner div {
+	margin-bottom: 2.5px;
 }
 
 .footer_inner span,
@@ -690,6 +697,11 @@
 	justify-content: center;
 	background-color: #EFEFEF;
 	padding-top: 20px;
+}
+
+.dist_title h1 {
+	color:  #2A6EB1;
+	font-size: 35px;
 }
 
 .dist_container .dist_box .text_wrapper {
