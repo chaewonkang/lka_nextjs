@@ -21,7 +21,7 @@ const HeaderContainer = styled.div`
   object-fit: cover;
 
   @media screen and ${(props) => props.theme.mobile} {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 30px;
   }
 `;
@@ -220,7 +220,7 @@ const StyledMenu = styled.nav`
   opacity: 0.9;
   height: 100vh;
   text-align: center;
-  padding-top: 0px;
+  padding-top: 30%;
   padding-bottom: 0;
   position: absolute;
   top: 0;
@@ -233,7 +233,7 @@ const StyledMenu = styled.nav`
   }
 
   & > div > span {
-    font-size: 18px;
+    font-size: 21px;
     margin-bottom: 0.5em;
     padding: 0.5em;
     color: #000;
@@ -246,7 +246,6 @@ const StyledMenu = styled.nav`
     text-transform: uppercase;
     display: block;
     padding: 0.25em;
-
     margin-bottom: 0.5em;
     color: #000;
 
@@ -254,7 +253,7 @@ const StyledMenu = styled.nav`
     transition: color 0.3s linear;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
     }
 
@@ -313,62 +312,35 @@ const Header = ({ isTransparent }) => {
         </StyledBurger>
         <StyledMenu open={open} setOpen={setOpen}>
           <div>
-            <Link href='/introduce/'>
+            <Link href='/company/'>
               <span>COMPANY</span>
             </Link>
-
-            <Link href='/introduce/'>
+            <Link href='/company/'>
               <a onClick={() => setOpen(!open)}>회사개요</a>
             </Link>
-            <Link href='/introduce/goal/'>
+            <Link href='/greeting/'>
               <a onClick={() => setOpen(!open)}>인사말</a>
             </Link>
-            <Link href='/introduce/prospect/'>
+            <Link href='/history/'>
               <a onClick={() => setOpen(!open)}>연혁</a>
             </Link>
-            <Link href='/introduce/direction/'>
+            <Link href='/address/'>
               <a onClick={() => setOpen(!open)}>오시는길</a>
             </Link>
           </div>
           <div>
-            <Link href='/professor-list/'>
+            <Link href='/business/'>
               <span>BUSINESS</span>
             </Link>
-            <Link href='/professor-list/'>
-              <a onClick={() => setOpen(false)}>교수진</a>
-            </Link>
           </div>
           <div>
-            <Link href='/study/student-union/'>
+            <Link href='/distribution/'>
               <span>DISTRIBUTION</span>
             </Link>
-            <Link href='/study/student-union/'>
-              <a onClick={() => setOpen(false)}>학생회</a>
-            </Link>
           </div>
           <div>
-            <Link href='/board-list/general/'>
+            <Link href='/contact/'>
               <span>CONTACT</span>
-            </Link>
-            <Link href='/board-list/general/'>
-              <a onClick={(e) => handleClick(e, '/board-list/general/')}>
-                일반공지사항
-              </a>
-            </Link>
-            <Link href='/board-list/college/'>
-              <a onClick={(e) => handleClick(e, '/board-list/college/')}>
-                학사관련공지사항
-              </a>
-            </Link>
-            <Link href='/board-list/free/'>
-              <a onClick={(e) => handleClick(e, '/board-list/free/')}>
-                자유게시판
-              </a>
-            </Link>
-            <Link href='/board-list/filebox/'>
-              <a onClick={(e) => handleClick(e, '/board-list/filebox/')}>
-                자료실
-              </a>
             </Link>
           </div>
         </StyledMenu>
@@ -394,14 +366,9 @@ const Header = ({ isTransparent }) => {
           </div>
         </div>
         <div className='dropdown'>
-          <Link href='/professor-list/'>
+          <Link href='/business/'>
             <span>BUSINESS</span>
           </Link>
-          <div className='dropdown-content'>
-            <Link href='/professor-list/'>
-              <a onClick={() => setOpen(false)}>교수진</a>
-            </Link>
-          </div>
         </div>
         <div className='dropdown'>
           <Link href='/distribution'>
