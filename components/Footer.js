@@ -5,30 +5,23 @@ function Footer() {
     <div className='footer_container'>
       <div className='footer_inner'>
         <div>
-          <span>CEO</span>
-          <p>Chang Joon Yong</p>
+          <span>Adj</span>
         </div>
         <div>
-          <span>Business Registration</span>
-          <p>105-11-81551</p>
+          <span>Information</span>
+          <p>info@adj.kr</p>
         </div>
         <div>
-          <span>Address</span>
-          <p>
-            10874 #38, Herman House02, 134, Chaekhyanggisup-gil, Paju-Si,
-            Gyeonggi-do, Korea
-          </p>
+          <span>Director</span>
+          <p>jaeunjeon@adj.kr</p>
         </div>
         <div>
-          <span>Phone</span>
-          <p>+82-10-5696-6635</p>
+          <span>Telephone</span>
+          <p>82(0)2 320 1960</p>
         </div>
         <div>
-          <span>E-mail</span>
-          <p>davidwtnt@naver.com</p>
-        </div>
-        <div className='copyright'>
-          <p>COPYRIGHT 2021 Business Channel ALL RIGHTS RESERVED.</p>
+          <span>Mobile</span>
+          <p>82(0)10 8908 1663</p>
         </div>
       </div>
     </div>

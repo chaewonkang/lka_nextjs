@@ -1,17 +1,47 @@
-import PageLayout from '../components/PageLayout';
-import SlideShow from '../components/SlideShow';
 import { ThemeProvider } from 'styled-components';
+
 import theme from '../styles/theme';
-import { useRouter } from 'next/router';
+import PageLayout from '../components/PageLayout';
+import ColorBlock from '../components/ColorBlock';
+import InfoBlock from '../components/InfoBlock';
+import LargeBlock from '../components/LargeBlock';
+import MediumBlock from '../components/MediumBlock';
+import SmallBlock from '../components/SmallBlock';
+import XLBlock from '../components/XLBlock';
 
 const Index = () => {
-  const router = useRouter();
-  console.log(router);
-  
   return (
     <ThemeProvider theme={theme}>
       <PageLayout>
-        <SlideShow></SlideShow>
+        <div className='firstrow'>
+          <InfoBlock></InfoBlock>
+          <LargeBlock></LargeBlock>
+          <ColorBlock></ColorBlock>
+          <MediumBlock></MediumBlock>
+        </div>
+        <div className='secondrow'>
+          <SmallBlock></SmallBlock>
+          <SmallBlock></SmallBlock>
+          <SmallBlock></SmallBlock>
+          <MediumBlock></MediumBlock>
+          <ColorBlock></ColorBlock>
+          <XLBlock></XLBlock>
+        </div>
+        <div className='thirdrow'>
+          <SmallBlock></SmallBlock>
+          <SmallBlock></SmallBlock>
+          <SmallBlock></SmallBlock>
+          <SmallBlock></SmallBlock>
+          <LargeBlock></LargeBlock>
+          <ColorBlock></ColorBlock>
+        </div>
+        <div className='forthrow'>
+          <MediumBlock></MediumBlock>
+          <SmallBlock></SmallBlock>
+          <XLBlock></XLBlock>
+          <ColorBlock></ColorBlock>
+          <MediumBlock></MediumBlock>
+        </div>
       </PageLayout>
     </ThemeProvider>
   );
