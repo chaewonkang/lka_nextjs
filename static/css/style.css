@@ -1,23 +1,19 @@
-@font-face
-{
-    font-family: 		'Signifier Regular';
-    src: 				url('/static/fonts/signifier-web-regular.woff2') format('woff2');
-    font-weight: 		normal;
-    font-style: 		normal;
-    font-display: 		swap;
-}
-
 @font-face {
-    font-family: 		'Signifier Italic';
-    src: 				url('/static/fonts/signifier-web-regular-italic.woff2') format('woff2');
-    font-weight:		normal;
-    font-style: 		normal;
-    font-display: 		swap;
+    font-family: 'KoPubDotumPM';
+    src: url('/static/fonts/KoPubDotumPM.eot');
+    src: url('/static/fonts/KoPubDotumPM.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/KoPubDotumPM.woff2') format('woff2'),
+        url('/static/fonts/KoPubDotumPM.woff') format('woff'),
+        url('/static/fonts/KoPubDotumPM.ttf') format('truetype'),
+        url('/static/fonts/KoPubDotumPM.svg#KoPubDotumPM') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 *
 {
-	font-family: 		'Signifier Regular', serif;
+	font-family: 		'Avenir', 'KoPubDotumPM', sans-serif;
 }
 
 p,
@@ -31,12 +27,12 @@ h4 {
 
 #body
 {
-	width: 				calc(100vw - 180px);
+	width: 				calc(100vw - 60px);
 	height: 			100vh;
 	overflow-y: 		auto;
 	overflow-x: 		hidden;
 	max-width:			2560px;
-	margin:				0 auto;
+	margin:				30px;
 	position:			relative;
 	-ms-overflow-style: none;
 	scrollbar-width: 	none;
@@ -75,286 +71,73 @@ h4 {
 
 .layout_container {
 	width:				100%;
-	height:				100%;
+	height:				calc(100% - 45px);
 	margin: 			0 auto;
 }
 
 /* ENDOF layout */
 
-/* TOPOF main */
+/* TOPOF header */
 
-.keyword_container {
-	display: 			flex;
-	width:				100%;
-	height:				auto;
-	padding-top:		92px;
-	padding-bottom:		30px;
-	margin:				0 auto;
+.header_container {
+	width:				calc(100vw - 60px);
+	display:			flex;
+	flex-direction:		row;
 }
 
-.keyword_container div {
-	display: 			flex;
-	flex-direction:		column;
-	width: 				25%;
-	padding-right:		20px;
+.header_container .company_title,
+.header_container .category,
+.header_container .year,
+.header_container .program,
+.header_container .project {
+	padding-right:		6px;
 }
 
-.keyword_container div span {
-
-	font-size: 			36px;
-	text-transform: 	capitalize;
-	cursor:				pointer;
+.header_container .company_title,
+.header_container .category {
+	width:				calc((100% / 22) * 2);
 }
 
-.keyword_container div span:hover {
-	font-style: 		italic;
+.header_container .project {
+	width:				calc((100% / 22) * 4);
 }
+
+.header_container .year {
+	width:				calc((100% / 22) * 1);
+}
+
+.header_container .program {
+	width:				calc((100% / 22) * 13);
+}
+
+.header_container .company_title div,
+.header_container .category div,
+.header_container .project div,
+.header_container .year div,
+.header_container .program div {
+	border-left:		1px solid #000;
+	border-bottom:		1px solid #000;
+	padding-left:		5px;
+	margin-top:			5px;
+
+}
+
+/* ENDOF header */
+
+
+/* TOPOF footer */
 
 .footer_container {
-	width:				100%;
-	display:			flex;
-	justify-content: 	center;
-	align-items: 		center;
 	position:			absolute;
-	bottom:				30px;
-}
-
-.footer_container span {
-	font-size: 			25px;
-	font-family:		'Signifier Italic';
-}
-
-/* ENDOF main */
-
-/* TOPOF Header */
-
-.header_container
-{
-	width: 				calc(100vw - 180px);
-	height:				fit-content;
-	position:			fixed;
-	top:				30px;
-}
-
-.header_container
-.header_inner
-{
-	width: 				100%;
-	display: 			flex;
-	flex-direction:		row;
-	height:				fit-content;
-}
-
-.header_container
-.header_inner
-div:first-child
-{
-	width: 				50%;
-	margin: 			0;
-}
-
-.header_container
-.header_inner
-div:first-child h1
-{
-	width:				100%;
-	cursor:				pointer;
-	font-size: 			25px;
-	font-weight: 		normal;
-	font-stretch: 		normal;
-	font-style: 		normal;
-	line-height: 		normal;
-	letter-spacing: 	normal;
-	color: 				#1a1919;
-	margin:					0;
-}
-
-.header_container .header_inner div:last-child {
-	width: 				50%;
-	margin: 			0;
-	text-align:			right;
-}
-
-.header_container .header_inner div:last-child span {
-	font-size:			25px;
-	margin-right:		5px;
-}
-
-.header_container .header_inner div:last-child span:last-child {
-	margin:				0;
-}
-
-
-
-/* ENDOF Header */
-
-
-/* TOPOF About */
-
-.about_container {
-	width: 				100%;
-	font-size:			36px;
-}
-
-.about_container .about_nav,
-.title_bar {
-	width: 				auto;
-	margin-top: 		92px;
-	border-top: 		1px solid #979797;
-	border-bottom: 		1px solid #979797;
-	display: 			flex;
-	flex-direction: 	row;
-	align-items: 		center;
-	justify-content:	center;
-}
-
-.title_bar {
-	margin-bottom:		35px;
-}
-
-.title_bar span {
-	margin-top:			5px;
-	margin-bottom:		3px;
-}
-
-.about_container .about_nav div {
-	margin-right: 		1em;
-	height:				fit-content;
-}
-
-.about_container .about_nav div h2 {
-	font-size: 			25px;
-	font-weight: 		normal;
-	margin-top:			10px;
-	margin-bottom:		6px;
-	cursor:				pointer;
-}
-
-.about_container .about_nav div h2:hover {
-	font-family:			'Signifier Italic';
-}
-
-.about_container .about_content {
-	margin-top:			70px;
-	width:				100%;
-}
-
-.about_container .about_content h3 {
-	width: 				100%;
-	font-weight: 		normal;
-	text-align: 		center;
-}
-
-.about_container .about_content .about_content_1  {
-	width:				100%;
+	bottom:				60px;
 	display:			flex;
-	flex-direction:		column;
-}
-
-.about_container .about_content .about_content_1 div span {
 	width:				100%;
-	text-align:			center;
-	display:			block;
+	height:				15px;
+	border-top:			1px solid #888;
 }
 
-.about_container .about_content .about_content_1 p,
-.about_container .about_content .about_content_2 {
-	margin:				0;
+.footer_container div {
+	width:				calc((100% / 22) * 2);
 }
 
-.about_container .about_content .about_content_2 {
-	margin-top:			40px;
-	text-align: 		center;
-}
-
-.about_container .about_content .about_content_2 div {
-	margin-bottom:		25px;
-}
-
-.about_container .about_content .about_content_2 span {
-	display: 			block;
-}
-
-.about_container .about_content .about_content_2 p {
-	text-align: 		left;
-}
-
-.about_container .about_content .about_content_1 span {
-	align-self:			center;
-	text-align:			center;
-	width: 				100%;
-}
-
-.about_container .about_content_3 {
-}
-
-.center p {
-	text-align:			center;
-}
-
-.about_container .about_content_3 div {
-	text-align:			center;
-	margin-bottom:		25px;
-}
-
-/* ENDOF About */
-
-
-/* TOPOF Artist */
-
-.keyword_span {
-	width:				100%;
-	font-size:			25px;
-	font-style:			italic;
-	height:				40px;
-	margin-top: 		50px;
-	margin-bottom:		50px;
-	text-align:			center;
-}
-
-.keyword_span span {
-	width:				100%;
-}
-
-.content_container {
-	border-top:			1px solid #000;
-	font-size:			36px;
-}
-
-.content_container .title_container {
-	padding-top:		20px;
-	display:			flex;
-	flex-direction:		row;
-	width:				100%;
-}
-
-.content_container .title_container div {
-	width:				33.3%;
-}
-
-.content_container .title_container div:first-child,
-.content_container .title_container div:last-child
-{
-	display:			flex;
-}
-
-.left_arrow {
-	justify-content: 		flex-start;
-}
-
-.right_arrow {
-	justify-content: 		flex-end;
-}
-
-.content_container .title_container div:nth-child(2) span {
-	display:			block;
-	text-align:			center;
-}
-
-.content_container .description_container {
-	width:				calc((100% / 8) * 6);
-	margin:				0 auto;
-	padding-top:		40px;
-}
-
-/* ENDOF Artist */
+/* ENDOF footer */

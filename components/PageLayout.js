@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import Header from './Header';
 import { useRouter } from 'next/router';
 
@@ -9,6 +10,7 @@ function PageLayout({ children }) {
       <div id='body'>
         <Header></Header>
         {children}
+        <Footer></Footer>
       </div>
     </div>
   );
