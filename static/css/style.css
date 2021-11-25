@@ -37,6 +37,27 @@ body {
   position: relative;
 }
 
+.content_index {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.thumb_container {
+  width: calc((100% / 22) * 8);
+  height: 100%;
+  position: absolute;
+  right: calc((100% / 22) * 2);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb_container img {
+  height: 80%;
+  object-fit: contain;
+}
+
 #body {
   width: 100%;
   height: 100%;
@@ -64,7 +85,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 9;
+  z-index: 10;
 }
 
 .view_filter div {
@@ -76,6 +97,29 @@ body {
 
 .view_filter div:first-child {
   margin-right: 10px;
+}
+
+.thumbnail_gallery {
+  width: 100vw;
+
+  margin-top: 20px;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.thumbnail_gallery div {
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail_gallery div img {
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
 }
 
 .indexing {
