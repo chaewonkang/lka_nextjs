@@ -10,25 +10,23 @@ const GlobalStyles = createGlobalStyle`
 			height: 100vh;
 			overflow-x: hidden;
 			margin: 0;
+			position: relative;
+
 		  }
 
-		  #__next {
-			  width: 100vw;
-			  height: auto;
-			  position: relative;
-		  }
 `;
 
 class MyDocument extends Document {
   static getInitialProps(context) {
     const sheet = new ServerStyleSheet(); // 서버사이드 렌더링 할 수 있게함.
-    const page = context.renderPage((App) => (props) =>
-      sheet.collectStyles(
-        <>
-          <GlobalStyles />
-          <App {...props} />
-        </>
-      )
+    const page = context.renderPage(
+      (App) => (props) =>
+        sheet.collectStyles(
+          <>
+            <GlobalStyles />
+            <App {...props} />
+          </>
+        )
     );
     const styleTags = sheet.getStyleElement();
     return { ...page, helmet: Helmet.renderStatic(), styleTags };

@@ -8,8 +8,8 @@ function PageLayout({ children }) {
   return (
     <div className='layout_container'>
       <div id='body'>
-        <Header></Header>
-        {children}
+        {/* <Header></Header> */}
+        <div id='container'>{children}</div>
         <Footer></Footer>
       </div>
     </div>
