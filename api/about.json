@@ -1,0 +1,23 @@
+{
+  "introduction": "text",
+  "people": [
+    {
+      "name": "string",
+      "title": "string",
+      "period": "string"
+    },
+    {
+      "name": "string",
+      "title": "string",
+      "period": "string"
+    },
+    {
+      "name": "string",
+      "title": "string",
+      "period": "string"
+    }
+  ],
+  "email": "string",
+  "address": "string",
+  "phone": "string"
+}

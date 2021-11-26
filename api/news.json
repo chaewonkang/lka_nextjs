@@ -1,0 +1,18 @@
+[
+  {
+    "index": 1,
+    "title": "string",
+    "imgList": ["img1", "img2", "img3"],
+    "link": "string",
+    "issue": "string",
+    "ISSN": "string"
+  },
+  {
+    "index": 2,
+    "title": "청파언덕집 is featured in Brique Magazine.",
+    "imgList": ["img1", "img2", "img3"],
+    "link": "magazine.brique.co",
+    "issue": "Brique Magazine (Vol.3 / Summer 2020)",
+    "ISSN": "ISSN: 2671-8960"
+  }
+]

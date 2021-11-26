@@ -266,6 +266,10 @@ textarea {
   opacity: 0.54;
 }
 
+.mobile_thumb_container {
+  display: none;
+}
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }

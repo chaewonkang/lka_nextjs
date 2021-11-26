@@ -1,0 +1,30 @@
+[
+  {
+    "index": 1,
+    "title": "string",
+    "imgList": ["img1", "img2", "img3"],
+    "location": "string",
+    "period": "string",
+    "status": "string",
+    "program": "string",
+    "material": "string",
+    "dimensions": "string",
+    "budget": "text",
+    "descriptionKr": "text",
+    "descriptionEn": "text"
+  },
+  {
+    "index": 2,
+    "title": "Between Real and Fake",
+    "imgList": ["img1", "img2", "img3"],
+    "location": "Seoul, Korea",
+    "period": "2016-2018",
+    "status": "APMAP 2016 [Amorepacific Museum of Art Project]",
+    "program": "Mock-up building of Amorepacific HQ, Seoul Korea (designed by David Chipperfield)",
+    "material": "Steel pipe, Steel plate, PVC mesh",
+    "dimensions": "405 x 420 x 500cm",
+    "budget": "$8,000",
+    "descriptionKr": "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+    "descriptionEn": "In an unexpected space along the entrance way to the mock-up building, one’s anticipation caused by the substantial concrete structure and the seeming elevator is unfamiliarly subverted. This leads to the subversion of the fixed conception of spaces and things and thereby bestows an intriguing significance upon the mock-up. Visitors are welcomed by two elevator openings at the lobby. Instinctively they enter one of the openings and encounter unexpected loop of stairs going up and down leading to the other opening. Such a nonsensical moment elevates the meaning of the whole experience and the definition of mock-up, which is a fake building. The steel stair structure is enclosed by PVC mesh of orance color which makes link to the safety fence at construction site of the real building"
+  }
+]

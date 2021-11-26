@@ -1,0 +1,141 @@
+@media screen and (max-width: 768px) {
+  #body {
+    font-size: 15px;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .layout_container {
+    margin: 13px;
+    width: calc(100vw - 26px);
+    height: calc(100vh - 26px);
+  }
+
+  .indexing {
+    flex-direction: column;
+  }
+
+  .indexing .header_container {
+    width: 100%;
+  }
+
+  .indexing .header_sub_container {
+    width: 100%;
+    top: 0px !important;
+  }
+
+  .indexing .header_sub_container .project {
+    width: 100%;
+  }
+
+  .indexing .header_sub_container .year,
+  .indexing .header_sub_container .program,
+  .header_sub_menu .project {
+    display: none;
+  }
+
+  .content_index {
+    min-height: 80vh;
+  }
+
+  #container {
+    height: auto;
+  }
+
+  .footer_container {
+    position: relative;
+    width: 100%;
+    margin-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .footer_container div {
+    width: 25%;
+  }
+
+  .footer_container div:first-child {
+    width: 50%;
+  }
+
+  .view_filter {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #bababa;
+    margin-top: 19px;
+  }
+
+  .index_row .project div {
+    position: relative;
+  }
+
+  .index_row .more_button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  .thumbnail_gallery {
+    margin-top: 19px;
+    height: auto;
+  }
+
+  .thumbnail_gallery div {
+    width: 50%;
+    padding: 0px;
+    margin-bottom: 19px;
+    align-items: flex-end;
+  }
+
+  .thumb_container {
+    display: none;
+  }
+
+  .mobile_thumb_container {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    right: 25%;
+  }
+
+  .thumb_container img {
+  }
+
+  .thumbnail_gallery div:nth-child(2n + 1) {
+    padding-right: 5px;
+  }
+
+  .thumbnail_gallery div:nth-child(2n) {
+    padding-left: 5px;
+  }
+
+  .thumbnail_gallery div img {
+    height: auto;
+  }
+
+  .about_menu,
+  .about_content {
+    flex-direction: column;
+  }
+
+  .about_menu .people,
+  .about_content .people,
+  .about_menu .introduction,
+  .about_content .introduction,
+  .about_menu .contact,
+  .about_content .contact {
+    width: 100%;
+  }
+
+  .about_content .people .people_row div {
+    width: 25%;
+  }
+}

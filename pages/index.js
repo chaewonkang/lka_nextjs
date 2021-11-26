@@ -18,6 +18,7 @@ const Index = () => {
   const [thumbIdx, setThumbIdx] = useState(0);
   const [loading, setLoading] = useState(true);
   const [viewMode, setViewMode] = useState('list');
+  const [thumbTop, setThumbTop] = useState('');
 
   useEffect(() => {}, [thumbIdx, viewMode]);
 
@@ -26,17 +27,18 @@ const Index = () => {
       {loading && (
         <>
           <PageLayout>
-            <div className='view_filter'>
-              <div onClick={() => setViewMode('thumbnail')}>Thumbnail</div>
-              <div onClick={() => setViewMode('list')}>List</div>
-            </div>
             <div
               className='thumb_container'
               style={thumbIdx === 0 ? { display: 'none' } : null}
             >
               <img src={imgArr[thumbIdx]}></img>
             </div>
-
+            <div
+              className='mobile_thumb_container'
+              style={{ top: `${thumbIdx * 26 + 155}px` }}
+            >
+              <img src={imgArr[thumbIdx]}></img>
+            </div>
             <div
               className='indexing'
               style={
@@ -52,8 +54,14 @@ const Index = () => {
                   <div>Architecture</div>
                   <div>Conceptual</div>
                   <div>News</div>
-                  <div>About</div>
+                  <Link href='/about'>
+                    <div>About</div>
+                  </Link>
                 </div>
+              </div>
+              <div className='view_filter'>
+                <div onClick={() => setViewMode('thumbnail')}>Thumbnail</div>
+                <div onClick={() => setViewMode('list')}>List</div>
               </div>
               {viewMode === 'list' ? (
                 <div className='header_sub_container'>
@@ -81,28 +89,10 @@ const Index = () => {
                       }}
                     >
                       <div className='project'>
-                        <div>현대백화점 본점 주차장캐노피</div>
-                      </div>
-                      <div className='year'>
-                        <div>Ongoing</div>
-                      </div>
-                      <div className='program'>
-                        <div>Public</div>
-                      </div>
-                    </div>
-                    <div
-                      className='index_row'
-                      onMouseOver={() => {
-                        setThumbIdx(4);
-                        console.log(thumbIdx);
-                      }}
-                      onMouseLeave={() => {
-                        setThumbIdx(0);
-                        console.log(thumbIdx);
-                      }}
-                    >
-                      <div className='project'>
-                        <div>청라 더카운티 단독주택</div>
+                        <div>
+                          현대백화점 본점 주차장캐노피
+                          <span className='more_button'>More ▶︎</span>
+                        </div>
                       </div>
                       <div className='year'>
                         <div>Ongoing</div>
@@ -123,7 +113,49 @@ const Index = () => {
                       }}
                     >
                       <div className='project'>
+                        <div>청라 더카운티 단독주택</div>
+                      </div>
+                      <div className='year'>
+                        <div>Ongoing</div>
+                      </div>
+                      <div className='program'>
+                        <div>Public</div>
+                      </div>
+                    </div>
+                    <div
+                      className='index_row'
+                      onMouseOver={() => {
+                        setThumbIdx(3);
+                        console.log(thumbIdx);
+                      }}
+                      onMouseLeave={() => {
+                        setThumbIdx(0);
+                        console.log(thumbIdx);
+                      }}
+                    >
+                      <div className='project'>
                         <div>서울도시건축비엔날레 2021 현장프로젝트 </div>
+                      </div>
+                      <div className='year'>
+                        <div>Ongoing</div>
+                      </div>
+                      <div className='program'>
+                        <div>Public</div>
+                      </div>
+                    </div>
+                    <div
+                      className='index_row'
+                      onMouseOver={() => {
+                        setThumbIdx(4);
+                        console.log(thumbIdx);
+                      }}
+                      onMouseLeave={() => {
+                        setThumbIdx(0);
+                        console.log(thumbIdx);
+                      }}
+                    >
+                      <div className='project'>
+                        <div>현대백화점 본점 주차장캐노피</div>
                       </div>
                       <div className='year'>
                         <div>Ongoing</div>
@@ -157,27 +189,6 @@ const Index = () => {
                       className='index_row'
                       onMouseOver={() => {
                         setThumbIdx(6);
-                        console.log(thumbIdx);
-                      }}
-                      onMouseLeave={() => {
-                        setThumbIdx(0);
-                        console.log(thumbIdx);
-                      }}
-                    >
-                      <div className='project'>
-                        <div>현대백화점 본점 주차장캐노피</div>
-                      </div>
-                      <div className='year'>
-                        <div>Ongoing</div>
-                      </div>
-                      <div className='program'>
-                        <div>Public</div>
-                      </div>
-                    </div>
-                    <div
-                      className='index_row'
-                      onMouseOver={() => {
-                        setThumbIdx(3);
                         console.log(thumbIdx);
                       }}
                       onMouseLeave={() => {

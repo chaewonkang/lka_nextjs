@@ -15,6 +15,45 @@
   font-family: 'Avenir', 'KoPubDotumPM', sans-serif;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header_container .company_title {
+  -webkit-animation: fadein 1s ease-in;
+  -moz-animation: fadein 1s ease-in;
+  animation: fadein 1s ease-in;
+}
+
+.header_container .category {
+  -webkit-animation: fadein 1s ease-in 1s;
+  -moz-animation: fadein 1s ease-in 1s;
+  animation: fadein 1s ease-in 1s;
+}
+
 p,
 span,
 h1,
@@ -80,9 +119,9 @@ body {
 }
 
 .view_filter {
+  position: absolute;
   width: fit-content;
   display: flex;
-  position: absolute;
   right: 0;
   top: 0;
   z-index: 10;
@@ -100,8 +139,7 @@ body {
 }
 
 .thumbnail_gallery {
-  width: 100vw;
-
+  width: 100%;
   margin-top: 20px;
   height: 70vh;
   display: flex;
@@ -114,12 +152,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .thumbnail_gallery div img {
   height: 100%;
   object-fit: contain;
-  padding: 10px;
 }
 
 .indexing {
@@ -167,14 +205,73 @@ body {
   color: #000;
 }
 
+.index_row .more_button {
+  display: none;
+}
+
+.about_menu {
+  width: 100%;
+  margin-top: 5px;
+  border-bottom: 1px solid #000;
+}
+
+.about_menu,
+.about_content {
+  display: flex;
+  flex-direction: row;
+}
+
 .header_container .company_title,
 .header_container .category {
   width: 50%;
 }
 
+.about_menu .people,
+.about_content .people {
+  width: calc((100% / 18) * 3);
+}
+
+.about_content .people .people_row,
+.about_content .contact .contact_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.about_content .people .people_row div {
+  width: calc(100% / 3);
+  margin-top: 5px;
+}
+
+.about_content .contact .contact_row div:first-child {
+  width: 25%;
+  margin-top: 5px;
+}
+
+.about_content .contact .contact_row div:last-child {
+  width: 75%;
+  margin-top: 5px;
+}
+
+.about_content .introduction p {
+  line-height: 17px;
+  letter-spacing: 0.5px;
+}
+
 .header_sub_menu .project,
-.index_row .project {
+.index_row .project,
+.about_menu .introduction,
+.about_menu .contact,
+.about_content .introduction,
+.about_content .contact {
   width: calc((100% / 18) * 4);
+}
+
+.about_menu .introduction,
+.about_content .introduction,
+.about_menu .people,
+.about_content .people {
+  margin-right: calc((100% / 18) * 1);
 }
 
 .header_sub_menu .year,
@@ -194,7 +291,10 @@ body {
 .header_sub_menu .program,
 .index_row .project,
 .index_row .year,
-.index_row .program {
+.index_row .program,
+.about_menu .introduction,
+.about_menu .contact,
+.about_menu .people {
   padding-right: 6px;
 }
 
@@ -229,10 +329,6 @@ body {
   padding-left: 5px;
 }
 
-/* ENDOF header */
-
-/* TOPOF footer */
-
 .footer_container {
   position: absolute;
   bottom: 0px;
@@ -246,5 +342,3 @@ body {
   /* background-color: rgba(255, 255, 2, 0.4); */
   padding-right: 6px;
 }
-
-/* ENDOF footer */
