@@ -3,11 +3,11 @@ import { useEffect, useState, useRef } from "react";
 import theme from "../styles/theme";
 import PageLayout from "../components/PageLayout";
 import Link from "next/link";
-import projectData from "../constants/projectData";
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
+import conceptData from "../constants/conceptData";
 
-const Architecture = () => {
+const Conceptual = () => {
     const [loading, setLoading] = useState(true);
     const [projectId, setProjectId] = useState(0);
     const router = useRouter();
@@ -57,12 +57,14 @@ const Architecture = () => {
                                     >
                                         Conceptual
                                     </div>
+
                                     <div>News</div>
                                     <Link href="/about">
                                         <div>About</div>
                                     </Link>
                                 </div>
                             </div>
+
                             <div className="architecture_header_sub_container">
                                 <div className="architecture_first_box">
                                     <div className="architecture_header">
@@ -72,15 +74,15 @@ const Architecture = () => {
                                             </div>
                                         </div>
                                         <div className="architecture_content_index">
-                                            {projectData &&
-                                                projectData.map(el => {
+                                            {conceptData &&
+                                                conceptData.map(el => {
                                                     return (
                                                         <div
                                                             key={el.index + el.title}
                                                             className="index_row"
                                                             onClick={() => {
                                                                 router.push({
-                                                                    pathname: "/architecture",
+                                                                    pathname: "/conceptual",
                                                                     query: {
                                                                         id: el.index,
                                                                     },
@@ -108,17 +110,17 @@ const Architecture = () => {
                                                 <div>Floor Area</div>
                                             </div>
                                             <div>
-                                                <div>{projectData[projectId - 1].location}</div>
-                                                <div>{projectData[projectId - 1].period}</div>
-                                                <div>{projectData[projectId - 1].status}</div>
-                                                <div>{projectData[projectId - 1].floor}</div>
-                                                <div>{projectData[projectId - 1].area}</div>
+                                                <div>{conceptData[projectId - 1].location}</div>
+                                                <div>{conceptData[projectId - 1].period}</div>
+                                                <div>{conceptData[projectId - 1].status}</div>
+                                                <div>{conceptData[projectId - 1].floor}</div>
+                                                <div>{conceptData[projectId - 1].area}</div>
                                             </div>
                                         </div>
                                     )}
                                     <div className="architecture_detail_image_container">
                                         {projectId && projectId != 0 && (
-                                            <Slideshow imgArr={projectData[projectId - 1].images} isAuto isArrowOn />
+                                            <Slideshow imgArr={conceptData[projectId - 1].images} isAuto isArrowOn />
                                         )}
                                     </div>
                                 </div>
@@ -134,8 +136,8 @@ const Architecture = () => {
                                     </div>
                                     {projectId && projectId != 0 && mTextOpen && (
                                         <div className="more_information_text">
-                                            <p>{projectData[projectId - 1].infoKr}</p>
-                                            <p>{projectData[projectId - 1].infoEn}</p>
+                                            <p>{conceptData[projectId - 1].infoKr}</p>
+                                            <p>{conceptData[projectId - 1].infoEn}</p>
                                         </div>
                                     )}
                                 </div>
@@ -148,4 +150,4 @@ const Architecture = () => {
     );
 };
 
-export default Architecture;
+export default Conceptual;

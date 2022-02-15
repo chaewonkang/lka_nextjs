@@ -1,22 +1,22 @@
-import React from 'react';
-import Head from 'next/head';
-import '../static/css/style.css';
-import '../static/css/base.css';
-import '../static/css/responsive.css';
+import React from "react";
+import Head from "next/head";
+import "../static/css/style.css";
+import "../static/css/base.css";
+import "../static/css/responsive.css";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <link rel='shortcut icon' href='../static/images/fav.ico' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
-        <title>LKA Architecture</title>
-      </Head>
-      <Component {...pageProps} />
-    </>
-  );
+    return (
+        <>
+            <Head>
+                <link rel="shortcut icon" href="../static/images/fav.ico" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                <title>LKA Architecture</title>
+            </Head>
+            <Component {...pageProps} />
+        </>
+    );
 }
 
 export default MyApp;

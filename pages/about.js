@@ -1,10 +1,12 @@
-import theme from "../../styles/theme";
+import theme from "../styles/theme";
 import { useEffect, useState, useRef } from "react";
-import PageLayout from "../../components/PageLayout";
+import PageLayout from "../components/PageLayout";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const About = () => {
     const menuTop = useRef();
+    const router = useRouter();
     const [contentTop, setContentTOp] = useState(0);
 
     useEffect(() => {
@@ -22,10 +24,31 @@ const About = () => {
                         </div>
                     </Link>
                     <div className="category">
-                        <Link href="/">
-                            <div>Architecture</div>
-                        </Link>
-                        <div>Conceptual</div>
+                        <div
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/architecture",
+                                    query: {
+                                        id: 1,
+                                    },
+                                });
+                            }}
+                        >
+                            Architecture
+                        </div>
+
+                        <div
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/conceptual",
+                                    query: {
+                                        id: 1,
+                                    },
+                                });
+                            }}
+                        >
+                            Conceptual
+                        </div>
                         <div>News</div>
                         <Link href="/about">
                             <div ref={menuTop}>About</div>

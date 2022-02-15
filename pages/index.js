@@ -35,8 +35,32 @@ const Index = () => {
                                     </div>
                                 </Link>
                                 <div className="category">
-                                    <div>Architecture</div>
-                                    <div>Conceptual</div>
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/architecture",
+                                                query: {
+                                                    id: 1,
+                                                },
+                                            });
+                                        }}
+                                    >
+                                        Architecture
+                                    </div>
+
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/conceptual",
+                                                query: {
+                                                    id: 1,
+                                                },
+                                            });
+                                        }}
+                                    >
+                                        Conceptual
+                                    </div>
+
                                     <div>News</div>
                                     <Link href="/about">
                                         <div>About</div>
