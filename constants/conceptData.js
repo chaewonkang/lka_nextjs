@@ -1,7 +1,7 @@
 const conceptData = [
     {
         index: 1,
-        title: "현대백화점 본점 주차장캐노피",
+        title: "Between Real and Fake",
         category: "Public",
         location: "seoul, Korea",
         period: "Ongoing",
@@ -29,7 +29,7 @@ const conceptData = [
     },
     {
         index: 2,
-        title: "청라 더카운티 단독주택",
+        title: "Perceptual Transition",
         location: "seoul, Korea",
         category: "Residential",
         period: "2016-2018",
@@ -57,7 +57,7 @@ const conceptData = [
     },
     {
         index: 3,
-        title: "“소통의 장”, 성북동 게스트하우스",
+        title: "Harlem Celebration",
         location: "seoul, Korea",
         category: "Commercial+Office / Cultural",
         period: "2016-2018",
@@ -85,7 +85,7 @@ const conceptData = [
     },
     {
         index: 4,
-        title: "현대백화점 본점 주차장캐노피",
+        title: "Labyrinth",
         location: "seoul, Korea",
         category: "Commercial+Office",
         period: "2016-2018",
@@ -113,7 +113,7 @@ const conceptData = [
     },
     {
         index: 5,
-        title: "이태원동 단독주택",
+        title: "Hide & Seek",
         location: "seoul, Korea",
         category: "Exhibition",
         period: "2016-2018",
@@ -141,7 +141,35 @@ const conceptData = [
     },
     {
         index: 6,
-        title: "수퍼빈 화성공장",
+        title: "Synaesthetic Sense",
+        location: "seoul, Korea",
+        category: "Commercial+Office / Interior",
+        period: "2016-2018",
+        status: "completed",
+        program: "HQ",
+        floor: "5F+1BF",
+        area: "9,000sf",
+        thumburl: "../static/images/img_6.png",
+        infoEn: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        infoKr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        images: [
+            {
+                url: "../static/images/img_1.png",
+                alt: "../static/images/img_1.png",
+            },
+            {
+                url: "../static/images/img_2.png",
+                alt: "../static/images/img_2.png",
+            },
+            {
+                url: "../static/images/img_3.png",
+                alt: "../static/images/img_3.png",
+            },
+        ],
+    },
+    {
+        index: 7,
+        title: "Dimension Convertible Chair",
         location: "seoul, Korea",
         category: "Commercial+Office / Interior",
         period: "2016-2018",

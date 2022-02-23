@@ -49,15 +49,20 @@ const Architecture = () => {
                                         onClick={() => {
                                             router.push({
                                                 pathname: "/conceptual",
-                                                query: {
-                                                    id: 1,
-                                                },
                                             });
                                         }}
                                     >
                                         Conceptual
                                     </div>
-                                    <div>News</div>
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/news",
+                                            });
+                                        }}
+                                    >
+                                        News
+                                    </div>
                                     <Link href="/about">
                                         <div>About</div>
                                     </Link>

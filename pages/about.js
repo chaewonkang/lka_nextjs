@@ -41,9 +41,6 @@ const About = () => {
                             onClick={() => {
                                 router.push({
                                     pathname: "/conceptual",
-                                    query: {
-                                        id: 1,
-                                    },
                                 });
                             }}
                         >
