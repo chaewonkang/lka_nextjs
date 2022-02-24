@@ -46,6 +46,7 @@ const Conceptual = () => {
                                                     },
                                                 });
                                             }}
+                                            style={{ color: "#888" }}
                                         >
                                             Architecture
                                         </div>
@@ -65,12 +66,20 @@ const Conceptual = () => {
                                                     pathname: "/news",
                                                 });
                                             }}
+                                            style={{ color: "#888" }}
                                         >
                                             News
                                         </div>
-                                        <Link href="/about">
-                                            <div>About</div>
-                                        </Link>
+                                        <div
+                                            onClick={() => {
+                                                router.push({
+                                                    pathname: "/about",
+                                                });
+                                            }}
+                                            style={{ color: "#888" }}
+                                        >
+                                            About
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="architecture_header_sub_container" style={{ marginTop: "22.5px" }}>
@@ -212,6 +221,7 @@ const Conceptual = () => {
                                                 },
                                             });
                                         }}
+                                        style={{ color: "#888" }}
                                     >
                                         Architecture
                                     </div>
@@ -232,12 +242,21 @@ const Conceptual = () => {
                                                 pathname: "/news",
                                             });
                                         }}
+                                        style={{ color: "#888" }}
                                     >
                                         News
                                     </div>
-                                    <Link href="/about">
-                                        <div>About</div>
-                                    </Link>
+
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/about",
+                                            });
+                                        }}
+                                        style={{ color: "#888" }}
+                                    >
+                                        About
+                                    </div>
                                 </div>
                             </div>
                             <div className="header_sub_container conceptual_header_sub_container">

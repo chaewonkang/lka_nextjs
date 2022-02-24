@@ -33,6 +33,7 @@ const About = () => {
                                     },
                                 });
                             }}
+                            style={{ color: "#888" }}
                         >
                             Architecture
                         </div>
@@ -43,6 +44,7 @@ const About = () => {
                                     pathname: "/conceptual",
                                 });
                             }}
+                            style={{ color: "#888" }}
                         >
                             Conceptual
                         </div>
@@ -52,6 +54,7 @@ const About = () => {
                                     pathname: "/news",
                                 });
                             }}
+                            style={{ color: "#888" }}
                         >
                             News
                         </div>

@@ -51,6 +51,7 @@ const Architecture = () => {
                                                 pathname: "/conceptual",
                                             });
                                         }}
+                                        style={{ color: "#888 !important" }}
                                     >
                                         Conceptual
                                     </div>

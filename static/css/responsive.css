@@ -1,6 +1,14 @@
 @media screen and (max-width: 992px) {
     #body {
-        font-size: 15px;
+        font-size: 15px !important;
+    }
+
+    .mobile_only {
+        display: unset !important;
+    }
+
+    .desktop_only {
+        display: none !important;
     }
 
     *::-webkit-scrollbar {
@@ -10,6 +18,7 @@
     * {
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
+        font-size: 15px !important;
     }
 
     .layout_container {
@@ -139,4 +148,59 @@
     .about_content .people .people_row div {
         width: 25%;
     }
+
+    /* TOPOF News */
+
+    .news_content_container {
+        margin-top: 20px;
+        height: auto !important;
+    }
+
+    .news_header_sub_container {
+        height: auto !important;
+    }
+
+    .news_content_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news_content_container .news_content_wrapper .news_module {
+        width: calc(100% - 2px);
+        border: none;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        height: auto;
+        margin-bottom: 38px !important;
+        min-height: 150px;
+    }
+
+    .news_date_row {
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        padding-left: 5px;
+        margin-bottom: 4px;
+    }
+
+    .news_module_slideshow .slide div {
+        display: block;
+    }
+
+    .news_module_slideshow .slideshow .slide {
+        height: 350px;
+    }
+
+    .news_module_slideshow .slideshow .slide,
+    .news_module_slideshow .slideshow .slide div img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .news_module_slideshow .slide div {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ENDOF News */
 }

@@ -35,6 +35,7 @@ const News = () => {
                                     },
                                 });
                             }}
+                            style={{ color: "#888" }}
                         >
                             Architecture
                         </div>
@@ -44,6 +45,7 @@ const News = () => {
                                     pathname: "/conceptual",
                                 });
                             }}
+                            style={{ color: "#888" }}
                         >
                             Conceptual
                         </div>
@@ -63,13 +65,14 @@ const News = () => {
                                     pathname: "/about",
                                 });
                             }}
+                            style={{ color: "#888" }}
                         >
                             About
                         </div>
                     </div>
                 </div>
                 <div
-                    className="header_sub_container"
+                    className="header_sub_container news_header_sub_container"
                     style={{ top: contentTop - 5, height: `calc(100vh - ${contentTop}px)` }}
                 >
                     <div className="news_content_container" style={{ height: `calc(100% - ${contentTop + 30}px)` }}>
@@ -77,12 +80,13 @@ const News = () => {
                             {newsData.map(news => {
                                 return (
                                     <div className="news_module">
+                                        <div className="mobile_only news_date_row">{news.createAt}</div>
                                         <div className="news_module_slideshow">
                                             <Slideshow imgArr={news.images} isArrowOn />
                                         </div>
                                         <div className="news_module_info">
-                                            <span>{news.createAt}</span>
-                                            <br />
+                                            <span className="desktop_only">{news.createAt}</span>
+                                            <br className="desktop_only"></br>
                                             <span>{news.title}</span>
                                             <span>
                                                 <a href={news.linkUrl} target="_blank">

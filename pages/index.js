@@ -47,24 +47,36 @@ const Index = () => {
                                     >
                                         Architecture
                                     </div>
-
                                     <div
                                         onClick={() => {
                                             router.push({
                                                 pathname: "/conceptual",
-                                                query: {
-                                                    id: 1,
-                                                },
                                             });
                                         }}
+                                        style={{ color: "#888" }}
                                     >
                                         Conceptual
                                     </div>
-
-                                    <div>News</div>
-                                    <Link href="/about">
-                                        <div>About</div>
-                                    </Link>
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/news",
+                                            });
+                                        }}
+                                        style={{ color: "#888" }}
+                                    >
+                                        News
+                                    </div>
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/about",
+                                            });
+                                        }}
+                                        style={{ color: "#888" }}
+                                    >
+                                        About
+                                    </div>
                                 </div>
                             </div>
                             <div className="view_filter">
@@ -95,6 +107,12 @@ const Index = () => {
                                                             setThumbIdx(el.index);
                                                         }}
                                                         onMouseLeave={() => {
+                                                            setThumbIdx(0);
+                                                        }}
+                                                        onTouchStart={() => {
+                                                            setThumbIdx(el.index);
+                                                        }}
+                                                        onTouchCancel={() => {
                                                             setThumbIdx(0);
                                                         }}
                                                         onClick={() => {
