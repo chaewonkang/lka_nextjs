@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 const delay = 3000;
 
-function Slideshow({ imgArr, width, height, isArrowOn, isButtonOn, isAuto }) {
+function Slideshow({ imgArr, width, isArrowOn, isButtonOn, isAuto }) {
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
 
@@ -28,9 +28,9 @@ function Slideshow({ imgArr, width, height, isArrowOn, isButtonOn, isAuto }) {
 
     return (
         <div
+            className="slideshow_wrapper"
             style={{
                 display: "flex",
-                height: height,
             }}
         >
             {isArrowOn && (

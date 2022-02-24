@@ -107,22 +107,33 @@ const Conceptual = () => {
                                         </div>
                                         {conceptualId && conceptualId != 0 && (
                                             <div
-                                                className="detail_information_row"
+                                                className="detail_information_row conceptual_detail_information_row"
                                                 style={{ top: `${conceptualId * 22.5 + 21.5}px` }}
                                             >
-                                                <div>
+                                                <div className="conceptual_detail_row">
                                                     <div>Location</div>
-                                                    <div>Period</div>
-                                                    <div>Status</div>
-                                                    <div>Floor</div>
-                                                    <div>Floor Area</div>
-                                                </div>
-                                                <div>
                                                     <div>{conceptData[conceptualId - 1].location}</div>
-                                                    <div>{conceptData[conceptualId - 1].period}</div>
-                                                    <div>{conceptData[conceptualId - 1].status}</div>
-                                                    <div>{conceptData[conceptualId - 1].floor}</div>
-                                                    <div>{conceptData[conceptualId - 1].area}</div>
+                                                </div>
+                                                <div className="conceptual_detail_row">
+                                                    <div>Period</div> <div>{conceptData[conceptualId - 1].period}</div>
+                                                </div>
+                                                <div className="conceptual_detail_row">
+                                                    <div>Status</div> <div>{conceptData[conceptualId - 1].status}</div>
+                                                </div>
+                                                <div className="conceptual_detail_row">
+                                                    <div>Program</div>
+                                                    <div>{conceptData[conceptualId - 1].program}</div>
+                                                </div>
+                                                <div className="conceptual_detail_row">
+                                                    <div>Meterial</div>
+                                                    <div>{conceptData[conceptualId - 1].material}</div>
+                                                </div>
+                                                <div className="conceptual_detail_row">
+                                                    <div>Dimension</div>
+                                                    <div>{conceptData[conceptualId - 1].dimension}</div>
+                                                </div>
+                                                <div className="conceptual_detail_row">
+                                                    <div>Budget</div> <div>{conceptData[conceptualId - 1].budget}</div>
                                                 </div>
                                             </div>
                                         )}

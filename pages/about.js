@@ -46,10 +46,25 @@ const About = () => {
                         >
                             Conceptual
                         </div>
-                        <div>News</div>
-                        <Link href="/about">
-                            <div ref={menuTop}>About</div>
-                        </Link>
+                        <div
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/news",
+                                });
+                            }}
+                        >
+                            News
+                        </div>
+                        <div
+                            ref={menuTop}
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/about",
+                                });
+                            }}
+                        >
+                            About
+                        </div>
                     </div>
                 </div>
                 <div className="header_sub_container" style={{ top: contentTop - 5 }}>

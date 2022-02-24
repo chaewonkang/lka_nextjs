@@ -121,8 +121,6 @@ body {
     height: 100%;
     white-space: nowrap;
     transition: ease 1000ms;
-    height: 100%;
-    max-height: 100%;
 }
 
 .slide {
@@ -375,11 +373,13 @@ body {
     margin-bottom: 100px;
 }
 
-.architecture_info_index {
-}
-
 .architecture_header {
     width: calc((100% / 18) * 4);
+}
+
+.conceptual_detail_information_row {
+    display: flex;
+    flex-direction: column;
 }
 
 .detail_information_row {
@@ -388,6 +388,26 @@ body {
     border-top: 1px solid #000;
     width: calc((100% / 18) * 14);
     display: flex;
+}
+
+.conceptual_detail_information_row .conceptual_detail_row {
+    padding-left: calc((100% / 14) * 1.5);
+    margin-right: 20px;
+    display: flex;
+}
+
+.conceptual_detail_information_row .conceptual_detail_row > div:first-child {
+    width: calc(100% / 14);
+}
+
+.conceptual_detail_information_row .conceptual_detail_row > div:last-child {
+    width: calc((100% / 14) * 2);
+    padding-left: 4px;
+}
+
+.detail_information_row > div:first-child {
+    padding-left: calc((100% / 14) * 1.5);
+    margin-right: 20px;
 }
 
 .architecture_header_sub_container .header_sub_menu .project,
@@ -414,11 +434,6 @@ body {
     max-height: 100%;
     object-fit: contain;
     object-position: top;
-}
-
-.detail_information_row > div:first-child {
-    padding-left: calc((100% / 14) * 1.5);
-    margin-right: 20px;
 }
 
 .header_sub_menu {
@@ -503,12 +518,13 @@ body {
 .about_menu .introduction,
 .about_menu .contact,
 .about_content .introduction,
-.about_content .contact {
+.about_content .contact,
+.index_row .conceptual_project {
     width: calc((100% / 18) * 4);
 }
 
 .header_sub_menu .conceptual_project,
-.index_row .conceptual_project {
+.index_row .conceptual_project:hover {
     width: 100%;
 }
 
@@ -595,3 +611,78 @@ body {
 
     padding-right: 6px;
 }
+
+/* TOPOF News */
+
+.news_content_container {
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+}
+
+.news_content_wrapper {
+    width: calc((100% / 18) * 16);
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.news_content_container .news_content_wrapper .news_module {
+    width: calc(50% - 3px);
+    height: calc(30vh - 3px);
+    margin-bottom: 6px;
+    min-height: 400px;
+    max-height: 600px;
+    border: 0.3px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.news_content_container .news_content_wrapper .news_module:nth-child(2n + 1) {
+    margin-right: 3px;
+}
+
+.news_content_container .news_content_wrapper .news_module:nth-child(2n) {
+    margin-left: 3px;
+}
+
+.news_module_slideshow {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.news_module_slideshow .slideshowSlider {
+    display: inline-block;
+}
+
+.news_module_slideshow .slideshow {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.news_module_slideshow .slideshow .slide,
+.news_module_slideshow .slideshow .slide div img {
+    object-fit: cover;
+    width: 100% !important;
+}
+
+.news_module_info {
+    width: 100%;
+    height: 30%;
+    border-top: 0.3px solid #000;
+    padding: 4px;
+}
+
+.news_module_info span {
+    display: block;
+}
+
+/* ENDOF News */

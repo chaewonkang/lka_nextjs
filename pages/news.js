@@ -3,14 +3,16 @@ import { useEffect, useState, useRef } from "react";
 import PageLayout from "../components/PageLayout";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Slideshow from "../components/Slideshow";
+import newsData from "../constants/newsData";
 
 const News = () => {
     const menuTop = useRef();
     const router = useRouter();
-    const [contentTop, setContentTOp] = useState(0);
+    const [contentTop, setContentTop] = useState(0);
 
     useEffect(() => {
-        setContentTOp(menuTop.current.offsetTop);
+        setContentTop(menuTop.current.offsetTop);
     }, [contentTop]);
 
     return (
@@ -36,7 +38,6 @@ const News = () => {
                         >
                             Architecture
                         </div>
-
                         <div
                             onClick={() => {
                                 router.push({
@@ -55,12 +56,50 @@ const News = () => {
                         >
                             News
                         </div>
-                        <Link href="/about">
-                            <div ref={menuTop}>About</div>
-                        </Link>
+                        <div
+                            ref={menuTop}
+                            onClick={() => {
+                                router.push({
+                                    pathname: "/about",
+                                });
+                            }}
+                        >
+                            About
+                        </div>
                     </div>
                 </div>
-                <div className="header_sub_container" style={{ top: contentTop - 5 }}></div>
+                <div
+                    className="header_sub_container"
+                    style={{ top: contentTop - 5, height: `calc(100vh - ${contentTop}px)` }}
+                >
+                    <div className="news_content_container" style={{ height: `calc(100% - ${contentTop + 30}px)` }}>
+                        <div className="news_content_wrapper">
+                            {newsData.map(news => {
+                                return (
+                                    <div className="news_module">
+                                        <div className="news_module_slideshow">
+                                            <Slideshow imgArr={news.images} isArrowOn />
+                                        </div>
+                                        <div className="news_module_info">
+                                            <span>{news.createAt}</span>
+                                            <br />
+                                            <span>{news.title}</span>
+                                            <span>
+                                                <a href={news.linkUrl} target="_blank">
+                                                    {news.link}
+                                                </a>
+                                            </span>
+                                            <span>
+                                                {news.category}| {news.publication}
+                                            </span>
+                                            <span>{news.issn}</span>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
             </div>
         </PageLayout>
     );
