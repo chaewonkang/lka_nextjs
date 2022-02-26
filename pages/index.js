@@ -5,15 +5,41 @@ import PageLayout from "../components/PageLayout";
 import Link from "next/link";
 import projectData from "../constants/projectData";
 import { useRouter } from "next/router";
+import parse from "html-react-parser";
+
+import * as _AppModelD from "../api/_AppModelD";
 
 const Index = () => {
     const [loading, setLoading] = useState(true);
     const [thumbIdx, setThumbIdx] = useState(0);
     const [viewMode, setViewMode] = useState("list");
-
+    const [arrayResponseData, setArrayResponseData] = useState([]);
     const router = useRouter();
 
     useEffect(() => {}, [thumbIdx, viewMode]);
+
+    useEffect(() => {
+        // __apiGetItemData();
+    }, [])
+
+    function __apiGetItemData() {
+        console.log("__apiGetItemData - 0")
+        // project, news, concept, about
+        const req = { query :  `?param1=concept`}
+        _AppModelD.getData(req)
+        .then(res => {
+            console.log("__apiGetItemData - 1")
+            console.log(res)
+            if (res.status < 300) {
+                if (res && res.data && res.data.results) {
+                    setArrayResponseData(Array.from([
+                        ...res.data.results, 
+                    ]))
+
+                }
+            }
+        })
+    }
 
     return (
         <ThemeProvider theme={theme}>
@@ -21,10 +47,21 @@ const Index = () => {
                 <>
                     <PageLayout>
                         <div className="thumb_container" style={thumbIdx === 0 ? { display: "none" } : null}>
-                            {thumbIdx !== 0 && <img src={projectData[thumbIdx - 1].thumburl}></img>}
+                            {
+                                thumbIdx !== 0 && 
+                                projectData &&
+                                projectData[thumbIdx - 1] &&
+                                projectData[thumbIdx - 1].thumburl &&
+                                <img src={projectData[thumbIdx - 1].thumburl}></img>
+                            }
                         </div>
                         <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26 + 155}px` }}>
-                            {thumbIdx !== 0 && <img src={projectData[thumbIdx - 1].thumburl}></img>}
+                            {
+                                thumbIdx !== 0 && 
+                                projectData &&
+                                projectData[thumbIdx - 1] &&
+                                projectData[thumbIdx - 1].thumburl &&
+                                <img src={projectData[thumbIdx - 1].thumburl}></img>}
                         </div>
                         <div className="indexing" style={viewMode === "thumbnail" ? { flexDirection: "column" } : null}>
                             <div className="header_container">
@@ -97,8 +134,53 @@ const Index = () => {
                                         </div>
                                     </div>
                                     <div className="content_index">
+                                        {
+                                            arrayResponseData &&
+                                            arrayResponseData.map(el => {
+                                                return (
+                                                    <div
+                                                        key={el.index + el.title}
+                                                        className="index_row"
+                                                        onMouseOver={() => {
+                                                            setThumbIdx(el.aid);
+                                                        }}
+                                                        onMouseLeave={() => {
+                                                            setThumbIdx(0);
+                                                        }}
+                                                        onTouchStart={() => {
+                                                            setThumbIdx(el.aid);
+                                                        }}
+                                                        onTouchCancel={() => {
+                                                            setThumbIdx(0);
+                                                        }}
+                                                        onClick={() => {
+                                                            router.push({
+                                                                pathname: "/architecture",
+                                                                query: {
+                                                                    id: el.aid,
+                                                                },
+                                                            });
+                                                        }}
+                                                    >
+                                                        <div className="project">
+                                                            <div>
+                                                                {el.title}
+                                                                <span className="more_button">More ▶︎</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="year">
+                                                            <div>{el.period}</div>
+                                                        </div>
+                                                        <div className="program">
+                                                            <div>{el.category}</div>
+                                                        </div>
+                                                    </div>
+                                                );
+                                            })
+                                        }
                                         {projectData &&
-                                            projectData.map(el => {
+                                            projectData
+                                            .map(el => {
                                                 return (
                                                     <div
                                                         key={el.index + el.title}

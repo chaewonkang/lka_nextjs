@@ -6,6 +6,9 @@ import Link from "next/link";
 import conceptData from "../constants/conceptData";
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
+import parse from "html-react-parser";
+
+import * as _AppModelD from "../api/_AppModelD";
 
 const Conceptual = () => {
     const [loading, setLoading] = useState(true);
@@ -14,6 +17,7 @@ const Conceptual = () => {
     const router = useRouter();
     const { query } = router;
     const [mTextOpen, setMTextOpen] = useState(false);
+    const [arrayResponseData, setArrayResponseData] = useState([]);
 
     useEffect(() => {}, [thumbIdx]);
 
@@ -21,6 +25,30 @@ const Conceptual = () => {
         setConceptualId(query.id);
         console.log(conceptualId);
     }, [router.query, conceptualId]);
+
+
+    useEffect(() => {
+        // __apiGetItemData();
+    }, [])
+
+    function __apiGetItemData() {
+        console.log("__apiGetItemData - 0")
+        // project, news, concept, about
+        const req = { query :  `?param1=concept`}
+        _AppModelD.getData(req)
+        .then(res => {
+            console.log("__apiGetItemData - 1")
+            console.log(res)
+            if (res.status < 300) {
+                if (res && res.data && res.data.results) {
+                    setArrayResponseData(Array.from([
+                        ...res.data.results, 
+                    ]))
+
+                }
+            }
+        })
+    }
 
     if (conceptualId && conceptualId !== 0) {
         return (
@@ -168,8 +196,8 @@ const Conceptual = () => {
                                         </div>
                                         {conceptualId && conceptualId != 0 && mTextOpen && (
                                             <div className="more_information_text">
-                                                <p>{conceptData[conceptualId - 1].infoKr}</p>
-                                                <p>{conceptData[conceptualId - 1].infoEn}</p>
+                                                <p>{conceptData[conceptualId - 1].info_kr}</p>
+                                                <p>{conceptData[conceptualId - 1].info_en}</p>
                                             </div>
                                         )}
                                     </div>

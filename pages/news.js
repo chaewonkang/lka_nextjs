@@ -5,15 +5,43 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
 import newsData from "../constants/newsData";
+import parse from "html-react-parser";
+
+import * as _AppModelD from "../api/_AppModelD";
 
 const News = () => {
     const menuTop = useRef();
     const router = useRouter();
     const [contentTop, setContentTop] = useState(0);
+    const [arrayResponseData, setArrayResponseData] = useState([]);
 
     useEffect(() => {
         setContentTop(menuTop.current.offsetTop);
     }, [contentTop]);
+
+
+    useEffect(() => {
+        // __apiGetItemData();
+    }, [])
+
+    function __apiGetItemData() {
+        console.log("__apiGetItemData - 0")
+        // project, news, concept, about
+        const req = { query :  `?param1=news`}
+        _AppModelD.getData(req)
+        .then(res => {
+            console.log("__apiGetItemData - 1")
+            console.log(res)
+            if (res.status < 300) {
+                if (res && res.data && res.data.results) {
+                    setArrayResponseData(Array.from([
+                        ...res.data.results, 
+                    ]))
+
+                }
+            }
+        })
+    }
 
     return (
         <PageLayout>

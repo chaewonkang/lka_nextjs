@@ -12,8 +12,8 @@ const conceptData = [
         dimension: "405 x 420 x 500cm",
         budget: "$8,000",
         thumburl: "../static/images/img_1.png",
-        infoEn: "In an unexpected space along the entrance way to the mock-up building, one’s anticipation caused by the substantial concrete structure and the seeming elevator is unfamiliarly subverted. This leads to the subversion of the fixed conception of spaces and things and thereby bestows an intriguing significance upon the mock-up. Visitors are welcomed by two elevator openings at the lobby. Instinctively they enter one of the openings and encounter unexpected loop of stairs going up and down leading to the other opening. Such a nonsensical moment elevates the meaning of the whole experience and the definition of mock-up, which is a fake building. The steel stair structure is enclosed by PVC mesh of orance color which makes link to the safety fence at construction site of the real building.",
-        infoKr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
+        info_en: "In an unexpected space along the entrance way to the mock-up building, one’s anticipation caused by the substantial concrete structure and the seeming elevator is unfamiliarly subverted. This leads to the subversion of the fixed conception of spaces and things and thereby bestows an intriguing significance upon the mock-up. Visitors are welcomed by two elevator openings at the lobby. Instinctively they enter one of the openings and encounter unexpected loop of stairs going up and down leading to the other opening. Such a nonsensical moment elevates the meaning of the whole experience and the definition of mock-up, which is a fake building. The steel stair structure is enclosed by PVC mesh of orance color which makes link to the safety fence at construction site of the real building.",
+        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -42,11 +42,11 @@ const conceptData = [
         dimension: "405 x 420 x 500cm",
         budget: "$8,000",
         thumburl: "../static/images/img_1.png",
-        infoEn: "In an unexpected space along the entrance way to the mock-up building, one’s anticipation caused by the substantial concrete structure and the seeming elevator is unfamiliarly subverted. This leads to the subversion of the fixed conception of spaces and things and thereby bestows an intriguing significance upon the mock-up. Visitors are welcomed by two elevator openings at the lobby. Instinctively they enter one of the openings and encounter unexpected loop of stairs going up and down leading to the other opening. Such a nonsensical moment elevates the meaning of the whole experience and the definition of mock-up, which is a fake building. The steel stair structure is enclosed by PVC mesh of orance color which makes link to the safety fence at construction site of the real building.",
-        infoKr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
+        info_en: "In an unexpected space along the entrance way to the mock-up building, one’s anticipation caused by the substantial concrete structure and the seeming elevator is unfamiliarly subverted. This leads to the subversion of the fixed conception of spaces and things and thereby bestows an intriguing significance upon the mock-up. Visitors are welcomed by two elevator openings at the lobby. Instinctively they enter one of the openings and encounter unexpected loop of stairs going up and down leading to the other opening. Such a nonsensical moment elevates the meaning of the whole experience and the definition of mock-up, which is a fake building. The steel stair structure is enclosed by PVC mesh of orance color which makes link to the safety fence at construction site of the real building.",
+        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
         thumburl: "../static/images/img_2.png",
-        infoEn: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
-        infoKr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
+        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
+        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
         images: [
             {
                 url: "../static/images/img_2.png",
@@ -73,8 +73,8 @@ const conceptData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_3.png",
-        infoEn: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        infoKr: "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr: "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_3.png",
@@ -101,8 +101,8 @@ const conceptData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_4.png",
-        infoEn: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        infoKr: "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr: "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_4.png",
@@ -129,8 +129,8 @@ const conceptData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_5.png",
-        infoEn: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
-        infoKr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_5.png",
@@ -157,8 +157,8 @@ const conceptData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        infoEn: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        infoKr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -185,8 +185,8 @@ const conceptData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        infoEn: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        infoKr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
