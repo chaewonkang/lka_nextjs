@@ -203,4 +203,70 @@
     }
 
     /* ENDOF News */
+
+    /* TOPOF architecture */
+
+    .architecture_header_sub_container {
+        width: 100%;
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .architecture_title_row {
+        width: 100%;
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        padding-left: 5px;
+        margin-bottom: 4px;
+    }
+
+    .detail_information_row {
+        border-top: none;
+        width: 100%;
+        top: 3px !important;
+    }
+
+    .detail_information_row > div:first-child {
+        padding-left: 0;
+    }
+
+    .architecture_first_box {
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        min-height: none;
+        margin-bottom: 90px;
+    }
+
+    .architecture_detail_image_container {
+        position: relative;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 19px;
+    }
+
+    .architecture_header_sub_container .more_information_box {
+        width: 100%;
+        border-top: none;
+        border-bottom: 1px solid #000;
+
+        display: flex;
+        background-color: #fff;
+        position: relative;
+        bottom: 49px;
+    }
+
+    .architecture_header_sub_container .more_information_box .more_information_title span:last-child {
+        left: unset;
+        right: 0;
+        z-index: 10;
+    }
+
+    .architecture_header_sub_container .more_information_box .more_information_text {
+        width: 100%;
+        position: absolute;
+    }
+
+    /* ENDOF architecture */
 }

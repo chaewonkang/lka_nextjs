@@ -22,30 +22,24 @@ const Architecture = () => {
         setProjectId(query.id);
     }, [projectId, router.query, mTextOpen]);
 
-
     useEffect(() => {
         // __apiGetItemData();
-    }, [])
+    }, []);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0")
+        console.log("__apiGetItemData - 0");
         // project, news, concept, about
-        const req = { query :  `?param1=project`}
-        _AppModelD.getData(req)
-        .then(res => {
-            console.log("__apiGetItemData - 1")
-            console.log(res)
+        const req = { query: `?param1=project` };
+        _AppModelD.getData(req).then(res => {
+            console.log("__apiGetItemData - 1");
+            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([
-                        ...res.data.results, 
-                    ]))
-
+                    setArrayResponseData(Array.from([...res.data.results]));
                 }
             }
-        })
+        });
     }
-
 
     return (
         <ThemeProvider theme={theme}>
@@ -98,9 +92,13 @@ const Architecture = () => {
                                     </Link>
                                 </div>
                             </div>
+
                             <div className="architecture_header_sub_container">
+                                <div className="mobile_only architecture_title_row">
+                                    {projectId && projectId != 0 && projectData[projectId - 1].title}
+                                </div>
                                 <div className="architecture_first_box">
-                                    <div className="architecture_header">
+                                    <div className="architecture_header desktop_only">
                                         <div className="header_sub_menu">
                                             <div className="project">
                                                 <div>Project</div>
