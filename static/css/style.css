@@ -257,7 +257,6 @@ body {
 #body {
     width: 100%;
     height: 100%;
-    max-width: 2560px;
     position: relative;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -302,7 +301,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: calc(100% / 22);
 }
 
 .thumbnail_gallery div img {

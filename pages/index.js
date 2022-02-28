@@ -17,10 +17,10 @@ const Index = () => {
     const router = useRouter();
     const { query } = router;
 
-    console.log(query);
-
     useEffect(() => {
-        query.mode === "list" ? setViewMode("list") : setViewMode("thumbnail");
+        if (!query.mode) setViewMode("list");
+        else if (query.mode === "list") setViewMode("list");
+        else setViewMode("thumbnail");
     }, [thumbIdx, viewMode, router.query]);
 
     useEffect(() => {
