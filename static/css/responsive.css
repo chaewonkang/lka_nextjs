@@ -24,7 +24,7 @@
     .layout_container {
         margin: 13px;
         width: calc(100vw - 26px);
-        height: calc(100vh - 26px);
+        height: auto;
     }
 
     .indexing {
@@ -208,7 +208,7 @@
 
     .architecture_header_sub_container {
         width: 100%;
-        margin-top: 40px;
+
         height: auto;
     }
 
@@ -234,8 +234,8 @@
         position: relative;
         flex-direction: column;
         height: auto;
-        min-height: none;
-        margin-bottom: 90px;
+        min-height: 0;
+        margin-bottom: 60px;
     }
 
     .architecture_detail_image_container {
@@ -266,7 +266,43 @@
     .architecture_header_sub_container .more_information_box .more_information_text {
         width: 100%;
         position: absolute;
+        top: 25px;
+    }
+
+    .no_border {
+        border-top: none;
+        border-bottom: none;
     }
 
     /* ENDOF architecture */
+
+    .mobile_footer_container {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* TOPOF conceptual */
+
+    .index_row .conceptual_project {
+        width: 100%;
+    }
+
+    .architecture_header {
+        display: none;
+    }
+
+    .conceptual_detail_information_row .conceptual_detail_row {
+        padding-left: 0;
+    }
+
+    .conceptual_detail_information_row .conceptual_detail_row > div:first-child {
+        width: 25%;
+    }
+
+    .conceptual_detail_information_row .conceptual_detail_row > div:last-child {
+        width: 75%;
+    }
+
+    /* ENDOF conceptual */
 }

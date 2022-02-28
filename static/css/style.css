@@ -466,7 +466,7 @@ body {
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    color: #888;
+    color: #bababa;
 }
 
 .index_row:hover {
@@ -616,7 +616,7 @@ body {
     bottom: 0px;
     display: flex;
     width: calc(100vw - 60px);
-    border-top: 1px solid #888;
+    border-top: 1px solid #bababa;
     background-color: #fff;
 }
 

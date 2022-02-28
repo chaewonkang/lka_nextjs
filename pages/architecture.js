@@ -9,6 +9,7 @@ import Slideshow from "../components/Slideshow";
 import parse from "html-react-parser";
 
 import * as _AppModelD from "../api/_AppModelD";
+import Footer from "../components/Footer";
 
 const Architecture = () => {
     const [loading, setLoading] = useState(true);
@@ -74,7 +75,7 @@ const Architecture = () => {
                                                 pathname: "/conceptual",
                                             });
                                         }}
-                                        style={{ color: "#888 !important" }}
+                                        style={{ color: "#BABABA !important" }}
                                     >
                                         Conceptual
                                     </div>
@@ -84,16 +85,52 @@ const Architecture = () => {
                                                 pathname: "/news",
                                             });
                                         }}
+                                        style={{ color: "#BABABA !important" }}
                                     >
                                         News
                                     </div>
-                                    <Link href="/about">
-                                        <div>About</div>
-                                    </Link>
+
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/about",
+                                            });
+                                        }}
+                                        style={{ color: "#BABABA !important" }}
+                                    >
+                                        About
+                                    </div>
                                 </div>
                             </div>
-
                             <div className="architecture_header_sub_container">
+                                <div className="view_filter no_border">
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/",
+                                                query: {
+                                                    mode: "thumbnail",
+                                                },
+                                            });
+                                        }}
+                                        className=" mobile_only"
+                                    >
+                                        Thumbnail
+                                    </div>
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/",
+                                                query: {
+                                                    mode: "list",
+                                                },
+                                            });
+                                        }}
+                                        className="mobile_only"
+                                    >
+                                        List
+                                    </div>
+                                </div>
                                 <div className="mobile_only architecture_title_row">
                                     {projectId && projectId != 0 && projectData[projectId - 1].title}
                                 </div>
@@ -180,10 +217,15 @@ const Architecture = () => {
                                 </div>
                                 <div className="more_information_box">
                                     <div className="more_information_title">
-                                        {!mTextOpen && <span>More Information</span>}
+                                        {!mTextOpen && <span className="desktop_only">More Information</span>}
+                                        <span className="mobile_only">More Information</span>
                                         <span
                                             onClick={() => setMTextOpen(!mTextOpen)}
-                                            style={mTextOpen ? { transform: "rotate(180deg)", left: "30%" } : null}
+                                            style={
+                                                mTextOpen
+                                                    ? { transform: "rotate(180deg)", left: "30%", bottom: 0 }
+                                                    : null
+                                            }
                                         >
                                             ▲
                                         </span>
@@ -195,7 +237,7 @@ const Architecture = () => {
                                         </div>
                                     )}
                                 </div>
-                            </div>
+                            </div>{" "}
                         </div>
                     </PageLayout>
                 </>

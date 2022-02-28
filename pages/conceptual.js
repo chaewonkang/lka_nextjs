@@ -26,28 +26,23 @@ const Conceptual = () => {
         console.log(conceptualId);
     }, [router.query, conceptualId]);
 
-
     useEffect(() => {
         // __apiGetItemData();
-    }, [])
+    }, []);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0")
+        console.log("__apiGetItemData - 0");
         // project, news, concept, about
-        const req = { query :  `?param1=concept`}
-        _AppModelD.getData(req)
-        .then(res => {
-            console.log("__apiGetItemData - 1")
-            console.log(res)
+        const req = { query: `?param1=concept` };
+        _AppModelD.getData(req).then(res => {
+            console.log("__apiGetItemData - 1");
+            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([
-                        ...res.data.results, 
-                    ]))
-
+                    setArrayResponseData(Array.from([...res.data.results]));
                 }
             }
-        })
+        });
     }
 
     if (conceptualId && conceptualId !== 0) {
@@ -74,7 +69,7 @@ const Conceptual = () => {
                                                     },
                                                 });
                                             }}
-                                            style={{ color: "#888" }}
+                                            style={{ color: "#BABABA" }}
                                         >
                                             Architecture
                                         </div>
@@ -94,7 +89,7 @@ const Conceptual = () => {
                                                     pathname: "/news",
                                                 });
                                             }}
-                                            style={{ color: "#888" }}
+                                            style={{ color: "#BABABA" }}
                                         >
                                             News
                                         </div>
@@ -104,13 +99,30 @@ const Conceptual = () => {
                                                     pathname: "/about",
                                                 });
                                             }}
-                                            style={{ color: "#888" }}
+                                            style={{ color: "#BABABA" }}
                                         >
                                             About
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="architecture_header_sub_container" style={{ marginTop: "22.5px" }}>
+                                    <div className="view_filter no_border">
+                                        <div className=" mobile_only"></div>
+                                        <div
+                                            onClick={() => {
+                                                router.push({
+                                                    pathname: "/conceptual",
+                                                });
+                                            }}
+                                            className="mobile_only"
+                                        >
+                                            List
+                                        </div>
+                                    </div>
+                                    <div className="mobile_only architecture_title_row">
+                                        {conceptualId && conceptualId != 0 && conceptData[conceptualId - 1].title}
+                                    </div>
                                     <div className="architecture_first_box">
                                         <div className="architecture_header">
                                             <div className="header_sub_menu">
@@ -186,10 +198,15 @@ const Conceptual = () => {
                                     </div>
                                     <div className="more_information_box">
                                         <div className="more_information_title">
-                                            {!mTextOpen && <span>More Information</span>}
+                                            {!mTextOpen && <span className="desktop_only">More Information</span>}
+                                            <span className="mobile_only">More Information</span>
                                             <span
                                                 onClick={() => setMTextOpen(!mTextOpen)}
-                                                style={mTextOpen ? { transform: "rotate(180deg)", left: "30%" } : null}
+                                                style={
+                                                    mTextOpen
+                                                        ? { transform: "rotate(180deg)", left: "30%", bottom: "0" }
+                                                        : null
+                                                }
                                             >
                                                 ▲
                                             </span>
@@ -215,7 +232,10 @@ const Conceptual = () => {
             {loading && (
                 <>
                     <PageLayout>
-                        <div className="conceptual_thumb_container" style={thumbIdx === 0 ? { display: "none" } : null}>
+                        <div
+                            className="conceptual_thumb_container desktop_only"
+                            style={thumbIdx === 0 ? { display: "none" } : null}
+                        >
                             {thumbIdx !== 0 && (
                                 <>
                                     {conceptData[thumbIdx - 1].images.slice(0, 3).map(el => {
@@ -249,7 +269,7 @@ const Conceptual = () => {
                                                 },
                                             });
                                         }}
-                                        style={{ color: "#888" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         Architecture
                                     </div>
@@ -270,7 +290,7 @@ const Conceptual = () => {
                                                 pathname: "/news",
                                             });
                                         }}
-                                        style={{ color: "#888" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         News
                                     </div>
@@ -281,7 +301,7 @@ const Conceptual = () => {
                                                 pathname: "/about",
                                             });
                                         }}
-                                        style={{ color: "#888" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         About
                                     </div>

@@ -19,28 +19,23 @@ const News = () => {
         setContentTop(menuTop.current.offsetTop);
     }, [contentTop]);
 
-
     useEffect(() => {
         // __apiGetItemData();
-    }, [])
+    }, []);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0")
+        console.log("__apiGetItemData - 0");
         // project, news, concept, about
-        const req = { query :  `?param1=news`}
-        _AppModelD.getData(req)
-        .then(res => {
-            console.log("__apiGetItemData - 1")
-            console.log(res)
+        const req = { query: `?param1=news` };
+        _AppModelD.getData(req).then(res => {
+            console.log("__apiGetItemData - 1");
+            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([
-                        ...res.data.results, 
-                    ]))
-
+                    setArrayResponseData(Array.from([...res.data.results]));
                 }
             }
-        })
+        });
     }
 
     return (
@@ -63,7 +58,7 @@ const News = () => {
                                     },
                                 });
                             }}
-                            style={{ color: "#888" }}
+                            style={{ color: "#BABABA" }}
                         >
                             Architecture
                         </div>
@@ -73,7 +68,7 @@ const News = () => {
                                     pathname: "/conceptual",
                                 });
                             }}
-                            style={{ color: "#888" }}
+                            style={{ color: "#BABABA" }}
                         >
                             Conceptual
                         </div>
@@ -93,7 +88,7 @@ const News = () => {
                                     pathname: "/about",
                                 });
                             }}
-                            style={{ color: "#888" }}
+                            style={{ color: "#BABABA" }}
                         >
                             About
                         </div>

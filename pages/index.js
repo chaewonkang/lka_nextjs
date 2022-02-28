@@ -15,30 +15,31 @@ const Index = () => {
     const [viewMode, setViewMode] = useState("list");
     const [arrayResponseData, setArrayResponseData] = useState([]);
     const router = useRouter();
+    const { query } = router;
 
-    useEffect(() => {}, [thumbIdx, viewMode]);
+    console.log(query);
+
+    useEffect(() => {
+        query.mode === "list" ? setViewMode("list") : setViewMode("thumbnail");
+    }, [thumbIdx, viewMode, router.query]);
 
     useEffect(() => {
         // __apiGetItemData();
-    }, [])
+    }, []);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0")
+        console.log("__apiGetItemData - 0");
         // project, news, concept, about
-        const req = { query :  `?param1=concept`}
-        _AppModelD.getData(req)
-        .then(res => {
-            console.log("__apiGetItemData - 1")
-            console.log(res)
+        const req = { query: `?param1=concept` };
+        _AppModelD.getData(req).then(res => {
+            console.log("__apiGetItemData - 1");
+            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([
-                        ...res.data.results, 
-                    ]))
-
+                    setArrayResponseData(Array.from([...res.data.results]));
                 }
             }
-        })
+        });
     }
 
     return (
@@ -47,21 +48,20 @@ const Index = () => {
                 <>
                     <PageLayout>
                         <div className="thumb_container" style={thumbIdx === 0 ? { display: "none" } : null}>
-                            {
-                                thumbIdx !== 0 && 
+                            {thumbIdx !== 0 &&
                                 projectData &&
                                 projectData[thumbIdx - 1] &&
-                                projectData[thumbIdx - 1].thumburl &&
-                                <img src={projectData[thumbIdx - 1].thumburl}></img>
-                            }
+                                projectData[thumbIdx - 1].thumburl && (
+                                    <img src={projectData[thumbIdx - 1].thumburl}></img>
+                                )}
                         </div>
                         <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26 + 155}px` }}>
-                            {
-                                thumbIdx !== 0 && 
+                            {thumbIdx !== 0 &&
                                 projectData &&
                                 projectData[thumbIdx - 1] &&
-                                projectData[thumbIdx - 1].thumburl &&
-                                <img src={projectData[thumbIdx - 1].thumburl}></img>}
+                                projectData[thumbIdx - 1].thumburl && (
+                                    <img src={projectData[thumbIdx - 1].thumburl}></img>
+                                )}
                         </div>
                         <div className="indexing" style={viewMode === "thumbnail" ? { flexDirection: "column" } : null}>
                             <div className="header_container">
@@ -90,7 +90,7 @@ const Index = () => {
                                                 pathname: "/conceptual",
                                             });
                                         }}
-                                        style={{ color: "#888" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         Conceptual
                                     </div>
@@ -100,7 +100,7 @@ const Index = () => {
                                                 pathname: "/news",
                                             });
                                         }}
-                                        style={{ color: "#888" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         News
                                     </div>
@@ -110,15 +110,39 @@ const Index = () => {
                                                 pathname: "/about",
                                             });
                                         }}
-                                        style={{ color: "#888" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         About
                                     </div>
                                 </div>
                             </div>
                             <div className="view_filter">
-                                <div onClick={() => setViewMode("thumbnail")}>Thumbnail</div>
-                                <div onClick={() => setViewMode("list")}>List</div>
+                                <div
+                                    onClick={() => {
+                                        router.push({
+                                            pathname: "/",
+                                            query: {
+                                                mode: "thumbnail",
+                                            },
+                                        });
+                                    }}
+                                    style={viewMode === "list" ? { color: "#BABABA" } : null}
+                                >
+                                    Thumbnail
+                                </div>
+                                <div
+                                    onClick={() => {
+                                        router.push({
+                                            pathname: "/",
+                                            query: {
+                                                mode: "list",
+                                            },
+                                        });
+                                    }}
+                                    style={viewMode === "thumbnail" ? { color: "#BABABA" } : null}
+                                >
+                                    List
+                                </div>
                             </div>
                             {viewMode === "list" ? (
                                 <div className="header_sub_container">
@@ -134,8 +158,7 @@ const Index = () => {
                                         </div>
                                     </div>
                                     <div className="content_index">
-                                        {
-                                            arrayResponseData &&
+                                        {arrayResponseData &&
                                             arrayResponseData.map(el => {
                                                 return (
                                                     <div
@@ -176,11 +199,9 @@ const Index = () => {
                                                         </div>
                                                     </div>
                                                 );
-                                            })
-                                        }
+                                            })}
                                         {projectData &&
-                                            projectData
-                                            .map(el => {
+                                            projectData.map(el => {
                                                 return (
                                                     <div
                                                         key={el.index + el.title}

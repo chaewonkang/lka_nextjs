@@ -17,28 +17,23 @@ const About = () => {
         setContentTOp(menuTop.current.offsetTop);
     }, [contentTop]);
 
-
     useEffect(() => {
         __apiGetItemData();
-    }, [])
+    }, []);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0")
+        console.log("__apiGetItemData - 0");
         // project, news, concept, about
-        const req = { query :  `?param1=about`}
-        _AppModelD.getData(req)
-        .then(res => {
-            console.log("__apiGetItemData - 1")
-            console.log(res)
+        const req = { query: `?param1=about` };
+        _AppModelD.getData(req).then(res => {
+            console.log("__apiGetItemData - 1");
+            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([
-                        ...res.data.results, 
-                    ]))
-
+                    setArrayResponseData(Array.from([...res.data.results]));
                 }
             }
-        })
+        });
     }
 
     return (
@@ -61,7 +56,7 @@ const About = () => {
                                     },
                                 });
                             }}
-                            style={{ color: "#888" }}
+                            style={{ color: "#BABABA" }}
                         >
                             Architecture
                         </div>
@@ -72,7 +67,7 @@ const About = () => {
                                     pathname: "/conceptual",
                                 });
                             }}
-                            style={{ color: "#888" }}
+                            style={{ color: "#BABABA" }}
                         >
                             Conceptual
                         </div>
@@ -82,7 +77,7 @@ const About = () => {
                                     pathname: "/news",
                                 });
                             }}
-                            style={{ color: "#888" }}
+                            style={{ color: "#BABABA" }}
                         >
                             News
                         </div>
@@ -113,63 +108,53 @@ const About = () => {
                     <div className="about_content">
                         <div className="introduction">
                             <div>
-
                                 {arrayResponseData &&
-                                arrayResponseData.length > 0 &&
-                                arrayResponseData[0] &&
-                                parse(arrayResponseData[0].info_kr)}
+                                    arrayResponseData.length > 0 &&
+                                    arrayResponseData[0] &&
+                                    parse(arrayResponseData[0].info_kr)}
                             </div>
                         </div>
                         <div className="people">
-                            {
-                                arrayResponseData &&
+                            {arrayResponseData &&
                                 arrayResponseData.length > 0 &&
                                 arrayResponseData[0] &&
                                 arrayResponseData[0].infoItems &&
-                                arrayResponseData[0].infoItems.map((infoItem, infoIndex)=> {
+                                arrayResponseData[0].infoItems.map((infoItem, infoIndex) => {
                                     return (
                                         <div className="people_row">
                                             <div>{infoItem.name}</div>
                                             <div>{infoItem.title}</div>
                                             <div>{infoItem.period.replace("-", "")}</div>
                                         </div>
-                                    )
-                                })
-
-                            }
+                                    );
+                                })}
                         </div>
                         <div className="contact">
                             <div className="contact_row">
                                 <div>Email</div>
                                 <div>
-                                    {
-                                        arrayResponseData &&
+                                    {arrayResponseData &&
                                         arrayResponseData.length > 0 &&
                                         arrayResponseData[0] &&
-                                        arrayResponseData[0].email
-                                    }
+                                        arrayResponseData[0].email}
                                 </div>
                             </div>
                             <div className="contact_row">
                                 <div>Address</div>
                                 <div>
-                                    {
-                                        arrayResponseData &&
+                                    {arrayResponseData &&
                                         arrayResponseData.length > 0 &&
                                         arrayResponseData[0] &&
-                                        arrayResponseData[0].address
-                                    }
+                                        arrayResponseData[0].address}
                                 </div>
                             </div>
                             <div className="contact_row">
                                 <div>Phone</div>
                                 <div>
-                                    {
-                                        arrayResponseData &&
+                                    {arrayResponseData &&
                                         arrayResponseData.length > 0 &&
                                         arrayResponseData[0] &&
-                                        arrayResponseData[0].phone
-                                    }
+                                        arrayResponseData[0].phone}
                                 </div>
                             </div>
                         </div>
