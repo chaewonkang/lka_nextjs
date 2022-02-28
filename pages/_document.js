@@ -6,13 +6,19 @@ import { ServerStyleSheet, createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 	   html,
 	   body {
-		  	width: 100vw;
-			height: 100vh;
+		  	width: 100%;
+			height: 100%;
 			overflow-x: hidden;
 			margin: 0;
 			position: relative;
 		  }
 
+		  #__next {
+			  width: calc(100% - 60px);
+			  height: calc(100% - 60px);
+			  margin: 0;
+			  top: 0;
+		  }
 `;
 
 class MyDocument extends Document {
