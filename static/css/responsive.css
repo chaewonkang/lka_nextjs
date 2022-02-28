@@ -156,6 +156,7 @@
     .news_content_container {
         margin-top: 20px;
         height: auto !important;
+        border-top: none !important;
     }
 
     .news_header_sub_container {
