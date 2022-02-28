@@ -6,6 +6,7 @@ import Link from "next/link";
 import projectData from "../constants/projectData";
 import { useRouter } from "next/router";
 import parse from "html-react-parser";
+import jQuery from "jquery";
 
 import * as _AppModelD from "../api/_AppModelD";
 
@@ -23,8 +24,39 @@ const Index = () => {
         else setViewMode("thumbnail");
     }, [thumbIdx, viewMode, router.query]);
 
+    function removeMobileOnclick() {
+        if (isMobile()) {
+            document.querySelector(".index_row").onTouchStart = "";
+        }
+    }
+
+    function isMobile() {
+        if (
+            navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/iPhone/i) ||
+            navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/iPod/i) ||
+            navigator.userAgent.match(/BlackBerry/i) ||
+            navigator.userAgent.match(/Windows Phone/i) ||
+            navigator.userAgent.match(/Opera Mini/i) ||
+            navigator.userAgent.match(/IEMobile/i)
+        ) {
+            return true;
+        }
+    }
+
     useEffect(() => {
+        window.$ = window.jQuery = jQuery;
         // __apiGetItemData();
+
+        const projectRows = document.getElementsByClassName("index_row");
+        var projetArr = Array.prototype.slice.call(projectRows);
+
+        window.addEventListener("load", removeMobileOnclick);
+
+        /* code using jquery */
+
+        /* endof code using jquery */
     }, []);
 
     function __apiGetItemData() {
@@ -59,7 +91,7 @@ const Index = () => {
                                     <img src={projectData[thumbIdx - 1].thumburl}></img>
                                 </div>
                             )}
-                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26 + 155}px` }}>
+                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26.5 + 156}px` }}>
                             {thumbIdx !== 0 &&
                                 projectData &&
                                 projectData[thumbIdx - 1] &&
@@ -172,12 +204,6 @@ const Index = () => {
                                                             setThumbIdx(el.aid);
                                                         }}
                                                         onMouseLeave={() => {
-                                                            setThumbIdx(0);
-                                                        }}
-                                                        onTouchStart={() => {
-                                                            setThumbIdx(el.aid);
-                                                        }}
-                                                        onTouchCancel={() => {
                                                             setThumbIdx(0);
                                                         }}
                                                         onClick={() => {

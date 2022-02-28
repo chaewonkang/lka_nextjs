@@ -90,7 +90,7 @@ const Architecture = () => {
                                                 pathname: "/conceptual",
                                             });
                                         }}
-                                        style={{ color: "#BABABA !important" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         Conceptual
                                     </div>
@@ -100,7 +100,7 @@ const Architecture = () => {
                                                 pathname: "/news",
                                             });
                                         }}
-                                        style={{ color: "#BABABA !important" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         News
                                     </div>
@@ -111,7 +111,7 @@ const Architecture = () => {
                                                 pathname: "/about",
                                             });
                                         }}
-                                        style={{ color: "#BABABA !important" }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         About
                                     </div>

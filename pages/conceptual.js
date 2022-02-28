@@ -265,9 +265,7 @@ const Conceptual = () => {
                                 </>
                             )}
                         </div>
-                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26 + 155}px` }}>
-                            {thumbIdx !== 0 && <img src={conceptData[thumbIdx - 1].thumburl}></img>}
-                        </div>
+
                         <div className="indexing">
                             <div className="header_container">
                                 <Link href="/">
@@ -361,6 +359,9 @@ const Conceptual = () => {
                                                 </div>
                                             );
                                         })}
+                                </div>
+                                <div className="conceptual_mobile_thumb_container" style={{ marginTop: "20px" }}>
+                                    {thumbIdx !== 0 && <img src={conceptData[thumbIdx - 1].thumburl}></img>}
                                 </div>
                             </div>
                         </div>
