@@ -468,7 +468,8 @@ body {
     color: #bababa;
 }
 
-.index_row:hover {
+.index_row:hover,
+.index_row:visited {
     color: #000;
 }
 

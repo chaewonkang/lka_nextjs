@@ -6,7 +6,7 @@ import Link from "next/link";
 import conceptData from "../constants/conceptData";
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
-import parse from "html-react-parser";
+import jQuery from "jquery";
 
 import * as _AppModelD from "../api/_AppModelD";
 
@@ -24,11 +24,26 @@ const Conceptual = () => {
     useEffect(() => {
         setConceptualId(query.id);
         console.log(conceptualId);
-    }, [router.query, conceptualId]);
+    }, [router.query, query.id, conceptualId]);
 
     useEffect(() => {
+        window.$ = window.jQuery = jQuery;
         // __apiGetItemData();
-    }, []);
+
+        /* code using jquery */
+
+        const conceptualRows = document.getElementsByClassName("conceptual_title_row");
+
+        var conceptualArr = Array.prototype.slice.call(conceptualRows);
+
+        for (let i = 0; i < conceptualArr.length; i++) {
+            conceptualArr[i].style.color = "#BABABA";
+        }
+
+        if (conceptualArr && conceptualId) conceptualArr[conceptualId - 1].style.color = "#000";
+
+        /* endof code using jquery */
+    }, [conceptualId]);
 
     function __apiGetItemData() {
         console.log("__apiGetItemData - 0");
@@ -147,7 +162,9 @@ const Conceptual = () => {
                                                                 }}
                                                             >
                                                                 <div className="project">
-                                                                    <div>{el.title}</div>
+                                                                    <div className="conceptual_title_row">
+                                                                        {el.title}
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         );

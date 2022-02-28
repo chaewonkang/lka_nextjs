@@ -7,9 +7,9 @@ import projectData from "../constants/projectData";
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
 import parse from "html-react-parser";
+import jQuery from "jquery";
 
 import * as _AppModelD from "../api/_AppModelD";
-import Footer from "../components/Footer";
 
 const Architecture = () => {
     const [loading, setLoading] = useState(true);
@@ -24,8 +24,23 @@ const Architecture = () => {
     }, [projectId, router.query, mTextOpen]);
 
     useEffect(() => {
+        window.$ = window.jQuery = jQuery;
         // __apiGetItemData();
-    }, []);
+
+        /* code using jquery */
+
+        const architectureRows = document.getElementsByClassName("architecture_title_row");
+
+        var architectureArr = Array.prototype.slice.call(architectureRows);
+
+        for (let i = 0; i < architectureArr.length; i++) {
+            architectureArr[i].style.color = "#BABABA";
+        }
+
+        if (architectureArr && projectId) architectureArr[projectId].style.color = "#000";
+
+        /* endof code using jquery */
+    }, [projectId]);
 
     function __apiGetItemData() {
         console.log("__apiGetItemData - 0");
@@ -181,7 +196,7 @@ const Architecture = () => {
                                                             }}
                                                         >
                                                             <div className="project">
-                                                                <div>{el.title}</div>
+                                                                <div className="architecture_title_row">{el.title}</div>
                                                             </div>
                                                         </div>
                                                     );
