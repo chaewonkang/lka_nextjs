@@ -487,6 +487,8 @@ body {
 .about_content {
     display: flex;
     flex-direction: row;
+    margin-left: -6px;
+    padding-left: 6px;
 }
 
 .header_container .company_title,
@@ -632,6 +634,13 @@ body {
     width: 100%;
     display: flex;
     overflow-y: auto;
+    border-top: 1px solid #000 !important;
+    margin-left: -6px;
+    padding-left: 6px;
+}
+
+.about_menu {
+    border-bottom: 1px solid #000 !important;
 }
 
 .news_content_wrapper {

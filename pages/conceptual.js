@@ -251,7 +251,7 @@ const Conceptual = () => {
                     <PageLayout>
                         <div
                             className="conceptual_thumb_container desktop_only"
-                            // style={thumbIdx === 0 ? { display: "none" } : null}
+                            style={thumbIdx === 0 ? { display: "none" } : null}
                         >
                             {thumbIdx !== 0 && (
                                 <>
@@ -360,7 +360,10 @@ const Conceptual = () => {
                                             );
                                         })}
                                 </div>
-                                <div className="conceptual_mobile_thumb_container" style={{ marginTop: "20px" }}>
+                                <div
+                                    className="conceptual_mobile_thumb_container mobile_only"
+                                    style={{ marginTop: "20px" }}
+                                >
                                     {thumbIdx !== 0 && <img src={conceptData[thumbIdx - 1].thumburl}></img>}
                                 </div>
                             </div>

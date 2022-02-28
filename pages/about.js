@@ -93,7 +93,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="header_sub_container" style={{ top: contentTop - 5 }}>
+                <div className="header_sub_container " style={{ top: contentTop - 5.5 }}>
                     <div className="about_menu desktop_only">
                         <div className="introduction">
                             <div>Introduction</div>
@@ -105,7 +105,7 @@ const About = () => {
                             <div>Contact</div>
                         </div>
                     </div>
-                    <div className="about_content">
+                    <div className="about_content about_header_sub_container">
                         <div className="mobile_only about_category_row">Introduction</div>
                         <div className="introduction">
                             <div>

@@ -79,7 +79,6 @@ const Index = () => {
             {loading && (
                 <>
                     <PageLayout>
-                        {" "}
                         {thumbIdx !== 0 &&
                             projectData &&
                             projectData[thumbIdx - 1] &&
@@ -91,7 +90,7 @@ const Index = () => {
                                     <img src={projectData[thumbIdx - 1].thumburl}></img>
                                 </div>
                             )}
-                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26.5 + 156}px` }}>
+                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26.5 + 155}px` }}>
                             {thumbIdx !== 0 &&
                                 projectData &&
                                 projectData[thumbIdx - 1] &&

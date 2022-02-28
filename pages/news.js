@@ -96,7 +96,7 @@ const News = () => {
                 </div>
                 <div
                     className="header_sub_container news_header_sub_container"
-                    style={{ top: contentTop - 5, height: `calc(100vh - ${contentTop}px)` }}
+                    style={{ top: contentTop - 6.5, height: `calc(100vh - ${contentTop}px)` }}
                 >
                     <div className="news_content_container" style={{ height: `calc(100% - ${contentTop + 30}px)` }}>
                         <div className="news_content_wrapper">
