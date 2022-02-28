@@ -71,7 +71,7 @@ body {
 }
 
 .desktop_only {
-    display: unset !important;
+    display: unset;
 }
 
 /* TOPOF Slideshow */

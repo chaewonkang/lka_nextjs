@@ -94,7 +94,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="header_sub_container" style={{ top: contentTop - 5 }}>
-                    <div className="about_menu">
+                    <div className="about_menu desktop_only">
                         <div className="introduction">
                             <div>Introduction</div>
                         </div>
@@ -106,6 +106,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="about_content">
+                        <div className="mobile_only about_category_row">Introduction</div>
                         <div className="introduction">
                             <div>
                                 {arrayResponseData &&
@@ -114,6 +115,7 @@ const About = () => {
                                     parse(arrayResponseData[0].info_kr)}
                             </div>
                         </div>
+                        <div className="mobile_only about_category_row">People</div>
                         <div className="people">
                             {arrayResponseData &&
                                 arrayResponseData.length > 0 &&
@@ -129,6 +131,7 @@ const About = () => {
                                     );
                                 })}
                         </div>
+                        <div className="mobile_only about_category_row">Contact</div>
                         <div className="contact">
                             <div className="contact_row">
                                 <div>Email</div>

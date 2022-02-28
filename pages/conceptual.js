@@ -234,7 +234,7 @@ const Conceptual = () => {
                     <PageLayout>
                         <div
                             className="conceptual_thumb_container desktop_only"
-                            style={thumbIdx === 0 ? { display: "none" } : null}
+                            // style={thumbIdx === 0 ? { display: "none" } : null}
                         >
                             {thumbIdx !== 0 && (
                                 <>

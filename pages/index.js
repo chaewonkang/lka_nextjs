@@ -47,14 +47,18 @@ const Index = () => {
             {loading && (
                 <>
                     <PageLayout>
-                        <div className="thumb_container" style={thumbIdx === 0 ? { display: "none" } : null}>
-                            {thumbIdx !== 0 &&
-                                projectData &&
-                                projectData[thumbIdx - 1] &&
-                                projectData[thumbIdx - 1].thumburl && (
+                        {" "}
+                        {thumbIdx !== 0 &&
+                            projectData &&
+                            projectData[thumbIdx - 1] &&
+                            projectData[thumbIdx - 1].thumburl && (
+                                <div
+                                    className="thumb_container"
+                                    style={thumbIdx === 0 ? { display: "none !important" } : null}
+                                >
                                     <img src={projectData[thumbIdx - 1].thumburl}></img>
-                                )}
-                        </div>
+                                </div>
+                            )}
                         <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26 + 155}px` }}>
                             {thumbIdx !== 0 &&
                                 projectData &&
