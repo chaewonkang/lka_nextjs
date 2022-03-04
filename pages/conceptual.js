@@ -354,6 +354,7 @@ const Conceptual = () => {
                                                         <div>
                                                             <span
                                                                 className="mobile_only"
+                                                                style={{ width: "100%", display: "block" }}
                                                                 onMouseOver={() => {
                                                                     setThumbIdx(el.aid);
                                                                 }}

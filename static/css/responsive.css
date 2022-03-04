@@ -11,6 +11,10 @@
         display: unset !important;
     }
 
+    span.mobile_only {
+        display: inline-block !important;
+    }
+
     .desktop_only {
         display: none !important;
     }

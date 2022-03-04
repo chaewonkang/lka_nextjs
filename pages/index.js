@@ -169,6 +169,7 @@ const Index = () => {
                                                             <div className="main_project_div">
                                                                 <span
                                                                     className="mobile_only"
+                                                                    style={{ width: "100%", display: "block" }}
                                                                     onTouchStart={() => {
                                                                         setThumbIdx(el.aid);
                                                                     }}
