@@ -353,6 +353,7 @@ const Conceptual = () => {
                                                     <div className="conceptual_project">
                                                         <div>
                                                             <span
+                                                                className="mobile_only"
                                                                 onMouseOver={() => {
                                                                     setThumbIdx(el.aid);
                                                                 }}
@@ -364,6 +365,32 @@ const Conceptual = () => {
                                                                 }}
                                                                 onTouchCancel={() => {
                                                                     setThumbIdx(0);
+                                                                }}
+                                                            >
+                                                                {el.title}
+                                                            </span>
+                                                            <span
+                                                                className="desktop_only"
+                                                                style={{ width: "100%", display: "block" }}
+                                                                onMouseOver={() => {
+                                                                    setThumbIdx(el.aid);
+                                                                }}
+                                                                onMouseLeave={() => {
+                                                                    setThumbIdx(0);
+                                                                }}
+                                                                onTouchStart={() => {
+                                                                    setThumbIdx(el.aid);
+                                                                }}
+                                                                onTouchCancel={() => {
+                                                                    setThumbIdx(0);
+                                                                }}
+                                                                onClick={() => {
+                                                                    router.push({
+                                                                        pathname: "/conceptual",
+                                                                        query: {
+                                                                            id: el.aid,
+                                                                        },
+                                                                    });
                                                                 }}
                                                             >
                                                                 {el.title}

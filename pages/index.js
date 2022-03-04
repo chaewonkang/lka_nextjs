@@ -168,6 +168,7 @@ const Index = () => {
                                                         <div className="project">
                                                             <div className="main_project_div">
                                                                 <span
+                                                                    className="mobile_only"
                                                                     onTouchStart={() => {
                                                                         setThumbIdx(el.aid);
                                                                     }}
@@ -179,6 +180,32 @@ const Index = () => {
                                                                     }}
                                                                     onMouseLeave={() => {
                                                                         setThumbIdx(0);
+                                                                    }}
+                                                                >
+                                                                    {el.title}
+                                                                </span>
+                                                                <span
+                                                                    className="desktop_only"
+                                                                    style={{ width: "100%", display: "block" }}
+                                                                    onTouchStart={() => {
+                                                                        setThumbIdx(el.aid);
+                                                                    }}
+                                                                    onTouchCancel={() => {
+                                                                        setThumbIdx(0);
+                                                                    }}
+                                                                    onMouseOver={() => {
+                                                                        setThumbIdx(el.aid);
+                                                                    }}
+                                                                    onMouseLeave={() => {
+                                                                        setThumbIdx(0);
+                                                                    }}
+                                                                    onClick={() => {
+                                                                        router.push({
+                                                                            pathname: "/architecture",
+                                                                            query: {
+                                                                                id: el.aid,
+                                                                            },
+                                                                        });
                                                                     }}
                                                                 >
                                                                     {el.title}
@@ -198,10 +225,30 @@ const Index = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <div className="year">
+                                                        <div
+                                                            className="year"
+                                                            onClick={() => {
+                                                                router.push({
+                                                                    pathname: "/architecture",
+                                                                    query: {
+                                                                        id: el.aid,
+                                                                    },
+                                                                });
+                                                            }}
+                                                        >
                                                             <div>{el.period}</div>
                                                         </div>
-                                                        <div className="program">
+                                                        <div
+                                                            className="program"
+                                                            onClick={() => {
+                                                                router.push({
+                                                                    pathname: "/architecture",
+                                                                    query: {
+                                                                        id: el.aid,
+                                                                    },
+                                                                });
+                                                            }}
+                                                        >
                                                             <div>{el.category}</div>
                                                         </div>
                                                     </div>
