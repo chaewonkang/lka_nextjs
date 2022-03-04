@@ -22,6 +22,7 @@ const News = () => {
 
         if (arrayResponseData) {
             setLoading(true);
+            console.log(arrayResponseData);
         }
 
         if (menuTop && menuTop.current) setContentTop(menuTop.current.offsetTop);
@@ -109,12 +110,17 @@ const News = () => {
                                     {arrayResponseData.map(news => {
                                         return (
                                             <div className="news_module">
-                                                <div className="mobile_only news_date_row">{news.createAt}</div>
+                                                <div className="mobile_only news_date_row">
+                                                    {" "}
+                                                    {news.created_at.slice(0, 10).replace(/-/g, ".")}
+                                                </div>
                                                 <div className="news_module_slideshow">
                                                     <Slideshow imgArr={news.images} isArrowOn />
                                                 </div>
                                                 <div className="news_module_info">
-                                                    <span className="desktop_only">{news.create_at}</span>
+                                                    <span className="desktop_only">
+                                                        {news.created_at.slice(0, 10).replace(/-/g, ".")}
+                                                    </span>
                                                     <br className="desktop_only"></br>
                                                     <span>{news.title}</span>
                                                     <span>
