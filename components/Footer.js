@@ -7,10 +7,16 @@ function Footer() {
     return (
         <div className="footer_container">
             <div>
-                <span>Contact</span>
+                <span>
+                    <a href="mailto: leehong.kim@gmail.com">Contact</a>
+                </span>
             </div>
             <div>
-                <span>Instagram</span>
+                <span>
+                    <a href="https://www.instagram.com/leehongkim/" target="_blank">
+                        Instagram
+                    </a>
+                </span>
             </div>
             <div>
                 <span>Facebook</span>

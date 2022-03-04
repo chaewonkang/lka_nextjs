@@ -1,4 +1,8 @@
 @media screen and (max-width: 992px) {
+    html,
+    body {
+        height: auto;
+    }
     #body {
         font-size: 15px !important;
     }
@@ -27,6 +31,10 @@
         height: auto;
     }
 
+    .firstbox {
+        width: 100% !important;
+    }
+
     .indexing {
         flex-direction: column;
     }
@@ -46,7 +54,7 @@
 
     .indexing .header_sub_container .year,
     .indexing .header_sub_container .program,
-    .header_sub_menu .project {
+    .header_sub_menu {
         display: none;
     }
 
@@ -56,8 +64,8 @@
     }
 
     #container {
-        min-height: 100vh;
         height: auto;
+        min-height: 90vh;
     }
 
     .footer_container {
@@ -84,6 +92,10 @@
         margin-top: 20px;
     }
 
+    .index_row {
+        height: unset;
+    }
+
     .index_row .project div {
         position: relative;
     }
@@ -104,6 +116,7 @@
         padding: 0px;
         margin-bottom: 19px;
         align-items: flex-end;
+        height: fit-content;
     }
 
     .thumb_container {
@@ -215,23 +228,42 @@
         height: auto;
     }
 
-    .architecture_title_row {
+    .mobile_only_architecture_title_row {
         width: 100%;
-        border-left: 1px solid #bababa;
-        border-bottom: 1px solid #bababa;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
         padding-left: 5px;
         margin-bottom: 4px;
+        margin-top: 4px;
         color: #000 !important;
+        display: block;
+    }
+
+    .mobile_only_detail_information_row {
+        border-top: none;
+        width: 100%;
+        left: 2px;
+        top: 3px !important;
+        display: flex !important;
+        position: relative;
+    }
+
+    .mobile_only_detail_information_row > div:first-of-type {
+        width: 25%;
     }
 
     .detail_information_row {
         border-top: none;
         width: 100%;
+        left: 2px;
         top: 3px !important;
+        display: flex !important;
+        position: relative;
     }
 
     .detail_information_row > div:first-child {
         padding-left: 0;
+        width: 25%;
     }
 
     .architecture_first_box {
@@ -243,11 +275,19 @@
     }
 
     .architecture_detail_image_container {
-        position: relative;
+        position: unset;
         width: 100%;
         left: 0;
         right: 0;
         margin-top: 19px;
+        top: 0;
+        height: auto;
+        max-height: auto;
+    }
+
+    .architecture_header {
+        width: 0;
+        height: 0;
     }
 
     .architecture_header_sub_container .more_information_box {
@@ -273,11 +313,6 @@
         top: 25px;
     }
 
-    .no_border {
-        border-top: none;
-        border-bottom: none;
-    }
-
     /* ENDOF architecture */
 
     .mobile_footer_container {
@@ -298,10 +333,11 @@
 
     .conceptual_detail_information_row .conceptual_detail_row {
         padding-left: 0;
+        margin-right: 0;
     }
 
     .conceptual_detail_information_row .conceptual_detail_row > div:first-child {
-        width: 25%;
+        width: 25% !important;
     }
 
     .conceptual_detail_information_row .conceptual_detail_row > div:last-child {
@@ -309,7 +345,7 @@
     }
 
     .conceptual_header_sub_container {
-        margin-top: 20px !important;
+        margin-top: 0px !important;
     }
     /* ENDOF conceptual */
 

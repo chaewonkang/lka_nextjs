@@ -10,8 +10,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_1.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed corner; ",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed corner ",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -38,8 +40,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_2.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
         images: [
             {
                 url: "../static/images/img_2.png",
@@ -66,8 +70,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_3.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_3.png",
@@ -94,8 +100,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_4.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_4.png",
@@ -122,8 +130,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_5.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_5.png",
@@ -150,8 +160,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -178,7 +190,8 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_7.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent bulows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent bulows a smooth transition to the adjacent building of the east and opens up to the sky.",
         info_kr: "봄바람을 있는 얼마나 다.",
         images: [
             {
@@ -206,8 +219,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_1.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent ith the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent ith the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -234,8 +249,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_2.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed cornerhe sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed cornerhe sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -262,8 +279,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_3.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -290,8 +309,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_4.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent builllows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent builllows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -318,8 +339,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_5.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -346,8 +369,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west ing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west ing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -374,8 +399,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_7.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design stratews a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design stratews a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -402,8 +429,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_1.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed corner; ",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed corner; ",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -430,8 +459,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_2.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -458,8 +489,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_3.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -486,8 +519,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_4.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -514,8 +549,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_5.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -542,8 +579,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -570,7 +609,8 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_7.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent bulows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent bulows a smooth transition to the adjacent building of the east and opens up to the sky.",
         info_kr: "봄바람을 있는 얼마나 다.",
         images: [
             {
@@ -598,8 +638,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_1.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent ith the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent ith the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -626,8 +668,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_2.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed cornerhe sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed cornerhe sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -654,8 +698,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_3.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -682,8 +728,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_4.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent builllows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent builllows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -710,8 +758,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_5.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -738,8 +788,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west ing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west ing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -766,8 +818,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_7.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design stratews a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design stratews a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -794,8 +848,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_1.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed corner; ",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed corner; ",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -822,8 +878,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_2.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from th",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. ",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -850,8 +908,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_3.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design straict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -878,8 +938,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_4.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strateing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -906,8 +968,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_5.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buildoth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -934,8 +998,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to thend micro aspect comes from the advantage of this exposed corner; strategizing the depth in its volume and in the facade detail. Respecting the facade/window arrangement in a grid manner of the neighborhood, the pilaster plays a key role in vitalizing the gesture of the building. A half of each 2ft-wide pilaster is tapered by 45 degrees, and the direction of tapering is inconsistent. This breaks a rather strict grid of the facade. Also, west corner of the first floor makes a dialogue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -962,7 +1028,8 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_7.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent bulows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent bulows a smooth transition to the adjacent building of the east and opens up to the sky.",
         info_kr: "봄바람을 있는 얼마나 다.",
         images: [
             {
@@ -990,8 +1057,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_1.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent ith the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent ith the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -1018,8 +1087,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_2.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed cornerhe sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design strategy both in macro and micro aspect comes from the advantage of this exposed cornerhe sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -1046,8 +1117,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_3.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -1074,8 +1147,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_4.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent builllows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent builllows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -1102,8 +1177,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_5.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent buue with the existing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -1130,8 +1207,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_6.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west ing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west ing adjacent neighbor and the chamfered east corner of the top floor allows a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",
@@ -1158,8 +1237,10 @@ const projectData = [
         floor: "5F+1BF",
         area: "9,000sf",
         thumburl: "../static/images/img_7.png",
-        info_en: "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design stratews a smooth transition to the adjacent building of the east and opens up to the sky.",
-        info_kr: "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
+        info_en:
+            "The site of 18ft by 100ft is located on the 130th street between Park and Madison Avenue in East Harlem. Buildings in this row uniquely does not line up at the lot line. The adjacent building to the west aligns its facade with the lot line. However the one to the east sits at 7ft set back from the lot line, which allows an exposed corner. The design stratews a smooth transition to the adjacent building of the east and opens up to the sky.",
+        info_kr:
+            "봄바람을 있는 얼마나 남는 피어나는 얼마나 우리는 구하지 이것이다. 천하를 꽃이 싹이 그와 교향악이다. 웅대한 꽃 그들은 이상의 심장은 보내는 사막이다. 이 이상이 역사를 어디 크고 못하다 찾아 사라지지 약동하다. 사랑의 피는 우리의 꽃이 무엇을 가지에 능히 스며들어 봄바람이다. 어디 살 목숨이 무엇이 바이며, 끝까지 노년에게서 풀이 간에 것이다. 그러므로 황금시대의 미묘한 커다란 사막이다. 지혜는 이상, 용기가 것이 몸이 예수는 많이 기쁘며, 약동하다. 구하지 찬미를 구하지 끝에 행복스럽고 곳이 사는가 황금시대의 같은 사막이다. 용감하고 대한 그것을 주며, 이것이다. 같이 밥을 반짝이는 원질이 것이다.",
         images: [
             {
                 url: "../static/images/img_1.png",

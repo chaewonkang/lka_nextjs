@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from "react";
 import theme from "../styles/theme";
 import PageLayout from "../components/PageLayout";
 import Link from "next/link";
-import projectData from "../constants/projectData";
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
 import parse from "html-react-parser";
@@ -12,50 +11,61 @@ import jQuery from "jquery";
 import * as _AppModelD from "../api/_AppModelD";
 
 const Architecture = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [projectId, setProjectId] = useState(0);
     const router = useRouter();
     const { query } = router;
     const [mTextOpen, setMTextOpen] = useState(false);
     const [arrayResponseData, setArrayResponseData] = useState([]);
-
-    useEffect(() => {
-        setProjectId(query.id);
-    }, [projectId, router.query, mTextOpen]);
-
-    useEffect(() => {
-        window.$ = window.jQuery = jQuery;
-        // __apiGetItemData();
-
-        /* code using jquery */
-
-        const architectureRows = document.getElementsByClassName("architecture_title_row");
-
-        var architectureArr = Array.prototype.slice.call(architectureRows);
-
-        for (let i = 0; i < architectureArr.length; i++) {
-            architectureArr[i].style.color = "#BABABA";
-        }
-
-        if (architectureArr && projectId) architectureArr[projectId].style.color = "#000";
-
-        /* endof code using jquery */
-    }, [projectId]);
+    const [detailIdx, setDetailIdx] = useState(0);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0");
-        // project, news, concept, about
         const req = { query: `?param1=project` };
         _AppModelD.getData(req).then(res => {
-            console.log("__apiGetItemData - 1");
-            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([...res.data.results]));
+                    setArrayResponseData(Array.from([...res.data.results]).reverse());
+                    setProjectId(query.id);
+                    setDetailIdx(query.id);
                 }
             }
         });
     }
+
+    useEffect(() => {
+        window.$ = window.jQuery = jQuery;
+
+        __apiGetItemData();
+        if (arrayResponseData) setLoading(true);
+
+        const architectureRows = document.getElementsByClassName("architecture_title_row");
+        const detailInfoRows = document.getElementsByClassName("detail_information_row");
+
+        var architectureArr = Array.prototype.slice.call(architectureRows);
+        var detailInfoArr = Array.prototype.slice.call(detailInfoRows);
+
+        if (architectureArr && detailInfoArr) {
+            for (let i = 0; i < architectureArr.length; i++) {
+                architectureArr[i].style.color = "#BABABA";
+            }
+
+            for (let i = 0; i < detailInfoArr.length; i++) {
+                detailInfoArr[i].style.display = "none";
+            }
+        }
+
+        if (
+            architectureArr &&
+            detailInfoArr &&
+            projectId != 0 &&
+            arrayResponseData &&
+            architectureArr[projectId - 1] &&
+            detailInfoArr[projectId - 1]
+        ) {
+            architectureArr[projectId - 1].style.color = "#000";
+            detailInfoArr[projectId - 1].style.display = "flex";
+        }
+    }, [projectId, router.query, query.id, mTextOpen, loading]);
 
     return (
         <ThemeProvider theme={theme}>
@@ -118,7 +128,7 @@ const Architecture = () => {
                                 </div>
                             </div>
                             <div className="architecture_header_sub_container">
-                                <div className="view_filter no_border">
+                                <div className="view_filter">
                                     <div
                                         onClick={() => {
                                             router.push({
@@ -146,8 +156,9 @@ const Architecture = () => {
                                         List
                                     </div>
                                 </div>
-                                <div className="mobile_only architecture_title_row">
-                                    {projectId && projectId != 0 && projectData[projectId - 1].title}
+                                <div className="mobile_only_architecture_title_row">
+                                    {projectId && projectId != 0 && arrayResponseData[projectId - 1].title}
+                                    {projectId && projectId != 0 && arrayResponseData[projectId - 1].aid}
                                 </div>
                                 <div className="architecture_first_box">
                                     <div className="architecture_header desktop_only">
@@ -157,46 +168,46 @@ const Architecture = () => {
                                             </div>
                                         </div>
                                         <div className="architecture_content_index">
-                                            {/* API */}
-                                            {/* {arrayResponseData &&
+                                            {arrayResponseData &&
                                                 arrayResponseData.map(el => {
                                                     return (
-                                                        <div
-                                                            key={el.index + el.title}
-                                                            className="index_row"
-                                                            onClick={() => {
-                                                                router.push({
-                                                                    pathname: "/architecture",
-                                                                    query: {
-                                                                        id: el.aid,
-                                                                    },
-                                                                });
-                                                            }}
-                                                        >
-                                                            <div className="project">
-                                                                <div>{el.title}</div>
-                                                            </div>
-                                                        </div>
-                                                    );
-                                                })} */}
-                                            {/* NO API */}
-                                            {projectData &&
-                                                projectData.map(el => {
-                                                    return (
-                                                        <div
-                                                            key={el.index + el.title}
-                                                            className="index_row"
-                                                            onClick={() => {
-                                                                router.push({
-                                                                    pathname: "/architecture",
-                                                                    query: {
-                                                                        id: el.index,
-                                                                    },
-                                                                });
-                                                            }}
-                                                        >
-                                                            <div className="project">
-                                                                <div className="architecture_title_row">{el.title}</div>
+                                                        <div style={{ display: "flex" }}>
+                                                            <div
+                                                                key={el.aid + el.title}
+                                                                className="index_row"
+                                                                onClick={() => {
+                                                                    router.push({
+                                                                        pathname: "/architecture",
+                                                                        query: {
+                                                                            id: el.aid,
+                                                                        },
+                                                                    });
+                                                                }}
+                                                            >
+                                                                <div className="project">
+                                                                    <div className="architecture_title_row">
+                                                                        {el.title} {el.aid}
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    className="detail_information_row"
+                                                                    style={{ color: "#000" }}
+                                                                >
+                                                                    <div>
+                                                                        <div>Location</div>
+                                                                        <div>Period</div>
+                                                                        <div>Status</div>
+                                                                        <div>Floor</div>
+                                                                        <div>Floor Area</div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>{el.location}</div>
+                                                                        <div>{el.period}</div>
+                                                                        <div>{el.status}</div>
+                                                                        <div>{el.floor}</div>
+                                                                        <div>{el.area}</div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     );
@@ -204,10 +215,7 @@ const Architecture = () => {
                                         </div>
                                     </div>
                                     {projectId && projectId != 0 && (
-                                        <div
-                                            className="detail_information_row"
-                                            style={{ top: `${projectId * 22.5 + 21.5}px` }}
-                                        >
+                                        <div className="mobile_only_detail_information_row">
                                             <div>
                                                 <div>Location</div>
                                                 <div>Period</div>
@@ -216,17 +224,21 @@ const Architecture = () => {
                                                 <div>Floor Area</div>
                                             </div>
                                             <div>
-                                                <div>{projectData[projectId - 1].location}</div>
-                                                <div>{projectData[projectId - 1].period}</div>
-                                                <div>{projectData[projectId - 1].status}</div>
-                                                <div>{projectData[projectId - 1].floor}</div>
-                                                <div>{projectData[projectId - 1].area}</div>
+                                                <div>{arrayResponseData[projectId - 1].location}</div>
+                                                <div>{arrayResponseData[projectId - 1].period}</div>
+                                                <div>{arrayResponseData[projectId - 1].status}</div>
+                                                <div>{arrayResponseData[projectId - 1].floor}</div>
+                                                <div>{arrayResponseData[projectId - 1].area}</div>
                                             </div>
                                         </div>
                                     )}
                                     <div className="architecture_detail_image_container">
-                                        {projectId && projectId != 0 && (
-                                            <Slideshow imgArr={projectData[projectId - 1].images} isAuto isArrowOn />
+                                        {projectId && projectId != 0 && arrayResponseData[projectId - 1] && (
+                                            <Slideshow
+                                                imgArr={arrayResponseData[projectId - 1].images}
+                                                isAuto
+                                                isArrowOn
+                                            />
                                         )}
                                     </div>
                                 </div>
@@ -247,12 +259,12 @@ const Architecture = () => {
                                     </div>
                                     {projectId && projectId != 0 && mTextOpen && (
                                         <div className="more_information_text">
-                                            <p>{projectData[projectId - 1].info_kr}</p>
-                                            <p>{projectData[projectId - 1].info_en}</p>
+                                            <p>{parse(arrayResponseData[projectId - 1].info_kr)}</p>
+                                            <p>{parse(arrayResponseData[projectId - 1].info_en)}</p>
                                         </div>
                                     )}
                                 </div>
-                            </div>{" "}
+                            </div>
                         </div>
                     </PageLayout>
                 </>

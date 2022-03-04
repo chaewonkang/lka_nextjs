@@ -3,15 +3,16 @@ import { useEffect, useState, useRef } from "react";
 import theme from "../styles/theme";
 import PageLayout from "../components/PageLayout";
 import Link from "next/link";
-import conceptData from "../constants/conceptData";
+
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
 import jQuery from "jquery";
+import parse from "html-react-parser";
 
 import * as _AppModelD from "../api/_AppModelD";
 
 const Conceptual = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [thumbIdx, setThumbIdx] = useState(0);
     const [conceptualId, setConceptualId] = useState(0);
     const router = useRouter();
@@ -22,39 +23,36 @@ const Conceptual = () => {
     useEffect(() => {}, [thumbIdx]);
 
     useEffect(() => {
-        setConceptualId(query.id);
-        console.log(conceptualId);
-    }, [router.query, query.id, conceptualId]);
-
-    useEffect(() => {
         window.$ = window.jQuery = jQuery;
-        // __apiGetItemData();
 
-        /* code using jquery */
+        __apiGetItemData();
+        if (arrayResponseData) {
+            setLoading(true);
+        }
 
         const conceptualRows = document.getElementsByClassName("conceptual_title_row");
 
         var conceptualArr = Array.prototype.slice.call(conceptualRows);
 
-        for (let i = 0; i < conceptualArr.length; i++) {
-            conceptualArr[i].style.color = "#BABABA";
+        if (conceptualArr) {
+            for (let i = 0; i < conceptualArr.length; i++) {
+                conceptualArr[i].style.color = "#BABABA";
+            }
         }
 
         if (conceptualArr && conceptualId) conceptualArr[conceptualId - 1].style.color = "#000";
 
         /* endof code using jquery */
-    }, [conceptualId]);
+    }, [conceptualId, router.query, query.id, mTextOpen, loading]);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0");
         // project, news, concept, about
         const req = { query: `?param1=concept` };
         _AppModelD.getData(req).then(res => {
-            console.log("__apiGetItemData - 1");
-            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
                     setArrayResponseData(Array.from([...res.data.results]));
+                    setConceptualId(query.id);
                 }
             }
         });
@@ -135,8 +133,11 @@ const Conceptual = () => {
                                             List
                                         </div>
                                     </div>
-                                    <div className="mobile_only architecture_title_row">
-                                        {conceptualId && conceptualId != 0 && conceptData[conceptualId - 1].title}
+                                    <div className="mobile_only_architecture_title_row">
+                                        {conceptualId &&
+                                            conceptualId != 0 &&
+                                            arrayResponseData[conceptualId - 1] &&
+                                            arrayResponseData[conceptualId - 1].title}
                                     </div>
                                     <div className="architecture_first_box">
                                         <div className="architecture_header">
@@ -146,17 +147,17 @@ const Conceptual = () => {
                                                 </div>
                                             </div>
                                             <div className="architecture_content_index">
-                                                {conceptData &&
-                                                    conceptData.map(el => {
+                                                {arrayResponseData &&
+                                                    arrayResponseData.map(el => {
                                                         return (
                                                             <div
-                                                                key={el.index + el.title}
+                                                                key={el.aid + el.title}
                                                                 className="index_row"
                                                                 onClick={() => {
                                                                     router.push({
                                                                         pathname: "/conceptual",
                                                                         query: {
-                                                                            id: el.index,
+                                                                            id: el.aid,
                                                                         },
                                                                     });
                                                                 }}
@@ -171,42 +172,45 @@ const Conceptual = () => {
                                                     })}
                                             </div>
                                         </div>
-                                        {conceptualId && conceptualId != 0 && (
-                                            <div
-                                                className="detail_information_row conceptual_detail_information_row"
-                                                style={{ top: `${conceptualId * 22.5 + 21.5}px` }}
-                                            >
-                                                <div className="conceptual_detail_row">
-                                                    <div>Location</div>
-                                                    <div>{conceptData[conceptualId - 1].location}</div>
-                                                </div>
-                                                <div className="conceptual_detail_row">
-                                                    <div>Period</div> <div>{conceptData[conceptualId - 1].period}</div>
-                                                </div>
-                                                <div className="conceptual_detail_row">
-                                                    <div>Status</div> <div>{conceptData[conceptualId - 1].status}</div>
-                                                </div>
-                                                <div className="conceptual_detail_row">
-                                                    <div>Program</div>
-                                                    <div>{conceptData[conceptualId - 1].program}</div>
-                                                </div>
-                                                <div className="conceptual_detail_row">
-                                                    <div>Meterial</div>
-                                                    <div>{conceptData[conceptualId - 1].material}</div>
-                                                </div>
-                                                <div className="conceptual_detail_row">
-                                                    <div>Dimension</div>
-                                                    <div>{conceptData[conceptualId - 1].dimension}</div>
-                                                </div>
-                                                <div className="conceptual_detail_row">
-                                                    <div>Budget</div> <div>{conceptData[conceptualId - 1].budget}</div>
-                                                </div>
+
+                                        <div
+                                            className="detail_information_row conceptual_detail_information_row"
+                                            style={{ top: `${conceptualId * 22.5 + 21.5}px` }}
+                                        >
+                                            <div className="conceptual_detail_row firstbox">
+                                                <div>Location</div>
+                                                <div>{arrayResponseData[conceptualId - 1].location}</div>
                                             </div>
-                                        )}
-                                        <div className="architecture_detail_image_container">
+                                            <div className="conceptual_detail_row">
+                                                <div>Period</div>
+                                                <div>{arrayResponseData[conceptualId - 1].period}</div>
+                                            </div>
+                                            <div className="conceptual_detail_row">
+                                                <div>Status</div>{" "}
+                                                <div>{arrayResponseData[conceptualId - 1].status}</div>
+                                            </div>
+                                            <div className="conceptual_detail_row">
+                                                <div>Program</div>
+                                                <div>{arrayResponseData[conceptualId - 1].program}</div>
+                                            </div>
+                                            <div className="conceptual_detail_row">
+                                                <div>Meterial</div>
+                                                <div>{arrayResponseData[conceptualId - 1].material}</div>
+                                            </div>
+                                            <div className="conceptual_detail_row">
+                                                <div>Dimension</div>
+                                                <div>{arrayResponseData[conceptualId - 1].dimension}</div>
+                                            </div>
+                                            <div className="conceptual_detail_row">
+                                                <div>Budget</div>{" "}
+                                                <div>{arrayResponseData[conceptualId - 1].budget}</div>
+                                            </div>
+                                        </div>
+
+                                        <div className="architecture_detail_image_container conceptual_detail_image_container">
                                             {conceptualId && conceptualId != 0 && (
                                                 <Slideshow
-                                                    imgArr={conceptData[conceptualId - 1].images}
+                                                    imgArr={arrayResponseData[conceptualId - 1].images}
                                                     isAuto
                                                     isArrowOn
                                                 />
@@ -230,8 +234,8 @@ const Conceptual = () => {
                                         </div>
                                         {conceptualId && conceptualId != 0 && mTextOpen && (
                                             <div className="more_information_text">
-                                                <p>{conceptData[conceptualId - 1].info_kr}</p>
-                                                <p>{conceptData[conceptualId - 1].info_en}</p>
+                                                <p>{parse(arrayResponseData[conceptualId - 1].info_kr)}</p>
+                                                <p>{parse(arrayResponseData[conceptualId - 1].info_en)}</p>
                                             </div>
                                         )}
                                     </div>
@@ -255,10 +259,10 @@ const Conceptual = () => {
                         >
                             {thumbIdx !== 0 && (
                                 <>
-                                    {conceptData[thumbIdx - 1].images.slice(0, 3).map(el => {
+                                    {arrayResponseData[thumbIdx - 1].images.slice(0, 3).map(el => {
                                         return (
                                             <div key={el.title}>
-                                                <img src={el.url}></img>
+                                                <img src={el.image}></img>
                                             </div>
                                         );
                                     })}
@@ -323,20 +327,33 @@ const Conceptual = () => {
                                 </div>
                             </div>
                             <div className="header_sub_container conceptual_header_sub_container">
+                                <div className="view_filter no_border">
+                                    <div className=" mobile_only"></div>
+                                    <div
+                                        onClick={() => {
+                                            router.push({
+                                                pathname: "/conceptual",
+                                            });
+                                        }}
+                                        className="mobile_only"
+                                    >
+                                        List
+                                    </div>
+                                </div>
                                 <div className="header_sub_menu">
                                     <div className="conceptual_project">
                                         <div>Project</div>
                                     </div>
                                 </div>
                                 <div className="content_index">
-                                    {conceptData &&
-                                        conceptData.map(el => {
+                                    {arrayResponseData &&
+                                        arrayResponseData.map(el => {
                                             return (
                                                 <div
                                                     key={el.title}
                                                     className="index_row"
                                                     onMouseOver={() => {
-                                                        setThumbIdx(el.index);
+                                                        setThumbIdx(el.aid);
                                                     }}
                                                     onMouseLeave={() => {
                                                         setThumbIdx(0);
@@ -345,7 +362,7 @@ const Conceptual = () => {
                                                         router.push({
                                                             pathname: "/conceptual",
                                                             query: {
-                                                                id: el.index,
+                                                                id: el.aid,
                                                             },
                                                         });
                                                     }}
@@ -364,7 +381,7 @@ const Conceptual = () => {
                                     className="conceptual_mobile_thumb_container mobile_only"
                                     style={{ marginTop: "20px" }}
                                 >
-                                    {thumbIdx !== 0 && <img src={conceptData[thumbIdx - 1].thumburl}></img>}
+                                    {thumbIdx !== 0 && <img src={arrayResponseData[thumbIdx - 1].image}></img>}
                                 </div>
                             </div>
                         </div>

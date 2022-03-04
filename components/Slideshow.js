@@ -55,9 +55,9 @@ function Slideshow({ imgArr, width, isArrowOn, isButtonOn, isAuto }) {
                 <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
                     {imgArr.map((image, index) => {
                         return (
-                            <div className="slide" key={index.alt}>
+                            <div className="slide" key={index.image}>
                                 <div>
-                                    <img src={image.url} />
+                                    <img src={image.image} />
                                 </div>
                             </div>
                         );

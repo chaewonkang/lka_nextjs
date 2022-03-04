@@ -11,7 +11,7 @@ import jQuery from "jquery";
 import * as _AppModelD from "../api/_AppModelD";
 
 const Index = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [thumbIdx, setThumbIdx] = useState(0);
     const [viewMode, setViewMode] = useState("list");
     const [arrayResponseData, setArrayResponseData] = useState([]);
@@ -24,51 +24,18 @@ const Index = () => {
         else setViewMode("thumbnail");
     }, [thumbIdx, viewMode, router.query]);
 
-    function removeMobileOnclick() {
-        if (isMobile()) {
-            document.querySelector(".index_row").onTouchStart = "";
-        }
-    }
-
-    function isMobile() {
-        if (
-            navigator.userAgent.match(/Android/i) ||
-            navigator.userAgent.match(/iPhone/i) ||
-            navigator.userAgent.match(/iPad/i) ||
-            navigator.userAgent.match(/iPod/i) ||
-            navigator.userAgent.match(/BlackBerry/i) ||
-            navigator.userAgent.match(/Windows Phone/i) ||
-            navigator.userAgent.match(/Opera Mini/i) ||
-            navigator.userAgent.match(/IEMobile/i)
-        ) {
-            return true;
-        }
-    }
-
     useEffect(() => {
         window.$ = window.jQuery = jQuery;
-        // __apiGetItemData();
-
-        const projectRows = document.getElementsByClassName("index_row");
-        var projetArr = Array.prototype.slice.call(projectRows);
-
-        window.addEventListener("load", removeMobileOnclick);
-
-        /* code using jquery */
-
-        /* endof code using jquery */
+        __apiGetItemData();
+        if (arrayResponseData) setLoading(true);
     }, []);
 
     function __apiGetItemData() {
-        console.log("__apiGetItemData - 0");
-        // project, news, concept, about
-        const req = { query: `?param1=concept` };
+        const req = { query: `?param1=project` };
         _AppModelD.getData(req).then(res => {
-            console.log("__apiGetItemData - 1");
-            console.log(res);
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([...res.data.results]));
+                    setArrayResponseData(Array.from([...res.data.results]).reverse());
                 }
             }
         });
@@ -80,22 +47,22 @@ const Index = () => {
                 <>
                     <PageLayout>
                         {thumbIdx !== 0 &&
-                            projectData &&
-                            projectData[thumbIdx - 1] &&
-                            projectData[thumbIdx - 1].thumburl && (
+                            arrayResponseData &&
+                            arrayResponseData[thumbIdx - 1] &&
+                            arrayResponseData[thumbIdx - 1].image && (
                                 <div
                                     className="thumb_container"
                                     style={thumbIdx === 0 ? { display: "none !important" } : null}
                                 >
-                                    <img src={projectData[thumbIdx - 1].thumburl}></img>
+                                    <img src={arrayResponseData[thumbIdx - 1].image}></img>
                                 </div>
                             )}
                         <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26.5 + 155}px` }}>
                             {thumbIdx !== 0 &&
-                                projectData &&
-                                projectData[thumbIdx - 1] &&
-                                projectData[thumbIdx - 1].thumburl && (
-                                    <img src={projectData[thumbIdx - 1].thumburl}></img>
+                                arrayResponseData &&
+                                arrayResponseData[thumbIdx - 1] &&
+                                arrayResponseData[thumbIdx - 1].image && (
+                                    <img src={arrayResponseData[thumbIdx - 1].image}></img>
                                 )}
                         </div>
                         <div className="indexing" style={viewMode === "thumbnail" ? { flexDirection: "column" } : null}>
@@ -160,6 +127,7 @@ const Index = () => {
                                                 mode: "thumbnail",
                                             },
                                         });
+                                        setThumbIdx(0);
                                     }}
                                     style={viewMode === "list" ? { color: "#BABABA" } : null}
                                 >
@@ -197,12 +165,18 @@ const Index = () => {
                                             arrayResponseData.map(el => {
                                                 return (
                                                     <div
-                                                        key={el.index + el.title}
+                                                        key={el.aid + el.title}
                                                         className="index_row"
                                                         onMouseOver={() => {
                                                             setThumbIdx(el.aid);
                                                         }}
                                                         onMouseLeave={() => {
+                                                            setThumbIdx(0);
+                                                        }}
+                                                        onTouchStart={() => {
+                                                            setThumbIdx(el.aid);
+                                                        }}
+                                                        onTouchCancel={() => {
                                                             setThumbIdx(0);
                                                         }}
                                                         onClick={() => {
@@ -215,50 +189,8 @@ const Index = () => {
                                                         }}
                                                     >
                                                         <div className="project">
-                                                            <div>
-                                                                {el.title}
-                                                                <span className="more_button">More ▶︎</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="year">
-                                                            <div>{el.period}</div>
-                                                        </div>
-                                                        <div className="program">
-                                                            <div>{el.category}</div>
-                                                        </div>
-                                                    </div>
-                                                );
-                                            })}
-                                        {projectData &&
-                                            projectData.map(el => {
-                                                return (
-                                                    <div
-                                                        key={el.index + el.title}
-                                                        className="index_row"
-                                                        onMouseOver={() => {
-                                                            setThumbIdx(el.index);
-                                                        }}
-                                                        onMouseLeave={() => {
-                                                            setThumbIdx(0);
-                                                        }}
-                                                        onTouchStart={() => {
-                                                            setThumbIdx(el.index);
-                                                        }}
-                                                        onTouchCancel={() => {
-                                                            setThumbIdx(0);
-                                                        }}
-                                                        onClick={() => {
-                                                            router.push({
-                                                                pathname: "/architecture",
-                                                                query: {
-                                                                    id: el.index,
-                                                                },
-                                                            });
-                                                        }}
-                                                    >
-                                                        <div className="project">
-                                                            <div>
-                                                                {el.title}
+                                                            <div className="main_project_div">
+                                                                {el.title} {el.aid}
                                                                 <span className="more_button">More ▶︎</span>
                                                             </div>
                                                         </div>
@@ -275,20 +207,20 @@ const Index = () => {
                                 </div>
                             ) : (
                                 <div className="thumbnail_gallery">
-                                    {projectData.map(el => {
+                                    {arrayResponseData.reverse().map(el => {
                                         return (
                                             <div
-                                                key={el.index + el.title}
+                                                key={el.aid + el.title}
                                                 onClick={() => {
                                                     router.push({
                                                         pathname: "/architecture",
                                                         query: {
-                                                            id: el.index,
+                                                            id: el.aid,
                                                         },
                                                     });
                                                 }}
                                             >
-                                                <img src={el.thumburl}></img>
+                                                <img src={el.image}></img>
                                             </div>
                                         );
                                     })}
