@@ -190,7 +190,7 @@ const Index = () => {
                                                     >
                                                         <div className="project">
                                                             <div className="main_project_div">
-                                                                {el.title} {el.aid}
+                                                                {el.title}
                                                                 <span className="more_button">More ▶︎</span>
                                                             </div>
                                                         </div>

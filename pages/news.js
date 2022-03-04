@@ -100,7 +100,7 @@ const News = () => {
                         </div>
                         <div
                             className="header_sub_container news_header_sub_container"
-                            style={{ paddingTop: contentTop - 6.5, height: `calc(100vh - 60px)` }}
+                            style={{ paddingTop: contentTop - 5.5, height: `calc(100vh - 60px)` }}
                         >
                             <div
                                 className="news_content_container"

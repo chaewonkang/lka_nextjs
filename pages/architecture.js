@@ -158,7 +158,7 @@ const Architecture = () => {
                                 </div>
                                 <div className="mobile_only_architecture_title_row">
                                     {projectId && projectId != 0 && arrayResponseData[projectId - 1].title}
-                                    {projectId && projectId != 0 && arrayResponseData[projectId - 1].aid}
+                                    {/* {projectId && projectId != 0 && arrayResponseData[projectId - 1].aid} */}
                                 </div>
                                 <div className="architecture_first_box">
                                     <div className="architecture_header desktop_only">
@@ -186,7 +186,7 @@ const Architecture = () => {
                                                             >
                                                                 <div className="project">
                                                                     <div className="architecture_title_row">
-                                                                        {el.title} {el.aid}
+                                                                        {el.title}
                                                                     </div>
                                                                 </div>
                                                                 <div
