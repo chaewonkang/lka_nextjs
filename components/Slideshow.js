@@ -86,7 +86,7 @@ function Slideshow({ imgArr, width, isArrowOn, isButtonOn, isAuto }) {
                         } else if (index == imgArr.length - 1) setIndex(0);
                     }}
                 >
-                    <span id="rightArrowSpan">►</span>
+                    <span id="rightArrowSpan">▶︎</span>
                 </div>
             )}
         </div>

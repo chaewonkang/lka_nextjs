@@ -349,28 +349,38 @@ const Conceptual = () => {
                                     {arrayResponseData &&
                                         arrayResponseData.map(el => {
                                             return (
-                                                <div
-                                                    key={el.title}
-                                                    className="index_row"
-                                                    onMouseOver={() => {
-                                                        setThumbIdx(el.aid);
-                                                    }}
-                                                    onMouseLeave={() => {
-                                                        setThumbIdx(0);
-                                                    }}
-                                                    onClick={() => {
-                                                        router.push({
-                                                            pathname: "/conceptual",
-                                                            query: {
-                                                                id: el.aid,
-                                                            },
-                                                        });
-                                                    }}
-                                                >
+                                                <div key={el.title} className="index_row">
                                                     <div className="conceptual_project">
                                                         <div>
-                                                            {el.title}
-                                                            <span className="more_button">More ▶︎</span>
+                                                            <span
+                                                                onMouseOver={() => {
+                                                                    setThumbIdx(el.aid);
+                                                                }}
+                                                                onMouseLeave={() => {
+                                                                    setThumbIdx(0);
+                                                                }}
+                                                                onTouchStart={() => {
+                                                                    setThumbIdx(el.aid);
+                                                                }}
+                                                                onTouchCancel={() => {
+                                                                    setThumbIdx(0);
+                                                                }}
+                                                            >
+                                                                {el.title}
+                                                            </span>
+                                                            <span
+                                                                className="more_button"
+                                                                onClick={() => {
+                                                                    router.push({
+                                                                        pathname: "/conceptual",
+                                                                        query: {
+                                                                            id: el.aid,
+                                                                        },
+                                                                    });
+                                                                }}
+                                                            >
+                                                                More ▶︎
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>

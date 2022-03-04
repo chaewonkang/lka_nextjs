@@ -57,7 +57,7 @@ const Index = () => {
                                     <img src={arrayResponseData[thumbIdx - 1].image}></img>
                                 </div>
                             )}
-                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26.5 + 155}px` }}>
+                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26.5 + 159}px` }}>
                             {thumbIdx !== 0 &&
                                 arrayResponseData &&
                                 arrayResponseData[thumbIdx - 1] &&
@@ -164,34 +164,38 @@ const Index = () => {
                                         {arrayResponseData &&
                                             arrayResponseData.map(el => {
                                                 return (
-                                                    <div
-                                                        key={el.aid + el.title}
-                                                        className="index_row"
-                                                        onMouseOver={() => {
-                                                            setThumbIdx(el.aid);
-                                                        }}
-                                                        onMouseLeave={() => {
-                                                            setThumbIdx(0);
-                                                        }}
-                                                        onTouchStart={() => {
-                                                            setThumbIdx(el.aid);
-                                                        }}
-                                                        onTouchCancel={() => {
-                                                            setThumbIdx(0);
-                                                        }}
-                                                        onClick={() => {
-                                                            router.push({
-                                                                pathname: "/architecture",
-                                                                query: {
-                                                                    id: el.aid,
-                                                                },
-                                                            });
-                                                        }}
-                                                    >
+                                                    <div key={el.aid + el.title} className="index_row">
                                                         <div className="project">
                                                             <div className="main_project_div">
-                                                                {el.title}
-                                                                <span className="more_button">More ▶︎</span>
+                                                                <span
+                                                                    onTouchStart={() => {
+                                                                        setThumbIdx(el.aid);
+                                                                    }}
+                                                                    onTouchCancel={() => {
+                                                                        setThumbIdx(0);
+                                                                    }}
+                                                                    onMouseOver={() => {
+                                                                        setThumbIdx(el.aid);
+                                                                    }}
+                                                                    onMouseLeave={() => {
+                                                                        setThumbIdx(0);
+                                                                    }}
+                                                                >
+                                                                    {el.title}
+                                                                </span>
+                                                                <span
+                                                                    className="more_button"
+                                                                    onClick={() => {
+                                                                        router.push({
+                                                                            pathname: "/architecture",
+                                                                            query: {
+                                                                                id: el.aid,
+                                                                            },
+                                                                        });
+                                                                    }}
+                                                                >
+                                                                    More ▶︎
+                                                                </span>
                                                             </div>
                                                         </div>
                                                         <div className="year">
