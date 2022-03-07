@@ -3,7 +3,7 @@ const conceptData = [
         index: 1,
         title: "Between Real and Fake",
         category: "Public",
-        location: "seoul, Korea",
+        location: "Seoul, Korea",
         period: "Ongoing",
         status: "APMAP 2016 [Amorepacific Museum of Art Project]",
         program: "Mock-up building of Amorepacific HQ, Seoul Korea (designed by David Chipperfield)",

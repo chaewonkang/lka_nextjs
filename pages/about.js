@@ -93,7 +93,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="header_sub_container " style={{ top: contentTop - 5.5 }}>
+                <div className="header_sub_container " style={{ paddingTop: "67px", display: "flex" }}>
                     <div className="about_menu desktop_only">
                         <div className="introduction">
                             <div>Introduction</div>

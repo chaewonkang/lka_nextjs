@@ -27,7 +27,10 @@ const Index = () => {
     useEffect(() => {
         window.$ = window.jQuery = jQuery;
         __apiGetItemData();
-        if (arrayResponseData) setLoading(true);
+        if (arrayResponseData) {
+            setLoading(true);
+            console.log(arrayResponseData);
+        }
     }, []);
 
     function __apiGetItemData() {
@@ -35,7 +38,9 @@ const Index = () => {
         _AppModelD.getData(req).then(res => {
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([...res.data.results]).reverse());
+                    setArrayResponseData(
+                        Array.from([...res.data.results]).sort((a, b) => parseFloat(a.aid) - parseFloat(b.aid)),
+                    );
                 }
             }
         });
@@ -259,7 +264,7 @@ const Index = () => {
                                 </div>
                             ) : (
                                 <div className="thumbnail_gallery">
-                                    {arrayResponseData.reverse().map(el => {
+                                    {arrayResponseData.map(el => {
                                         return (
                                             <div
                                                 key={el.aid + el.title}

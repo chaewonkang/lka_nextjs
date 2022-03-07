@@ -24,7 +24,9 @@ const Architecture = () => {
         _AppModelD.getData(req).then(res => {
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([...res.data.results]).reverse());
+                    setArrayResponseData(
+                        Array.from([...res.data.results]).sort((a, b) => parseFloat(a.aid) - parseFloat(b.aid)),
+                    );
                     setProjectId(query.id);
                     setDetailIdx(query.id);
                 }
@@ -193,18 +195,25 @@ const Architecture = () => {
                                                                     className="detail_information_row"
                                                                     style={{ color: "#000" }}
                                                                 >
-                                                                    <div>
-                                                                        <div>Location</div>
-                                                                        <div>Period</div>
-                                                                        <div>Status</div>
-                                                                        <div>Floor</div>
-                                                                        <div>Floor Area</div>
-                                                                    </div>
-                                                                    <div>
+                                                                    <div className="detail_information_each_row">
+                                                                        <div className="field">Location</div>
                                                                         <div>{el.location}</div>
+                                                                    </div>
+                                                                    <div className="detail_information_each_row">
+                                                                        <div className="field">Period</div>
+
                                                                         <div>{el.period}</div>
+                                                                    </div>
+                                                                    <div className="detail_information_each_row">
+                                                                        <div className="field">Status</div>
                                                                         <div>{el.status}</div>
+                                                                    </div>
+                                                                    <div className="detail_information_each_row">
+                                                                        <div className="field">Floor</div>
                                                                         <div>{el.floor}</div>
+                                                                    </div>
+                                                                    <div className="detail_information_each_row">
+                                                                        <div className="field">Floor Area</div>{" "}
                                                                         <div>{el.area}</div>
                                                                     </div>
                                                                 </div>

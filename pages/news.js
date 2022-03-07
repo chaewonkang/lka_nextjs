@@ -4,8 +4,9 @@ import PageLayout from "../components/PageLayout";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Slideshow from "../components/Slideshow";
-import newsData from "../constants/newsData";
+
 import parse from "html-react-parser";
+import jQuery from "jquery";
 
 import * as _AppModelD from "../api/_AppModelD";
 import { ThemeProvider } from "styled-components";
@@ -18,15 +19,14 @@ const News = () => {
     const [arrayResponseData, setArrayResponseData] = useState([]);
 
     useEffect(() => {
+        window.$ = window.jQuery = jQuery;
+
         __apiGetItemData();
 
         if (arrayResponseData) {
             setLoading(true);
-            console.log(arrayResponseData);
         }
-
-        if (menuTop && menuTop.current) setContentTop(menuTop.current.offsetTop);
-    }, [contentTop, loading]);
+    }, [contentTop, loading, menuTop]);
 
     function __apiGetItemData() {
         // project, news, concept, about
@@ -77,6 +77,7 @@ const News = () => {
                                     Conceptual
                                 </div>
                                 <div
+                                    ref={menuTop}
                                     onClick={() => {
                                         router.push({
                                             pathname: "/news",
@@ -86,12 +87,12 @@ const News = () => {
                                     News
                                 </div>
                                 <div
-                                    ref={menuTop}
                                     onClick={() => {
                                         router.push({
                                             pathname: "/about",
                                         });
                                     }}
+                                    className="about_position"
                                     style={{ color: "#BABABA" }}
                                 >
                                     About
@@ -100,12 +101,9 @@ const News = () => {
                         </div>
                         <div
                             className="header_sub_container news_header_sub_container"
-                            style={{ paddingTop: contentTop - 5.5, height: `calc(100vh - 60px)` }}
+                            style={{ paddingTop: "66.5px" }}
                         >
-                            <div
-                                className="news_content_container"
-                                style={{ height: `calc(100% - ${contentTop + 30}px)` }}
-                            >
+                            <div className="news_content_container">
                                 <div className="news_content_wrapper">
                                     {arrayResponseData.map(news => {
                                         return (
