@@ -12,21 +12,14 @@ import * as _AppModelD from "../api/_AppModelD";
 import { ThemeProvider } from "styled-components";
 
 const News = () => {
-    const [loading, setLoading] = useState(false);
-    const menuTop = useRef();
     const router = useRouter();
-    const [contentTop, setContentTop] = useState(0);
+    const [loading, setLoading] = useState(false);
+    const [isSafari, setIsSafari] = useState();
     const [arrayResponseData, setArrayResponseData] = useState([]);
 
     useEffect(() => {
-        window.$ = window.jQuery = jQuery;
-
         __apiGetItemData();
-
-        if (arrayResponseData) {
-            setLoading(true);
-        }
-    }, [contentTop, loading, menuTop]);
+    }, [loading]);
 
     function __apiGetItemData() {
         // project, news, concept, about
@@ -35,6 +28,8 @@ const News = () => {
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
                     setArrayResponseData(Array.from([...res.data.results]));
+                    setLoading(true);
+                    setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
                 }
             }
         });
@@ -77,7 +72,6 @@ const News = () => {
                                     Conceptual
                                 </div>
                                 <div
-                                    ref={menuTop}
                                     onClick={() => {
                                         router.push({
                                             pathname: "/news",
@@ -101,7 +95,7 @@ const News = () => {
                         </div>
                         <div
                             className="header_sub_container news_header_sub_container"
-                            style={{ paddingTop: "66.5px" }}
+                            style={isSafari ? { paddingTop: "66.5px" } : { paddingTop: "67px" }}
                         >
                             <div className="news_content_container">
                                 <div className="news_content_wrapper">

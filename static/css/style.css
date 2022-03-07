@@ -645,8 +645,12 @@ h4 {
     /* background-color: rgba(255, 255, 2, 0.4); */
 }
 
-.index_row .project {
-    display: flex;
+.index_row .project,
+.header_container .category {
+}
+.index_row .project div,
+.header_container .category div {
+    height: 17.5px;
 }
 
 .index_row .project div,
