@@ -225,18 +225,25 @@ const Architecture = () => {
                                     </div>
                                     {projectId && projectId != 0 && (
                                         <div className="mobile_only_detail_information_row">
-                                            <div>
+                                            <div className="mobile_only_detail_each_row">
                                                 <div>Location</div>
-                                                <div>Period</div>
-                                                <div>Status</div>
-                                                <div>Floor</div>
-                                                <div>Floor Area</div>
-                                            </div>
-                                            <div>
                                                 <div>{arrayResponseData[projectId - 1].location}</div>
+                                            </div>
+                                            <div className="mobile_only_detail_each_row">
+                                                <div>Period</div>
+
                                                 <div>{arrayResponseData[projectId - 1].period}</div>
+                                            </div>
+                                            <div className="mobile_only_detail_each_row">
+                                                <div>Status</div>
                                                 <div>{arrayResponseData[projectId - 1].status}</div>
+                                            </div>
+                                            <div className="mobile_only_detail_each_row">
+                                                <div>Floor</div>
                                                 <div>{arrayResponseData[projectId - 1].floor}</div>
+                                            </div>
+                                            <div className="mobile_only_detail_each_row">
+                                                <div>Floor Area</div>
                                                 <div>{arrayResponseData[projectId - 1].area}</div>
                                             </div>
                                         </div>

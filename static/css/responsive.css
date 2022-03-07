@@ -3,6 +3,11 @@
     body {
         height: auto;
     }
+
+    .index_row .project div,
+    .header_container .category div {
+        height: unset;
+    }
     #body {
         font-size: 15px !important;
     }
@@ -250,11 +255,22 @@
         left: 2px;
         top: 3px !important;
         display: flex !important;
+        flex-direction: column;
         position: relative;
     }
 
-    .mobile_only_detail_information_row > div:first-of-type {
+    .mobile_only_detail_each_row {
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile_only_detail_each_row > div:first-of-type {
         width: 25%;
+    }
+
+    .mobile_only_detail_each_row > div:last-of-type {
+        width: 75%;
+        padding-left: 5%;
     }
 
     .detail_information_row {
@@ -347,6 +363,7 @@
 
     .conceptual_detail_information_row .conceptual_detail_row > div:last-child {
         width: 75%;
+        padding-left: 5%;
     }
 
     .conceptual_header_sub_container {
