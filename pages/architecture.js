@@ -38,7 +38,10 @@ const Architecture = () => {
         window.$ = window.jQuery = jQuery;
 
         __apiGetItemData();
-        if (arrayResponseData) setLoading(true);
+        if (arrayResponseData) {
+            setLoading(true);
+            console.log(arrayResponseData);
+        }
 
         const architectureRows = document.getElementsByClassName("architecture_title_row");
         const detailInfoRows = document.getElementsByClassName("detail_information_row");
@@ -175,13 +178,13 @@ const Architecture = () => {
                                                     return (
                                                         <div style={{ display: "flex" }}>
                                                             <div
-                                                                key={el.aid + el.title}
+                                                                key={parseInt(el.rid) + el.title}
                                                                 className="index_row"
                                                                 onClick={() => {
                                                                     router.push({
                                                                         pathname: "/architecture",
                                                                         query: {
-                                                                            id: el.aid,
+                                                                            id: parseInt(el.rid),
                                                                         },
                                                                     });
                                                                 }}

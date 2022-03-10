@@ -51,7 +51,9 @@ const Conceptual = () => {
         _AppModelD.getData(req).then(res => {
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
-                    setArrayResponseData(Array.from([...res.data.results]));
+                    setArrayResponseData(
+                        Array.from([...res.data.results].sort((a, b) => parseFloat(a.aid) - parseFloat(b.aid))),
+                    );
                     setConceptualId(query.id);
                 }
             }
@@ -151,13 +153,13 @@ const Conceptual = () => {
                                                     arrayResponseData.map(el => {
                                                         return (
                                                             <div
-                                                                key={el.aid + el.title}
+                                                                key={parseInt(el.rid) + el.title}
                                                                 className="index_row"
                                                                 onClick={() => {
                                                                     router.push({
                                                                         pathname: "/conceptual",
                                                                         query: {
-                                                                            id: el.aid,
+                                                                            id: parseInt(el.rid),
                                                                         },
                                                                     });
                                                                 }}
@@ -356,13 +358,13 @@ const Conceptual = () => {
                                                                 className="mobile_only"
                                                                 style={{ width: "100%", display: "block" }}
                                                                 onMouseOver={() => {
-                                                                    setThumbIdx(el.aid);
+                                                                    setThumbIdx(parseInt(el.rid));
                                                                 }}
                                                                 onMouseLeave={() => {
                                                                     setThumbIdx(0);
                                                                 }}
                                                                 onTouchStart={() => {
-                                                                    setThumbIdx(el.aid);
+                                                                    setThumbIdx(parseInt(el.rid));
                                                                 }}
                                                                 onTouchCancel={() => {
                                                                     setThumbIdx(0);
@@ -374,13 +376,13 @@ const Conceptual = () => {
                                                                 className="desktop_only"
                                                                 style={{ width: "100%", display: "block" }}
                                                                 onMouseOver={() => {
-                                                                    setThumbIdx(el.aid);
+                                                                    setThumbIdx(parseInt(el.rid));
                                                                 }}
                                                                 onMouseLeave={() => {
                                                                     setThumbIdx(0);
                                                                 }}
                                                                 onTouchStart={() => {
-                                                                    setThumbIdx(el.aid);
+                                                                    setThumbIdx(parseInt(el.rid));
                                                                 }}
                                                                 onTouchCancel={() => {
                                                                     setThumbIdx(0);
@@ -389,7 +391,7 @@ const Conceptual = () => {
                                                                     router.push({
                                                                         pathname: "/conceptual",
                                                                         query: {
-                                                                            id: el.aid,
+                                                                            id: parseInt(el.rid),
                                                                         },
                                                                     });
                                                                 }}
@@ -402,7 +404,7 @@ const Conceptual = () => {
                                                                     router.push({
                                                                         pathname: "/conceptual",
                                                                         query: {
-                                                                            id: el.aid,
+                                                                            id: parseInt(el.rid),
                                                                         },
                                                                     });
                                                                 }}

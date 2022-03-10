@@ -29,7 +29,6 @@ const Index = () => {
         __apiGetItemData();
         if (arrayResponseData) {
             setLoading(true);
-            console.log(arrayResponseData);
         }
     }, []);
 
@@ -40,6 +39,11 @@ const Index = () => {
                 if (res && res.data && res.data.results) {
                     setArrayResponseData(
                         Array.from([...res.data.results]).sort((a, b) => parseFloat(a.aid) - parseFloat(b.aid)),
+                        console.log(
+                            Array.from([...res.data.results]).sort(
+                                (a, b) => parseFloat(parseInt(a.rid)) - parseFloat(parseInt(b.rid)),
+                            ),
+                        ),
                     );
                 }
             }
@@ -169,20 +173,20 @@ const Index = () => {
                                         {arrayResponseData &&
                                             arrayResponseData.map(el => {
                                                 return (
-                                                    <div key={el.aid + el.title} className="index_row">
+                                                    <div key={parseInt(el.rid) + el.title} className="index_row">
                                                         <div className="project">
                                                             <div className="main_project_div">
                                                                 <span
                                                                     className="mobile_only"
                                                                     style={{ width: "100%", display: "block" }}
                                                                     onTouchStart={() => {
-                                                                        setThumbIdx(el.aid);
+                                                                        setThumbIdx(parseInt(el.rid));
                                                                     }}
                                                                     onTouchCancel={() => {
                                                                         setThumbIdx(0);
                                                                     }}
                                                                     onMouseOver={() => {
-                                                                        setThumbIdx(el.aid);
+                                                                        setThumbIdx(parseInt(el.rid));
                                                                     }}
                                                                     onMouseLeave={() => {
                                                                         setThumbIdx(0);
@@ -194,13 +198,13 @@ const Index = () => {
                                                                     className="desktop_only"
                                                                     style={{ width: "100%", display: "block" }}
                                                                     onTouchStart={() => {
-                                                                        setThumbIdx(el.aid);
+                                                                        setThumbIdx(parseInt(el.rid));
                                                                     }}
                                                                     onTouchCancel={() => {
                                                                         setThumbIdx(0);
                                                                     }}
                                                                     onMouseOver={() => {
-                                                                        setThumbIdx(el.aid);
+                                                                        setThumbIdx(parseInt(el.rid));
                                                                     }}
                                                                     onMouseLeave={() => {
                                                                         setThumbIdx(0);
@@ -209,7 +213,7 @@ const Index = () => {
                                                                         router.push({
                                                                             pathname: "/architecture",
                                                                             query: {
-                                                                                id: el.aid,
+                                                                                id: parseInt(el.rid),
                                                                             },
                                                                         });
                                                                     }}
@@ -222,7 +226,7 @@ const Index = () => {
                                                                         router.push({
                                                                             pathname: "/architecture",
                                                                             query: {
-                                                                                id: el.aid,
+                                                                                id: parseInt(el.rid),
                                                                             },
                                                                         });
                                                                     }}
@@ -237,7 +241,7 @@ const Index = () => {
                                                                 router.push({
                                                                     pathname: "/architecture",
                                                                     query: {
-                                                                        id: el.aid,
+                                                                        id: parseInt(el.rid),
                                                                     },
                                                                 });
                                                             }}
@@ -250,7 +254,7 @@ const Index = () => {
                                                                 router.push({
                                                                     pathname: "/architecture",
                                                                     query: {
-                                                                        id: el.aid,
+                                                                        id: parseInt(el.rid),
                                                                     },
                                                                 });
                                                             }}
@@ -267,12 +271,12 @@ const Index = () => {
                                     {arrayResponseData.map(el => {
                                         return (
                                             <div
-                                                key={el.aid + el.title}
+                                                key={parseInt(el.rid) + el.title}
                                                 onClick={() => {
                                                     router.push({
                                                         pathname: "/architecture",
                                                         query: {
-                                                            id: el.aid,
+                                                            id: parseInt(el.rid),
                                                         },
                                                     });
                                                 }}
