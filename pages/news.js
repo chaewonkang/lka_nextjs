@@ -95,7 +95,7 @@ const News = () => {
                         </div>
                         <div
                             className="header_sub_container news_header_sub_container"
-                            style={isSafari ? { paddingTop: "66.5px" } : { paddingTop: "67px" }}
+                            style={isSafari ? { paddingTop: "66.5px" } : { paddingTop: "66.7px" }}
                         >
                             <div className="news_content_container">
                                 <div className="news_content_wrapper">
