@@ -660,6 +660,8 @@ h4 {
 .index_row .project,
 .header_container .category {
 }
+
+.header_container .company_title div,
 .index_row .project div,
 .header_container .category div {
     height: 17.5px;
