@@ -358,6 +358,7 @@ h4 {
     background-color: #fff;
     position: absolute;
     bottom: 0;
+    padding-top: 4px;
 }
 
 .architecture_header_sub_container .more_information_box .more_information_title {
