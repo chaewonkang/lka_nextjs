@@ -4,6 +4,7 @@
         height: auto;
     }
 
+    .header_container .company_title div,
     .index_row .project div,
     .header_container .category div {
         height: unset;
