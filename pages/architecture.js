@@ -278,8 +278,8 @@ const Architecture = () => {
                                     </div>
                                     {projectId && projectId != 0 && mTextOpen && (
                                         <div className="more_information_text">
-                                            <p>{parse(arrayResponseData[projectId - 1].info_kr)}</p>
-                                            <p>{parse(arrayResponseData[projectId - 1].info_en)}</p>
+                                            {parse(arrayResponseData[projectId - 1].info_kr)}
+                                            {parse(arrayResponseData[projectId - 1].info_en)}
                                         </div>
                                     )}
                                 </div>

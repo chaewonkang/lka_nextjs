@@ -384,6 +384,16 @@ h4 {
     margin-bottom: 28px;
 }
 
+.more_information_text > p:first-child {
+    line-height: 17px;
+    letter-spacing: 0.2px;
+}
+
+.more_information_text > p:last-child {
+    line-height: 15px;
+    letter-spacing: 0.05px;
+}
+
 .architecture_first_box {
     width: 100%;
     display: flex;

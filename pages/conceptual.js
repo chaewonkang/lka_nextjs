@@ -236,8 +236,8 @@ const Conceptual = () => {
                                         </div>
                                         {conceptualId && conceptualId != 0 && mTextOpen && (
                                             <div className="more_information_text">
-                                                <p>{parse(arrayResponseData[conceptualId - 1].info_kr)}</p>
-                                                <p>{parse(arrayResponseData[conceptualId - 1].info_en)}</p>
+                                                {parse(arrayResponseData[conceptualId - 1].info_kr)}
+                                                {parse(arrayResponseData[conceptualId - 1].info_en)}
                                             </div>
                                         )}
                                     </div>

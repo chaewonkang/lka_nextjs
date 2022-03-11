@@ -133,12 +133,26 @@
         display: none;
     }
 
+    .news_module_info {
+        padding-left: 0px;
+    }
+
     .mobile_thumb_container {
         position: absolute;
         z-index: 1;
         width: 50%;
         display: block;
         right: 25%;
+    }
+
+    .more_information_text > p:first-child {
+        line-height: 24px;
+        letter-spacing: 0.1px;
+    }
+
+    .more_information_text > p:last-child {
+        line-height: 20px;
+        letter-spacing: 0.05px;
     }
 
     .thumb_container img {
