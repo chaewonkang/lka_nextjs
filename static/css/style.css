@@ -404,6 +404,7 @@ h4 {
 }
 
 .detail_information_row {
+    padding-top: 5px;
     position: absolute;
     height: auto;
     border-top: 1px solid #000;
