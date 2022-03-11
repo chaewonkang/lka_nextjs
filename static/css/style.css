@@ -397,7 +397,7 @@ h4 {
 
 .detail_information_row {
     position: absolute;
-    height: fit-content;
+    height: auto;
     border-top: 1px solid #000;
     width: calc(((100% / 18) * 14));
     left: calc(((100% / 18) * 4));
@@ -597,6 +597,10 @@ h4 {
 .about_menu .people,
 .about_content .people {
     margin-right: calc((100% / 18) * 1);
+}
+
+.about_content .introduction {
+    margin-top: 5px;
 }
 
 .header_sub_menu .year,
