@@ -39,11 +39,6 @@ const Index = () => {
                 if (res && res.data && res.data.results) {
                     setArrayResponseData(
                         Array.from([...res.data.results]).sort((a, b) => parseInt(a.rid) - parseInt(b.rid)),
-                        console.log(
-                            Array.from([...res.data.results]).sort(
-                                (a, b) => parseFloat(parseInt(a.rid)) - parseFloat(parseInt(b.rid)),
-                            ),
-                        ),
                     );
                 }
             }
