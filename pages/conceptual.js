@@ -52,7 +52,7 @@ const Conceptual = () => {
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
                     setArrayResponseData(
-                        Array.from([...res.data.results].sort((a, b) => parseFloat(a.aid) - parseFloat(b.aid))),
+                        Array.from([...res.data.results].sort((a, b) => parseInt(a.rid) - parseInt(b.rid))),
                     );
                     setConceptualId(query.id);
                 }
