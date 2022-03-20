@@ -25,7 +25,7 @@ const Architecture = () => {
             if (res.status < 300) {
                 if (res && res.data && res.data.results) {
                     setArrayResponseData(
-                        Array.from([...res.data.results]).sort((a, b) => parseFloat(a.aid) - parseFloat(b.aid)),
+                        Array.from([...res.data.results]).sort((a, b) => parseInt(a.rid) - parseInt(b.rid)),
                     );
                     setProjectId(query.id);
                     setDetailIdx(query.id);
@@ -74,7 +74,7 @@ const Architecture = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            {loading && (
+            {loading && arrayResponseData && (
                 <>
                     <PageLayout>
                         <div className="indexing">
@@ -190,7 +190,7 @@ const Architecture = () => {
                                                             >
                                                                 <div className="project">
                                                                     <div className="architecture_title_row">
-                                                                        {el.title}
+                                                                        {el.title && el.title}
                                                                     </div>
                                                                 </div>
                                                                 <div
@@ -199,24 +199,24 @@ const Architecture = () => {
                                                                 >
                                                                     <div className="detail_information_each_row">
                                                                         <div className="field">Location</div>
-                                                                        <div>{el.location}</div>
+                                                                        <div>{el.location && el.location}</div>
                                                                     </div>
                                                                     <div className="detail_information_each_row">
                                                                         <div className="field">Period</div>
 
-                                                                        <div>{el.period}</div>
+                                                                        <div>{el.period && el.period}</div>
                                                                     </div>
                                                                     <div className="detail_information_each_row">
                                                                         <div className="field">Status</div>
-                                                                        <div>{el.status}</div>
+                                                                        <div>{el.status && el.status}</div>
                                                                     </div>
                                                                     <div className="detail_information_each_row">
                                                                         <div className="field">Floor</div>
-                                                                        <div>{el.floor}</div>
+                                                                        <div>{el.floor && el.floor}</div>
                                                                     </div>
                                                                     <div className="detail_information_each_row">
                                                                         <div className="field">Floor Area</div>{" "}
-                                                                        <div>{el.area}</div>
+                                                                        <div>{el.area && el.area}</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -229,35 +229,52 @@ const Architecture = () => {
                                         <div className="mobile_only_detail_information_row">
                                             <div className="mobile_only_detail_each_row">
                                                 <div>Location</div>
-                                                <div>{arrayResponseData[projectId - 1].location}</div>
+                                                <div>
+                                                    {arrayResponseData[projectId - 1].location &&
+                                                        arrayResponseData[projectId - 1].location}
+                                                </div>
                                             </div>
                                             <div className="mobile_only_detail_each_row">
                                                 <div>Period</div>
-
-                                                <div>{arrayResponseData[projectId - 1].period}</div>
+                                                <div>
+                                                    {arrayResponseData[projectId - 1].period &&
+                                                        arrayResponseData[projectId - 1].period}
+                                                </div>
                                             </div>
                                             <div className="mobile_only_detail_each_row">
                                                 <div>Status</div>
-                                                <div>{arrayResponseData[projectId - 1].status}</div>
+                                                <div>
+                                                    {arrayResponseData[projectId - 1].status &&
+                                                        arrayResponseData[projectId - 1].status}
+                                                </div>
                                             </div>
                                             <div className="mobile_only_detail_each_row">
                                                 <div>Floor</div>
-                                                <div>{arrayResponseData[projectId - 1].floor}</div>
+                                                <div>
+                                                    {arrayResponseData[projectId - 1].floor &&
+                                                        arrayResponseData[projectId - 1].floor}
+                                                </div>
                                             </div>
                                             <div className="mobile_only_detail_each_row">
                                                 <div>Floor Area</div>
-                                                <div>{arrayResponseData[projectId - 1].area}</div>
+                                                <div>
+                                                    {arrayResponseData[projectId - 1].area &&
+                                                        arrayResponseData[projectId - 1].area}
+                                                </div>
                                             </div>
                                         </div>
                                     )}
                                     <div className="architecture_detail_image_container">
-                                        {projectId && projectId != 0 && arrayResponseData[projectId - 1] && (
-                                            <Slideshow
-                                                imgArr={arrayResponseData[projectId - 1].images}
-                                                isAuto
-                                                isArrowOn
-                                            />
-                                        )}
+                                        {projectId &&
+                                            projectId != 0 &&
+                                            arrayResponseData[projectId - 1] &&
+                                            arrayResponseData[projectId - 1].images && (
+                                                <Slideshow
+                                                    imgArr={arrayResponseData[projectId - 1].images}
+                                                    isAuto
+                                                    isArrowOn
+                                                />
+                                            )}
                                     </div>
                                 </div>
                                 <div className="more_information_box">

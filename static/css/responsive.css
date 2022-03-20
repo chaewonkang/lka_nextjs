@@ -422,5 +422,18 @@
         display: unset;
     }
 
+    .header_container .company_title div,
+    .header_container .category div,
+    .header_sub_menu .project div,
+    .header_sub_menu .conceptual_project div,
+    .header_sub_menu .year div,
+    .header_sub_menu .program div,
+    .index_row .project div,
+    .index_row .year div,
+    .index_row .program div,
+    .index_row .conceptual_project div {
+        height: unset;
+    }
+
     /* ENDOF about */
 }
