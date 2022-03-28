@@ -168,7 +168,7 @@
     }
 
     .thumbnail_gallery div img {
-        height: auto;
+        height: 100%;
     }
 
     .about_menu,
