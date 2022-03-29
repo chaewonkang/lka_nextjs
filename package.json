@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "dev": "next dev -p 3000",
-        "build": "next build",
-        "start": "next start"
+        "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+        "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && next start"
     },
     "keywords": [],
     "author": "",
