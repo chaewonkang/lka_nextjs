@@ -117,6 +117,12 @@ const About = () => {
                                             arrayResponseData[0] &&
                                             parse(arrayResponseData[0].info_kr)}
                                     </div>
+                                    <div>
+                                        {arrayResponseData &&
+                                            arrayResponseData.length > 0 &&
+                                            arrayResponseData[0] &&
+                                            parse(arrayResponseData[0].info_en)}
+                                    </div>
                                 </div>
                                 <div className="mobile_only about_category_row">People</div>
                                 <div className="people">

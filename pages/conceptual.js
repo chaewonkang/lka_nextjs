@@ -213,7 +213,6 @@ const Conceptual = () => {
                                             {conceptualId && conceptualId != 0 && (
                                                 <Slideshow
                                                     imgArr={arrayResponseData[conceptualId - 1].images}
-                                                    isAuto
                                                     isArrowOn
                                                 />
                                             )}
