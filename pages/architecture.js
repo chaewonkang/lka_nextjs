@@ -183,17 +183,18 @@ const Architecture = () => {
                                                             <div
                                                                 key={parseInt(el.rid) + el.title}
                                                                 className="index_row"
-                                                                onClick={() => {
-                                                                    router.push({
-                                                                        pathname: "/architecture",
-                                                                        query: {
-                                                                            id: parseInt(el.rid),
-                                                                        },
-                                                                    });
-                                                                }}
+                                                          
                                                             >
                                                                 <div className="project">
-                                                                    <div className="architecture_title_row">
+                                                                    <div className="architecture_title_row"
+                                                                        onClick={() => {
+                                                                                    router.push({
+                                                                                        pathname: "/architecture",
+                                                                                        query: {
+                                                                                            id: parseInt(el.rid),
+                                                                                        },
+                                                                                    });
+                                                                                }}>
                                                                         {el.title && el.title}
                                                                     </div>
                                                                 </div>

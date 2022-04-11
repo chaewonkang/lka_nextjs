@@ -52,9 +52,6 @@ const News = () => {
                                     onClick={() => {
                                         router.push({
                                             pathname: "/architecture",
-                                            query: {
-                                                id: 1,
-                                            },
                                         });
                                     }}
                                     style={{ color: "#BABABA" }}
