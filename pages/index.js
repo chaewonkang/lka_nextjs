@@ -19,7 +19,7 @@ const Index = () => {
     const { query } = router;
 
     useEffect(() => {
-        if (!query.mode) setViewMode("list");
+        if (!query.mode) setViewMode("thumbnail");
         else if (query.mode === "list") setViewMode("list");
         else setViewMode("thumbnail");
     }, [thumbIdx, viewMode, router.query]);
@@ -82,11 +82,10 @@ const Index = () => {
                                         onClick={() => {
                                             router.push({
                                                 pathname: "/architecture",
-                                                query: {
-                                                    id: 1,
-                                                },
+                                        
                                             });
                                         }}
+                                        style={{ color: "#BABABA" }}
                                     >
                                         Architecture
                                     </div>
