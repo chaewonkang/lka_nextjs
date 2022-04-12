@@ -474,8 +474,6 @@ h4 {
     cursor: pointer;
 }
 
-
-
 .mobile_only_architecture_title_row,
 .mobile_only_detail_information_row {
     display: none;
@@ -560,7 +558,6 @@ h4 {
 }
 
 .about_content {
-
 }
 
 .about_menu .introduction,
@@ -585,7 +582,7 @@ h4 {
 .about_content .people,
 .about_content .contact {
     width: calc((100% / 18) * 4);
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 175px);
     overflow: auto;
 }
 
@@ -641,7 +638,6 @@ h4 {
 
 .index_row .project div {
     width: calc((100% / 18) * 4);
-
 }
 
 .header_sub_menu .conceptual_project,
@@ -686,7 +682,7 @@ h4 {
 
 .index_row .project {
     padding-right: 6px;
-    cursor:unset;
+    cursor: unset;
 }
 
 .conceptual_header_sub_container {
