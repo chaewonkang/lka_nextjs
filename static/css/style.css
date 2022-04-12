@@ -432,18 +432,17 @@ h4 {
 }
 
 .conceptual_detail_information_row .conceptual_detail_row {
-    padding-left: calc(100% / 18);
-    margin-right: 20px;
     display: flex;
 }
 
 .conceptual_detail_information_row .conceptual_detail_row > div:first-child {
     width: calc((100% / 18) * 2);
+    margin-left: 10px;
 }
 
 .conceptual_detail_information_row .conceptual_detail_row > div:last-child {
-    width: calc((100% / 18) * 3);
-    padding-left: 4px;
+    width: calc((100% / 18) * 3.5);
+    margin-left: calc((100% / 18) * 0.5);
 }
 
 .detail_information_row > div {
@@ -704,6 +703,7 @@ h4 {
     padding-left: 5px;
     margin-top: 5px;
     height: 17.5px;
+    cursor: pointer;
 }
 
 .header_container .company_title div,
