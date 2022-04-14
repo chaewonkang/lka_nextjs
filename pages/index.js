@@ -61,7 +61,7 @@ const Index = () => {
                                     <img src={arrayResponseData[thumbIdx - 1].image}></img>
                                 </div>
                             )}
-                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 26.5 + 148}px` }}>
+                        <div className="mobile_thumb_container" style={{ top: `${thumbIdx * 24 + 144}px` }}>
                             {thumbIdx !== 0 &&
                                 arrayResponseData &&
                                 arrayResponseData[thumbIdx - 1] &&
@@ -82,7 +82,6 @@ const Index = () => {
                                         onClick={() => {
                                             router.push({
                                                 pathname: "/architecture",
-                                        
                                             });
                                         }}
                                         style={{ color: "#BABABA" }}

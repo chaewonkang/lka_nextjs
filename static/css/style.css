@@ -360,7 +360,7 @@ h4 {
     display: flex;
     background-color: #fff;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     padding-top: 4px;
 }
 
