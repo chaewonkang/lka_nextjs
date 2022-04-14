@@ -396,6 +396,7 @@
     .about_content .introduction,
     .about_content .people {
         margin-bottom: 38px;
+        max-height: unset;
     }
 
     .about_content .contact {

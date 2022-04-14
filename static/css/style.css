@@ -207,7 +207,8 @@ h4 {
 .layout_container {
     margin: 30px;
     width: calc(100vw - 60px);
-    height: calc(100vh - 60px);
+    margin-bottom: 10px;
+    height: calc(100vh - 40px);
     position: relative;
 }
 
@@ -308,7 +309,7 @@ h4 {
     height: 50vh;
     align-items: center;
     justify-content: center;
-    padding: calc(100% / 22);
+    padding: calc((100% / 22) * 0.5);
     cursor: pointer;
 }
 
@@ -581,8 +582,13 @@ h4 {
 .about_content .people,
 .about_content .contact {
     width: calc((100% / 18) * 4);
-    max-height: calc(100vh - 175px);
+    max-height: calc(100vh - 153px);
+    word-break: keep-all;
     overflow: auto;
+}
+
+.introduction div p span {
+    letter-spacing: -0.1px;
 }
 
 .about_menu .people,
