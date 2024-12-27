@@ -16,8 +16,9 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 class MyDocument extends Document {
-    static getInitialProps(context) {
+    static async getInitialProps(context) {
         const sheet = new ServerStyleSheet(); // 서버사이드 렌더링 할 수 있게함.
+        const initialProps = await Document.getInitialProps(context);
         const page = context.renderPage(
             App => props =>
                 sheet.collectStyles(
@@ -28,7 +29,7 @@ class MyDocument extends Document {
                 ),
         );
         const styleTags = sheet.getStyleElement();
-        return { ...page, helmet: Helmet.renderStatic(), styleTags };
+        return { ...page, ...initialProps, helmet: Helmet.renderStatic(), styleTags };
     }
     render() {
         const { htmlAttributes, bodyAttributes, ...helmet } = this.props.helmet; // helmet으로 부터 받아온다.

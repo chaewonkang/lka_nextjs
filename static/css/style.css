@@ -573,9 +573,17 @@ h4 {
     margin-bottom: 1.25px;
 }
 
-.header_container .company_title,
+
 .header_container .category {
     width: 50%;
+}
+
+.header_container a {
+    width: 50%;
+}
+
+.header_container a .company_title {
+    width: 100%;
 }
 
 .about_content .introduction,

@@ -19,6 +19,7 @@ const News = () => {
 
     useEffect(() => {
         __apiGetItemData();
+        console.log(arrayResponseData);
     }, [loading]);
 
     function __apiGetItemData() {
@@ -96,35 +97,45 @@ const News = () => {
                         >
                             <div className="news_content_container">
                                 <div className="news_content_wrapper">
-                                    {arrayResponseData.map(news => {
-                                        return (
-                                            <div className="news_module">
-                                                <div className="mobile_only news_date_row">
-                                                    {" "}
-                                                    {news.created_at.slice(0, 10).replace(/-/g, ".")}
-                                                </div>
-                                                <div className="news_module_slideshow">
-                                                    <Slideshow imgArr={news.images} isArrowOn />
-                                                </div>
-                                                <div className="news_module_info">
-                                                    <span className="desktop_only">
+                                    {arrayResponseData
+                                        .sort((a, b) => a.ordering - b.ordering)
+                                        .map(news => {
+                                            return (
+                                                <div className="news_module">
+                                                    <div className="mobile_only news_date_row">
                                                         {news.created_at.slice(0, 10).replace(/-/g, ".")}
-                                                    </span>
-                                                    <br className="desktop_only"></br>
-                                                    <span>{news.title}</span>
-                                                    <span>
-                                                        <a href={news.linkUrl} target="_blank">
-                                                            {news.link}
-                                                        </a>
-                                                    </span>
-                                                    <span>
-                                                        {news.category}| {news.publication}
-                                                    </span>
-                                                    <span>{news.issn}</span>
+                                                    </div>
+                                                    {news.images && (
+                                                        <div className="news_module_slideshow">
+                                                            <Slideshow imgArr={news.images} isArrowOn />
+                                                        </div>
+                                                    )}
+                                                    <div className="news_module_info">
+                                                        <span className="desktop_only">
+                                                            {news.created_at.slice(0, 10).replace(/-/g, ".")}
+                                                        </span>
+                                                        <br className="desktop_only"></br>
+                                                        {news.title && news.title !== "." && <span>{news.title}</span>}
+                                                        {news.link && news.link !== "." && (
+                                                            <span>
+                                                                <a href={news.linkUrl} target="_blank">
+                                                                    {news.link}
+                                                                </a>
+                                                            </span>
+                                                        )}
+
+                                                        <span>
+                                                            {news.category && news.category !== "." && news.category}
+                                                            {news.publication && news.publication !== "." && " |"}{" "}
+                                                            {news.publication &&
+                                                                news.publication !== "." &&
+                                                                news.publication}
+                                                        </span>
+                                                        {news.issn && news.issn !== "." && <span>{news.issn}</span>}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        );
-                                    })}
+                                            );
+                                        })}
                                 </div>
                             </div>
                         </div>
